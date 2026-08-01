@@ -660,6 +660,50 @@ hr {
 }
 .callout p { margin: 0; max-width: none; }
 
+.section-lead {
+  margin: .35rem 0 1.9rem;
+  font-size: 1.02rem;
+  color: var(--muted);
+  max-width: var(--measure);
+}
+
+.project-figure {
+  margin: 1.05rem 0 1.2rem;
+  padding: .8rem .8rem .65rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-subtle);
+}
+.project-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  /* the figures are line art on white; keep that ground in dark mode so they
+     stay legible instead of inverting into mud */
+  background: #fff;
+}
+.project-figure figcaption {
+  margin-top: .62rem;
+  font-size: .8rem;
+  line-height: 1.55;
+  color: var(--faint);
+}
+.project-figure figcaption b { color: var(--muted); font-weight: 600; }
+
+.chip-code, .chip-data, .chip-paper { padding-left: .52rem; }
+.chip-code::before, .chip-data::before, .chip-paper::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  margin-right: .1rem;
+}
+.chip-code::before  { background: #7c5cd6; }
+.chip-data::before  { background: #1f9d76; }
+.chip-paper::before { background: var(--accent); }
+
 /* --------------------------------------------------------------------------
    9. Publications
    -------------------------------------------------------------------------- */

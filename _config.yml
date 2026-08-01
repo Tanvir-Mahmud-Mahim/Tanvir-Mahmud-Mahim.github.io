@@ -78,6 +78,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - README.md
+  - GUIDE.md
   - deploy.bat
   - deploy.sh
   - .sass-cache

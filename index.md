@@ -3,16 +3,20 @@ layout: page
 title: "About"
 hide_title: true
 permalink: /
-description: "Tanvir Mahmud Mahim — Adjunct Lecturer and Research Assistant, Department of EEE, BRAC University. Quantum optics and photonics, 2D quantum materials, wide-bandgap devices, MEMS, and machine learning for electronic design automation."
+description: "Tanvir Mahmud Mahim — Adjunct Lecturer and Research Assistant, Department of EEE, BRAC University. Quantum optics and photonics, 2D quantum materials, MEMS, wide-bandgap devices, and machine learning for electronic design automation."
 ---
 
 <h1 class="intro-name">Tanvir Mahmud Mahim</h1>
 
-<p class="intro-tagline">Adjunct Lecturer and Research Assistant, <strong>Department of Electrical and Electronic Engineering, BRAC University</strong>. I build physics-informed, differentiable models of photonic, quantum and wide-bandgap devices — and use them to design those devices rather than tune them by hand.</p>
+<p class="intro-tagline">Adjunct Lecturer and Research Assistant, <strong>Department of Electrical and Electronic Engineering, BRAC University</strong>. I work on quantum optics and photonics, and on 2D quantum materials and MEMS — building device physics in a differentiable form so that hardware can be designed by optimisation rather than by hand.</p>
 
-My research sits at the boundary between device physics and machine learning. Most classical device design proceeds by parameter sweeps and expert intuition; I am interested in the opposite direction — writing the physics down in a differentiable form so that gradients, adjoint methods and reinforcement learning can search the design space directly, subject to the constraints a real fabrication process imposes.
+A device simulator answers the forward question: given this geometry, what does it do? Almost everything I build is aimed at the inverse — given this target, what geometry gets me there, and will it survive the fab? That only becomes tractable if the physics itself is differentiable, so my work consists largely of writing simulators you can take gradients through, then wrapping an adjoint, generative or reinforcement-learned optimiser around them. Code and datasets are released openly with each project.
 
-Three threads run through the current work. In **quantum optics and photonics**, with Dr. A. S. M. Mohsin at BRAC University, I model soliton-crystal microcombs in 4H-SiC photonic molecules for squeezing extraction beyond the 3 dB limit, and pick-and-place diamond micromembrane NV sensors for imaging single vortices in tantalum superconducting circuits. In **wide-bandgap devices and electronic design automation**, with Dr. Nadim Chowdhury at BUET, I work on physics-guided adjoint co-optimisation of monolithic E-mode GaN-on-SOI circuits, and on transferable analog transistor sizing with GlobalFoundries, Inc. In **MEMS and 2D materials**, with Prof. Md. Mosaddequr Rahman, I have developed hierarchical machine-learning frameworks for the inverse design of capacitive micromachined ultrasonic transducers, and TCAD models relating Raman phonon signatures to fixed edge charge in monolayer semiconductor nanoribbon transistors.
+**Quantum optics and photonics** is where most of that effort currently sits, with Dr. A. S. M. Mohsin at BRAC University. I model squeezed-light generation in soliton-crystal microcombs on 4H-silicon-carbide-on-insulator, where an auxiliary Purcell-extraction ring lifts detectable squeezing past the 3 dB ceiling that conventional resonator coupling imposes — 8.5 dB across a 1.74 GHz band in the optimised design. A second thread is an end-to-end simulation of a pick-and-place diamond micromembrane NV sensor that localises single vortices to 13 nm in tantalum superconducting circuits and separates out their contribution to dissipation. A third, with the University of Memphis, puts machine learning inside the instrument itself: a spiking, event-driven framework that triages solid-state single-photon emitters from Hanbury Brown–Twiss statistics, and photon-budget-aware training for optical neural inference at the standard quantum limit.
+
+**2D quantum materials and MEMS**, with Prof. Md. Mosaddequr Rahman, run from first principles up to circuit metrics. Frozen-phonon calculations show that two Raman modes in monolayer transition-metal dichalcogenide nanoribbons respond differently — 2LA(M) to strain, A′₁ to carrier density — which turns a spectroscopic measurement into a quantitative readout of the fixed edge charge that limits width scaling. Alongside it, a multiscale model of a strain-engineered WSe<sub>2</sub> ferroelectric transistor shows that 1% biaxial compression more than doubles hole mobility without collapsing the memory window, giving nonvolatile logic that survives complete power loss. The same physics-in-the-loop approach drives my inverse design of capacitive micromachined ultrasonic transducers.
+
+**Wide-bandgap devices and design automation**, with Dr. Nadim Chowdhury at BUET, extend the method to circuits: adjoint co-design of a monolithic E-mode GaN-on-SOI fractional-N PLL, and a graph reinforcement-learning framework with GlobalFoundries, Inc. for analog transistor sizing that transfers across process nodes. The <a href="{{ '/research/' | relative_url }}">Research</a> page covers all of it in detail, with figures, code and data.
 
 I completed my B.Sc. in Electrical and Electronic Engineering at BRAC University in December 2022 with High Distinction, and joined the department first as a Teaching Assistant, then as a Research Assistant, and since June 2025 as an Adjunct Lecturer. My earlier work — reinforcement-learning fuzzy control of microgrids and multi-machine networks, and modelling of custom-built bifacial photovoltaic panels — was carried out with Dr. A. H. M. A. Rahim, who retired in December 2024.
 
@@ -23,8 +27,8 @@ If your work touches any of this — or if you would like to collaborate — I w
 <ul class="interests">
   <li>Quantum Optics and Photonics</li>
   <li>2D Quantum Materials</li>
-  <li>Wide Bandgap (WBG) Semiconductor Devices</li>
   <li>Microelectromechanical Systems (MEMS)</li>
+  <li>Wide Bandgap (WBG) Semiconductor Devices</li>
   <li>Electronic Design Automation (EDA)</li>
   <li>Machine Learning</li>
 </ul>
@@ -45,12 +49,16 @@ If your work touches any of this — or if you would like to collaborate — I w
     <span class="news-body">Our review of the challenges and prospects in agrivoltaics appears online in <em>Advanced Energy and Sustainability Research</em> (Wiley, open access); it runs in the January 2026 issue.</span>
   </li>
   <li>
-    <span class="news-date">Jul 2025</span>
-    <span class="news-body">Began research in quantum optics and photonics with Dr. A. S. M. Mohsin — soliton-crystal microcombs, NV micromembrane sensing, and closed-loop machine learning for quantum photonic instrumentation. <a href="{{ '/research/' | relative_url }}">Read more</a></span>
+    <span class="news-date">Aug 2025</span>
+    <span class="news-body">BRAC University <a href="https://www.bracu.ac.bd/news/former-current-eee-faculty-members-publish-2-papers-top-journals" rel="noopener">featured our work in its news</a>, highlighting the <em>IEEE Transactions on Fuzzy Systems</em> and <em>IEEE Sensors Journal</em> papers with Prof. Md. Mosaddequr Rahman and Prof. A. H. M. A. Rahim.</span>
   </li>
   <li>
     <span class="news-date">Jul 2025</span>
-    <span class="news-body">Our hierarchical inverse-design framework for unit-cell CMUTs is published in the <em>IEEE Sensors Journal</em>.</span>
+    <span class="news-body">Began research in quantum optics and photonics with Dr. A. S. M. Mohsin — soliton-crystal microcombs, NV micromembrane vortex sensing, and closed-loop machine learning for quantum photonic instrumentation. <a href="{{ '/research/' | relative_url }}">Read more</a></span>
+  </li>
+  <li>
+    <span class="news-date">Jul 2025</span>
+    <span class="news-body">Our hierarchical inverse-design framework for unit-cell CMUTs is published in the <em>IEEE Sensors Journal</em>, with the dataset released on Zenodo.</span>
   </li>
   <li>
     <span class="news-date">Jun 2025</span>
@@ -66,7 +74,7 @@ If your work touches any of this — or if you would like to collaborate — I w
   </li>
   <li>
     <span class="news-date">Jul 2024</span>
-    <span class="news-body">Began research on 2D materials and MEMS with Prof. Md. Mosaddequr Rahman, spanning nanoribbon transistors, ferroelectric WSe<sub>2</sub> logic, and fabrication-aware inverse design.</span>
+    <span class="news-body">Began research on 2D quantum materials and MEMS with Prof. Md. Mosaddequr Rahman, spanning nanoribbon transistors, ferroelectric WSe<sub>2</sub> logic, and fabrication-aware inverse design.</span>
   </li>
   <li>
     <span class="news-date">Jul 2024</span>
@@ -75,6 +83,10 @@ If your work touches any of this — or if you would like to collaborate — I w
   <li>
     <span class="news-date">Mar 2024</span>
     <span class="news-body">Our comparative review of mono- and bifacial photovoltaic technologies appears in the <em>IEEE Journal of Photovoltaics</em>.</span>
+  </li>
+  <li>
+    <span class="news-date">Aug 2023</span>
+    <span class="news-body">Profiled by the <strong>Aspire Institute</strong> in its <a href="https://www.youtube.com/shorts/wTAnvPs7qkI" rel="noopener">First-Gen Friday series</a>, during the Aspire Leaders Program — founded at Harvard University in 2017 and spun out as an independent institute in 2021.</span>
   </li>
   <li>
     <span class="news-date">Dec 2022</span>

@@ -116,8 +116,9 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim — Adjunct Lecturer and R
 <section class="entry">
   <div class="entry-when">Feb – Nov 2023</div>
   <div class="entry-what">
-    <h3>Aspire Leadership Program</h3>
-    <p class="entry-where">Aspire Institute, Harvard University, Cambridge, USA</p>
+    <h3>Aspire Leaders Program</h3>
+    <p class="entry-where">Aspire Institute, Cambridge, USA — founded at Harvard University in 2017, independent since 2021</p>
+    <p>Profiled by the institute in its <a href="https://www.youtube.com/shorts/wTAnvPs7qkI" rel="noopener">First-Gen Friday</a> series.</p>
   </div>
 </section>
 
@@ -135,30 +136,5 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim — Adjunct Lecturer and R
   <div class="contact-card">
     <h4>Profiles</h4>
     <p><a href="{{ site.author.orcid }}" rel="noopener">ORCID</a> · <a href="{{ site.author.googlescholar }}" rel="noopener">Google Scholar</a><br><a href="{{ site.author.scopus }}" rel="noopener">Scopus</a> · <a href="{{ site.author.wos }}" rel="noopener">Web of Science</a> · <a href="{{ site.author.ieee }}" rel="noopener">IEEE Xplore</a><br><a href="{{ site.author.researchgate }}" rel="noopener">ResearchGate</a> · <a href="{{ site.author.github }}" rel="noopener">GitHub</a> · <a href="{{ site.author.linkedin }}" rel="noopener">LinkedIn</a></p>
-  </div>
-</div>
-
-## Referees
-
-<div class="contact-grid">
-  <div class="contact-card">
-    <h4>Dr. Md. Mosaddequr Rahman</h4>
-    <p>Professor and Chairperson, Department of EEE<br>BRAC University, Bangladesh<br><a href="mailto:mosaddeq@bracu.ac.bd">mosaddeq@bracu.ac.bd</a></p>
-  </div>
-  <div class="contact-card">
-    <h4>Dr. Abu S. M. Mohsin</h4>
-    <p>Associate Professor, Department of EEE<br>BRAC University, Bangladesh<br><a href="mailto:asm.mohsin@bracu.ac.bd">asm.mohsin@bracu.ac.bd</a></p>
-  </div>
-  <div class="contact-card">
-    <h4>Dr. A. S. Nazmul Huda</h4>
-    <p>Associate Professor, Department of EEE<br>BRAC University, Bangladesh<br><a href="mailto:nazmul.huda@bracu.ac.bd">nazmul.huda@bracu.ac.bd</a></p>
-  </div>
-  <div class="contact-card">
-    <h4>Dr. Nadim Chowdhury</h4>
-    <p>Associate Professor, Department of EEE<br>BUET, Bangladesh<br><a href="mailto:nadim@eee.buet.ac.bd">nadim@eee.buet.ac.bd</a></p>
-  </div>
-  <div class="contact-card">
-    <h4>Dr. Navneet Jain</h4>
-    <p>Distinguished Member of Technical Staff<br>GlobalFoundries Inc., USA<br><a href="mailto:navneet.jain@globalfoundries.com">navneet.jain@globalfoundries.com</a></p>
   </div>
 </div>

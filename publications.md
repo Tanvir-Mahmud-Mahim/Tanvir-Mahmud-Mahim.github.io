@@ -22,7 +22,9 @@ description: "Peer-reviewed publications by Tanvir Mahmud Mahim in IEEE Transact
       <p class="pub-venue"><em>{{ pub.venue }}</em>{% if pub.detail and pub.detail != "" %}, {{ pub.detail }}{% endif %} ({{ pub.year }}){% if pub.publisher %} · {{ pub.publisher }}{% endif %}</p>
       {% if pub.note %}<p class="pub-note">{{ pub.note }}</p>{% endif %}
       <ul class="pub-actions">
-        <li><a class="chip" href="{{ pub.url }}" rel="noopener">DOI: {{ pub.doi }}</a></li>
+        <li><a class="chip chip-paper" href="{{ pub.url }}" rel="noopener">DOI: {{ pub.doi }}</a></li>
+        {% if pub.code %}<li><a class="chip chip-code" href="{{ pub.code }}" rel="noopener">Code · GitHub</a></li>{% endif %}
+        {% if pub.data %}<li><a class="chip chip-data" href="{{ pub.data }}" rel="noopener">Data · Zenodo</a></li>{% endif %}
       </ul>
     </div>
   </li>
@@ -41,7 +43,9 @@ description: "Peer-reviewed publications by Tanvir Mahmud Mahim in IEEE Transact
       <p class="pub-venue"><em>{{ pub.venue }}</em>{% if pub.detail and pub.detail != "" %}, {{ pub.detail }}{% endif %} ({{ pub.year }}){% if pub.publisher %} · {{ pub.publisher }}{% endif %}</p>
       {% if pub.note %}<p class="pub-note">{{ pub.note }}</p>{% endif %}
       <ul class="pub-actions">
-        <li><a class="chip" href="{{ pub.url }}" rel="noopener">DOI: {{ pub.doi }}</a></li>
+        <li><a class="chip chip-paper" href="{{ pub.url }}" rel="noopener">DOI: {{ pub.doi }}</a></li>
+        {% if pub.code %}<li><a class="chip chip-code" href="{{ pub.code }}" rel="noopener">Code · GitHub</a></li>{% endif %}
+        {% if pub.data %}<li><a class="chip chip-data" href="{{ pub.data }}" rel="noopener">Data · Zenodo</a></li>{% endif %}
       </ul>
     </div>
   </li>
