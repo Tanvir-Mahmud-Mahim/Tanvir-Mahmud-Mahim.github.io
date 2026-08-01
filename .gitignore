@@ -10,3 +10,6 @@ Thumbs.db
 
 # Local one-time setup bundle (safe to delete)
 _setup/
+
+# Your original full-size photo — the cropped web version is assets/images/profile.jpg
+Profile_pic.jpg

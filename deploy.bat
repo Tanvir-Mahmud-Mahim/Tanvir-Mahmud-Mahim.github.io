@@ -49,6 +49,15 @@ if errorlevel 1 (
   echo        origin is already !CURRENT!
 )
 
+rem One-off tidy: your original full-size photo belongs in this folder but not in
+rem the repository (the cropped web version lives in assets/images/). Harmless to
+rem re-run once it is already untracked.
+git ls-files --error-unmatch Profile_pic.jpg >nul 2>&1
+if not errorlevel 1 (
+  echo        Untracking Profile_pic.jpg ^(kept on disk, removed from the repo^)...
+  git rm --cached -q Profile_pic.jpg
+)
+
 echo  [3/5] Staging files...
 git add -A
 
