@@ -1,14 +1,14 @@
 ---
 layout: page
 title: "Publications"
-subtitle: "Peer-reviewed journal articles and conference papers, newest first."
+subtitle: "Peer-reviewed journal articles and conference papers, listed in reverse chronological order."
 permalink: /publications/
 description: "Peer-reviewed publications by Tanvir Mahmud Mahim in IEEE Transactions on Fuzzy Systems, IEEE Sensors Journal, IEEE Journal of Photovoltaics, Advanced Energy and Sustainability Research, and Engineering Science and Technology."
 ---
 
 {% assign pubs = site.publications | sort: 'date' | reverse %}
 
-<p>A complete and continuously updated list is available on <a href="{{ site.author.googlescholar }}" rel="noopener">Google Scholar</a> and <a href="{{ site.author.orcid }}" rel="noopener">ORCID</a>. Titles below link to the publisher's record via DOI.</p>
+<p>A complete and continuously updated list is maintained on <a href="{{ site.author.googlescholar }}" rel="noopener">Google Scholar</a> and <a href="{{ site.author.orcid }}" rel="noopener">ORCID</a>. Each title below links to the publisher's record through its DOI.</p>
 
 ## Journal articles
 
@@ -53,5 +53,5 @@ description: "Peer-reviewed publications by Tanvir Mahmud Mahim in IEEE Transact
 </ul>
 
 <div class="callout">
-  <p>Work currently under review is described on the <a href="{{ '/research/' | relative_url }}">Research</a> page rather than listed here, so that this page contains only published, citable records.</p>
+  <p>Work currently under review is described on the <a href="{{ '/research/' | relative_url }}">Research</a> page rather than listed here, so that this page contains only published and citable records.</p>
 </div>

@@ -6,7 +6,7 @@ permalink: /teaching/
 description: "Teaching and supervision by Tanvir Mahmud Mahim at the Department of Electrical and Electronic Engineering, BRAC University."
 ---
 
-I have taught in the Department of Electrical and Electronic Engineering at BRAC University continuously since January 2022: first as a Teaching Assistant, then as a Research Assistant supporting undergraduate capstone groups, and since June 2025 as an Adjunct Lecturer.
+I have held teaching responsibilities in the Department of Electrical and Electronic Engineering at BRAC University continuously since January 2022, initially as a Teaching Assistant, subsequently as a Research Assistant supporting undergraduate capstone groups, and since June 2025 as an Adjunct Lecturer.
 
 ## Roles and courses
 
@@ -15,7 +15,7 @@ I have taught in the Department of Electrical and Electronic Engineering at BRAC
   <div class="entry-what">
     <h3>Adjunct Lecturer</h3>
     <p class="entry-where">Department of EEE, BRAC University</p>
-    <p>Lecture courses spanning device physics, computational methods and embedded systems.</p>
+    <p>Lecture courses covering device physics, computational methods and embedded systems.</p>
     <ul class="course-list">
       <li><span>Solid-State Devices</span></li>
       <li><span>Numerical Methods</span></li>
@@ -29,7 +29,7 @@ I have taught in the Department of Electrical and Electronic Engineering at BRAC
   <div class="entry-what">
     <h3>Research Assistant</h3>
     <p class="entry-where">Department of EEE, BRAC University</p>
-    <p>Research collaboration with industry partners and international universities, and supervision support for several undergraduate capstone project groups, mostly on device modeling, machine-learning-assisted design, and power electronics.</p>
+    <p>Research collaboration with industry partners and international universities, and supervision support for several undergraduate capstone project groups, primarily on device modeling, machine-learning-assisted design and power electronics.</p>
   </div>
 </section>
 

@@ -12,7 +12,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="quantum-optics">Quantum optics and photonics</h2>
 
-<p class="section-lead">With Dr. A. S. M. Mohsin, Department of EEE, BRAC University, since July 2025. This work develops differentiable models of quantum photonic hardware, including squeezed-light sources, color-center magnetometers and single-photon instrumentation, together with learned controllers that close the loop around them.</p>
+<p class="section-lead">Conducted with Dr. A. S. M. Mohsin, Department of EEE, BRAC University, since July 2025. This work develops differentiable models of quantum photonic hardware, including squeezed-light sources, color-center magnetometers and single-photon instrumentation, together with learned controllers that close the loop around them.</p>
 
 <section class="project">
   <h3>Exceeding the 3 dB squeezing-extraction limit in silicon-carbide microcombs</h3>
@@ -23,7 +23,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
     <figcaption><b>(a)</b> Photonic molecule: a two-FSR soliton-crystal main ring side-coupled to an auxiliary extraction ring. <b>(b)</b> Even comb teeth, and the odd squeezed-vacuum modes the auxiliary ring reaches. <b>(c–e)</b> Finite-element mode profile of the 1.85 µm × 500 nm 4H-SiC core, and the dispersion engineering that fixes the operating geometry.</figcaption>
   </figure>
 
-  <p>An open, reproducible pipeline for engineering strongly squeezed quantum states in soliton-crystal microcombs on 4H-silicon-carbide-on-insulator. Full-vector finite-element modeling, Lugiato–Lefever simulation and linearized Heisenberg–Langevin analysis are chained into a single workflow running from material parameters through to experimentally detectable quantum noise. Conventional resonator coupling limits extractable squeezing to 3 dB. Introducing an auxiliary Purcell-extraction ring, which selectively opens a channel to the below-threshold squeezed modes, raises this limit. The optimized design reaches <strong>8.5 dB of detectable squeezing across a 1.74 GHz band</strong> at fixed pump power, while generating dominant squeezed supermodes and entangled quadrature lattices.</p>
+  <p>This work develops an open and reproducible pipeline for engineering strongly squeezed quantum states in soliton-crystal microcombs on 4H-silicon-carbide-on-insulator. Full-vector finite-element modeling, Lugiato–Lefever simulation and linearized Heisenberg–Langevin analysis are chained into a single workflow running from material parameters through to experimentally detectable quantum noise. Conventional resonator coupling limits extractable squeezing to 3 dB. Introducing an auxiliary Purcell-extraction ring, which selectively opens a channel to the below-threshold squeezed modes, raises this limit. The optimized design reaches <strong>8.5 dB of detectable squeezing across a 1.74 GHz band</strong> at fixed pump power, while generating dominant squeezed supermodes and entangled quadrature lattices.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/sic-molecule-squeezer" rel="noopener">Code · GitHub</a></li>
@@ -40,7 +40,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
     <figcaption><b>Target:</b> vortex matter in a patterned Ta film, from time-dependent Ginzburg–Landau simulation at measured parameters. <b>Platform:</b> a pick-and-place diamond micromembrane with NV centers 6 nm deep, held at 25 nm standoff. <b>Outcome:</b> an NV-plane field map inverted to 13 nm vortex localization, with <em>T</em>₁ and <em>T</em>₂ mapping onto vortex drag and pinning.</figcaption>
   </figure>
 
-  <p>An open-source simulation framework for a nanoscale quantum sensing platform that characterizes vortex dynamics in superconducting tantalum circuits <em>in situ</em>. Time-dependent Ginzburg–Landau simulation, physics-informed inversion and nitrogen-vacancy magnetometry combine to localize individual vortices, identify their pinning states and quantify the dissipation they produce. This provides a route to the systematic study of the vortex-induced losses that limit superconducting quantum devices.</p>
+  <p>This work develops an open-source simulation framework for a nanoscale quantum sensing platform that characterizes vortex dynamics in superconducting tantalum circuits <em>in situ</em>. Time-dependent Ginzburg–Landau simulation, physics-informed inversion and nitrogen-vacancy magnetometry combine to localize individual vortices, identify their pinning states and quantify the dissipation they produce. This provides a route to the systematic study of the vortex-induced losses that limit superconducting quantum devices.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/nv-membrane-vortex-sensing" rel="noopener">Code · GitHub</a></li>
@@ -101,7 +101,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="quantum-materials-mems">2D quantum materials and MEMS</h2>
 
-<p class="section-lead">With Prof. Md. Mosaddequr Rahman, Department of EEE, BRAC University, since July 2024. This work treats monolayer transition-metal-dichalcogenide devices from first principles through to circuit-level metrics, and applies physics-in-the-loop inverse design to micromachined transducers.</p>
+<p class="section-lead">Conducted with Prof. Md. Mosaddequr Rahman, Department of EEE, BRAC University, since July 2024. This work treats monolayer transition-metal-dichalcogenide devices from first principles through to circuit-level metrics, and applies physics-in-the-loop inverse design to micromachined transducers.</p>
 
 <section class="project">
   <h3>Two Raman phonons that measure edge charge in monolayer nanoribbon transistors</h3>
@@ -128,7 +128,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
     <figcaption><b>(a)</b> Strained p-type MFMIS stack: monolayer WSe<sub>2</sub> channel, h-BN, floating gate and a CuInP<sub>2</sub>S<sub>6</sub> van der Waals ferroelectric under biaxial compression. <b>(b)</b> Compression lowers the Γ valley and suppresses intervalley scattering. <b>(c)</b> The multiscale chain, from strained two-valley transport through multidomain ferroelectric kinetics to nonvolatile-logic metrics.</figcaption>
   </figure>
 
-  <p>A multiscale simulation framework for a strain-engineered ferroelectric field-effect transistor built from a monolayer WSe<sub>2</sub> channel and a CuInP<sub>2</sub>S<sub>6</sub> van der Waals ferroelectric gate stack, coupling a calibrated two-valley Boltzmann transport model to self-consistent electrostatics and multidomain ferroelectric dynamics. <strong>One percent biaxial compressive strain more than doubles hole mobility</strong> and raises retained on-current by 1.8× while leaving the memory window intact. This indicates that strain and ferroelectric polarization act as independent design parameters rather than competing ones. At circuit level, the resulting complementary nonvolatile inverters and latches recover their state after complete power loss, <strong>cut worst-case static power by eight orders of magnitude</strong> against prior CIPS latches, and improve the energy–delay product by 2.3×.</p>
+  <p>This work develops a multiscale simulation framework for a strain-engineered ferroelectric field-effect transistor built from a monolayer WSe<sub>2</sub> channel and a CuInP<sub>2</sub>S<sub>6</sub> van der Waals ferroelectric gate stack, coupling a calibrated two-valley Boltzmann transport model to self-consistent electrostatics and multidomain ferroelectric dynamics. <strong>One percent biaxial compressive strain more than doubles hole mobility</strong> and raises retained on-current by 1.8× while leaving the memory window intact. This indicates that strain and ferroelectric polarization act as independent design parameters rather than competing ones. At circuit level, the resulting complementary nonvolatile inverters and latches recover their state after complete power loss, <strong>cut worst-case static power by eight orders of magnitude</strong> against prior CIPS latches, and improve the energy–delay product by 2.3×.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/Process-induced-compressive-strain-with-a-van-der-Waals-ferroelectric-gate-in-a-single-device" rel="noopener">Code · GitHub</a></li>
@@ -171,7 +171,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="wbg-devices">Wide-bandgap devices and design automation</h2>
 
-<p class="section-lead">With Dr. Nadim Chowdhury, Department of EEE, BUET, since May 2025. This work applies gradient-based design to GaN circuits and develops reinforcement-learning methods that transfer across process nodes.</p>
+<p class="section-lead">Conducted with Dr. Nadim Chowdhury, Department of EEE, BUET, since May 2025. This work applies gradient-based design to GaN circuits and develops reinforcement-learning methods that transfer across process nodes.</p>
 
 <section class="project">
   <h3>Co-designing a monolithic GaN-on-SOI fractional-N PLL</h3>
@@ -182,7 +182,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
     <figcaption><b>Problem:</b> manual design, with measured parasitics, mismatch and leakage, misses the 50 MHz target and only unlocks above 233 K. <b>Engine:</b> a PINN varactor surrogate <em>C</em>(<em>V</em>,<em>T</em>), a differentiable fractional-N loop and noise model, adjoint gradients over twelve design parameters, a GCN-SAC certificate and WGAN-GP variability, all on an open toolchain of OpenVAF, ngspice and gdstk. <b>Result:</b> a synthesizer locking 10/10 at 46.5 MHz across 218–423 K.</figcaption>
   </figure>
 
-  <p>A physics-informed machine-learning framework for the automated co-design of a monolithic fractional-N phase-locked loop in 200 V GaN-on-SOI technology. Physics-informed neural networks, adjoint-based gradient optimization and graph-neural reinforcement learning jointly optimize circuit performance, thermal robustness and manufacturability. These three objectives are conventionally traded off manually and in sequence. The resulting PLL shows substantially reduced phase error and jitter, improved lock yield, a compact layout implementation, and reliable fractional-N operation across a wide temperature range.</p>
+  <p>This work develops a physics-informed machine-learning framework for the automated co-design of a monolithic fractional-N phase-locked loop in 200 V GaN-on-SOI technology. Physics-informed neural networks, adjoint-based gradient optimization and graph-neural reinforcement learning jointly optimize circuit performance, thermal robustness and manufacturability. These three objectives are conventionally traded off manually and in sequence. The resulting PLL shows substantially reduced phase error and jitter, improved lock yield, a compact layout implementation, and reliable fractional-N operation across a wide temperature range.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/Physics-Informed-Machine-Learning-and-Adjoint-Co-Design-of-Monolithic-GaN-HEMT-Varactor-PLL" rel="noopener">Code · GitHub</a></li>
@@ -198,7 +198,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
     <figcaption>Devices are nodes and nets are edges. A GCN encoder feeds a soft actor–critic agent that drives ngspice across open PDKs at 180/130/65/45 nm. An interval type-2 TSK fuzzy reward with a non-zero footprint of uncertainty shapes the return, while a physics-in-the-loop adjoint supplies exact gradients of a differentiable figure of merit straight to the actor. The pretrained encoder transfers to new topologies.</figcaption>
   </figure>
 
-  <p>Developed with GlobalFoundries, Inc.: a graph-based reinforcement-learning framework for automatic transistor sizing that combines graph convolutional networks, interval type-2 fuzzy reward learning and physics-guided adjoint optimization. Whereas conventional approaches rely on black-box circuit simulation and fixed weighted objectives, the present framework incorporates uncertainty-aware reward modeling and physics-informed gradients, improving both optimization quality and sample efficiency. Validated across multiple technology nodes and amplifier benchmarks, it consistently outperforms existing Bayesian-optimization and reinforcement-learning methods while transferring across circuit topologies.</p>
+  <p>Developed with GlobalFoundries, Inc., this work presents a graph-based reinforcement-learning framework for automatic transistor sizing that combines graph convolutional networks, interval type-2 fuzzy reward learning and physics-guided adjoint optimization. Whereas conventional approaches rely on black-box circuit simulation and fixed weighted objectives, the present framework incorporates uncertainty-aware reward modeling and physics-informed gradients, improving both optimization quality and sample efficiency. Validated across multiple technology nodes and amplifier benchmarks, it consistently outperforms existing Bayesian-optimization and reinforcement-learning methods while transferring across circuit topologies.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/Physics-Guided-Graph-RL-with-an-Adaptive-Fuzzy-Reward-for-Transferable-Analog-Transistor-Sizing" rel="noopener">Code · GitHub</a></li>
@@ -207,7 +207,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="control-energy">Machine learning for control and energy systems</h2>
 
-<p class="section-lead">With Dr. A. H. M. A. Rahim (retired December 2024), 2023–2024. This work develops controllers that adapt their own inference rules, applied to grid-connected machines under fault conditions.</p>
+<p class="section-lead">Conducted with Dr. A. H. M. A. Rahim (retired December 2024) between 2023 and 2024. This work develops controllers that adapt their own inference rules, applied to grid-connected machines under fault conditions.</p>
 
 <section class="project">
   <h3>Fuzzy inference with reinforcement learning for DFIG low-voltage ride-through</h3>
@@ -229,7 +229,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="photovoltaics">Photovoltaic modeling: from cell physics to systems</h2>
 
-<p class="section-lead">With Dr. A. H. M. A. Rahim and Prof. Md. Mosaddequr Rahman, 2023–2026. A custom-built bifacial module, characterized experimentally and then modeled from the one-diode equations upward.</p>
+<p class="section-lead">Conducted with Dr. A. H. M. A. Rahim and Prof. Md. Mosaddequr Rahman between 2023 and 2026. A custom-built bifacial module was characterized experimentally and then modeled from the one-diode equations upward.</p>
 
 <section class="project">
   <h3>Weather-responsive efficiency model for a custom-built bifacial panel</h3>

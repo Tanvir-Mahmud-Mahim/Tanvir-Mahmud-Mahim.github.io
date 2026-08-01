@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Curriculum Vitae"
-subtitle: "A summary of education, appointments, skills and service. The full CV is available as a PDF."
+subtitle: "A summary of education, appointments, technical skills and professional service. The complete curriculum vitae is available as a PDF."
 permalink: /cv/
 description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Research Assistant, Department of EEE, BRAC University."
 ---
@@ -18,17 +18,18 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Rese
   <div class="entry-what">
     <h3>B.Sc. in Electrical and Electronic Engineering</h3>
     <p class="entry-where">BRAC University, Dhaka, Bangladesh</p>
-    <p>CGPA 3.77 / 4.00 · average marks 86.20% · academic honours: <strong>High Distinction</strong>. Certified by World Education Services (WES) as equivalent to a US bachelor's degree. Undergraduate thesis supervised by Dr. A. H. M. A. Rahim and archived in the BRAC University institutional repository.</p>
+    <p>CGPA 3.77 / 4.00 · average marks 86.20% · academic honors: <strong>High Distinction</strong>. Certified by World Education Services (WES) as equivalent to a US bachelor's degree. Undergraduate thesis supervised by Dr. A. H. M. A. Rahim and archived in the BRAC University institutional repository.</p>
   </div>
 </section>
 
-## Honours and awards
+## Honors and awards
 
 <section class="entry">
   <div class="entry-when">2020 – 2022</div>
   <div class="entry-what">
     <h3>Vice Chancellor's and Dean's List Award</h3>
-    <p class="entry-where">BRAC University · for academic excellence at undergraduate level</p>
+    <p class="entry-where">BRAC University</p>
+    <p>Awarded for academic excellence at the undergraduate level.</p>
   </div>
 </section>
 
@@ -36,7 +37,8 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Rese
   <div class="entry-when">2020 – 2022</div>
   <div class="entry-what">
     <h3>University Merit Scholarship</h3>
-    <p class="entry-where">BRAC University · for academic excellence at undergraduate level</p>
+    <p class="entry-where">BRAC University</p>
+    <p>Awarded for academic excellence at the undergraduate level.</p>
   </div>
 </section>
 
@@ -56,7 +58,7 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Rese
   <div class="entry-what">
     <h3>Adjunct Lecturer</h3>
     <p class="entry-where">Department of EEE, BRAC University</p>
-    <p>Solid-State Devices, Numerical Methods, and Microprocessor &amp; Embedded Systems.</p>
+    <p>Courses taught: Solid-State Devices, Numerical Methods, and Microprocessor &amp; Embedded Systems.</p>
   </div>
 </section>
 
@@ -65,7 +67,7 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Rese
   <div class="entry-what">
     <h3>Research Assistant</h3>
     <p class="entry-where">Department of EEE, BRAC University</p>
-    <p>Collaboration with industry partners and international universities; supervision support for undergraduate capstone groups.</p>
+    <p>Research collaboration with industry partners and international universities, together with supervision support for undergraduate capstone groups.</p>
   </div>
 </section>
 
@@ -74,7 +76,7 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Rese
   <div class="entry-what">
     <h3>Teaching Assistant</h3>
     <p class="entry-where">Department of EEE, BRAC University</p>
-    <p>DC &amp; Magnetic Circuits, Energy Conversion, Signals &amp; Systems, and Control Systems.</p>
+    <p>Courses supported: DC &amp; Magnetic Circuits, Energy Conversion, Signals &amp; Systems, and Control Systems.</p>
   </div>
 </section>
 
