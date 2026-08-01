@@ -259,6 +259,26 @@ Delete any line you do not need. On the Publications page the same buttons appea
 automatically: add `code:` and `data:` lines to a paper's front matter in
 `_publications/` and the chips render themselves.
 
+### Linking to a research area from elsewhere
+
+Each of the five area headings on `research.md` is written as raw HTML with a
+fixed id, so other pages can jump straight to it:
+
+```html
+<h2 id="quantum-optics">Quantum optics and photonics</h2>
+```
+
+The ids are `quantum-optics`, `quantum-materials-mems`, `wbg-devices`,
+`control-energy` and `photovoltaics`. Link to one like this:
+
+```html
+<a href="{{ '/research/#quantum-optics' | relative_url }}">Quantum optics</a>
+```
+
+The About page uses exactly this to send each of its bolded area names to the
+matching section. If you rename a heading, keep its id — otherwise every link
+pointing at it breaks silently.
+
 ### Moving a project to Completed
 
 Cut the whole `<section>` block and paste it below the `## Completed` heading. A

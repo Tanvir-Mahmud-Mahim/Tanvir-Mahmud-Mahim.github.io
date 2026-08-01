@@ -10,7 +10,7 @@ A device simulator answers one question: given this geometry, what does it do? T
 
 Work marked <span class="tag tag-review">Under review</span> is in peer review; the <a href="{{ '/publications/' | relative_url }}">Publications</a> page lists only accepted records. Code and datasets are released openly as each project matures.
 
-## Quantum optics and photonics
+<h2 id="quantum-optics">Quantum optics and photonics</h2>
 
 <p class="section-lead">With Dr. A. S. M. Mohsin, Department of EEE, BRAC University, since July 2025. Differentiable models of quantum photonic hardware — squeezed-light sources, colour-centre magnetometers, single-photon instrumentation — with learned controllers closing the loop around them.</p>
 
@@ -99,7 +99,7 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
   </ul>
 </section>
 
-## 2D quantum materials and MEMS
+<h2 id="quantum-materials-mems">2D quantum materials and MEMS</h2>
 
 <p class="section-lead">With Prof. Md. Mosaddequr Rahman, Department of EEE, BRAC University, since July 2024. Monolayer transition-metal-dichalcogenide devices carried from first principles up to circuit metrics, and physics-in-the-loop inverse design for micromachined transducers.</p>
 
@@ -169,7 +169,7 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
   </ul>
 </section>
 
-## Wide-bandgap devices and design automation
+<h2 id="wbg-devices">Wide-bandgap devices and design automation</h2>
 
 <p class="section-lead">With Dr. Nadim Chowdhury, Department of EEE, BUET, since May 2025. GaN circuits designed by gradient rather than by hand, and reinforcement learning that transfers across process nodes.</p>
 
@@ -205,7 +205,7 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
   </ul>
 </section>
 
-## Machine learning for control and energy systems
+<h2 id="control-energy">Machine learning for control and energy systems</h2>
 
 <p class="section-lead">With Dr. A. H. M. A. Rahim (retired December 2024), 2023–2024. Controllers that learn their own inference rules, applied to grid-connected machines under fault.</p>
 
@@ -227,7 +227,7 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
   </ul>
 </section>
 
-## Photovoltaic modelling — from cell physics to systems
+<h2 id="photovoltaics">Photovoltaic modelling — from cell physics to systems</h2>
 
 <p class="section-lead">With Dr. A. H. M. A. Rahim and Prof. Md. Mosaddequr Rahman, 2023–2026. A custom-built bifacial module, characterised experimentally and then modelled outward from the one-diode equations.</p>
 
