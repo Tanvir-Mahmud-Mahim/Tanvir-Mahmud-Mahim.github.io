@@ -58,13 +58,13 @@ if ! git push -u origin main; then
    * The repository does not exist yet. Create it at
      https://github.com/new named exactly:
          Tanvir-Mahmud-Mahim.github.io
-     Public, with NO README, .gitignore or licence ticked.
+     Public, with NO README, .gitignore or license ticked.
 
    * The remote has commits you do not have locally. If you
      are certain this folder is the version you want:
          git push -u origin main --force
 
-   * Sign-in was cancelled. Run this script again to retry.
+   * Sign-in was canceled. Run this script again to retry.
 ------------------------------------------------------------
 EOF
   exit 1

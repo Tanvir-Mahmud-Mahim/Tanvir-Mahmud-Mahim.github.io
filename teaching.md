@@ -27,7 +27,7 @@ I have taught in the Department of Electrical and Electronic Engineering at BRAC
   <div class="entry-what">
     <h3>Research Assistant</h3>
     <p class="entry-where">Department of EEE, BRAC University</p>
-    <p>Research collaboration with industry partners and international universities, and supervision support for several undergraduate capstone project groups — mostly on device modelling, machine-learning-assisted design, and power electronics.</p>
+    <p>Research collaboration with industry partners and international universities, and supervision support for several undergraduate capstone project groups — mostly on device modeling, machine-learning-assisted design, and power electronics.</p>
   </div>
 </section>
 

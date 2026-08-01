@@ -92,13 +92,13 @@ if errorlevel 1 (
   echo    * The repository does not exist yet. Create it at
   echo      https://github.com/new  named exactly:
   echo          %REPO%
-  echo      Public, and with NO README, .gitignore or licence ticked.
+  echo      Public, and with NO README, .gitignore or license ticked.
   echo.
   echo    * The remote already has commits you do not have locally.
   echo      If you are certain this folder is the version you want:
   echo          git push -u origin main --force
   echo.
-  echo    * Sign-in was cancelled. Run this file again to retry.
+  echo    * Sign-in was canceled. Run this file again to retry.
   echo  ------------------------------------------------------------
   echo.
   pause

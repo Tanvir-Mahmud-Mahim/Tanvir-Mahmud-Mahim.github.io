@@ -91,7 +91,7 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim — Adjunct Lecturer and R
   </div>
   <div class="skill-card">
     <h4>First-principles &amp; atomistic</h4>
-    <p>Density functional theory (Quantum ESPRESSO) · Wannierisation (Wannier90) · Molecular dynamics (LAMMPS) · Micromagnetics (MuMax<sup>3</sup>)</p>
+    <p>Density functional theory (Quantum ESPRESSO) · Wannierization (Wannier90) · Molecular dynamics (LAMMPS) · Micromagnetics (MuMax<sup>3</sup>)</p>
   </div>
   <div class="skill-card">
     <h4>Circuit, layout &amp; EDA</h4>

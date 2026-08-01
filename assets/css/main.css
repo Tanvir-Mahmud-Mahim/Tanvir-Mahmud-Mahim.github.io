@@ -1,13 +1,13 @@
 /* ==========================================================================
    Tanvir M. Mahim — personal academic site
    Layout follows the AcademicPages convention (sticky profile rail + content
-   column); the type, spacing and colour system are bespoke.
+   column); the type, spacing and color system are bespoke.
    Plain CSS on purpose: no Sass build step is needed on GitHub Pages.
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
    0. Self-hosted variable fonts
-   Inter and Newsreader, both SIL Open Font License 1.1 (licences alongside the
+   Inter and Newsreader, both SIL Open Font License 1.1 (licenses alongside the
    .woff2 files in /assets/fonts/). Self-hosted rather than pulled from Google
    Fonts: no third-party request on page load, nothing to break if that CDN is
    blocked, and no visitor IP handed to another origin.

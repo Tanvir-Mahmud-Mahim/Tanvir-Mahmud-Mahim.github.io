@@ -48,8 +48,8 @@
     catch (e) { return; }
     if (!target) { return; }
 
-    var cancelled = false;
-    var cancel = function () { cancelled = true; };
+    var canceled = false;
+    var cancel = function () { canceled = true; };
     ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (evt) {
       window.addEventListener(evt, cancel, { passive: true, once: true });
     });
@@ -57,11 +57,11 @@
     var lastSet = null;
 
     function jump() {
-      if (cancelled) { return; }
+      if (canceled) { return; }
       /* If the page has moved since our last jump, something other than us
          moved it — almost certainly the visitor. Stand down. */
       if (lastSet !== null && Math.abs(window.pageYOffset - lastSet) > 4) {
-        cancelled = true;
+        canceled = true;
         return;
       }
       var mast = document.querySelector('.masthead');

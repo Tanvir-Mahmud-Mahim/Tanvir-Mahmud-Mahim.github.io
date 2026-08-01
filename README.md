@@ -17,8 +17,8 @@ serve it at `https://tanvir-mahmud-mahim.github.io`.
 
 1. Create the repository at <https://github.com/new>
    · Owner `Tanvir-Mahmud-Mahim` · Name `Tanvir-Mahmud-Mahim.github.io` · **Public**
-   · Do **not** tick "Add a README", "Add .gitignore" or "Choose a licence" — this
-   folder already contains those files and an initialised repository would conflict.
+   · Do **not** tick "Add a README", "Add .gitignore" or "Choose a license" — this
+   folder already contains those files and an initialized repository would conflict.
 2. Double-click **`deploy.bat`** in this folder. It commits everything and pushes to
    `main`. The first push asks you to sign in to GitHub — that is Git Credential
    Manager, and it only happens once.
@@ -46,11 +46,11 @@ requires touching HTML or CSS.
 | Research projects (ongoing and completed) | `research.md` |
 | Publications | one file per paper in `_publications/` |
 | Courses and supervision | `teaching.md` |
-| Education, appointments, skills, referees | `cv.md` |
+| Education, appointments, skills, contact | `cv.md` |
 | The menu at the top of every page | `_data/navigation.yml` |
 | Profile photograph | `assets/images/profile.jpg` |
 | CV PDF | `assets/files/Tanvir_Mahmud_Mahim_CV.pdf` |
-| Colours, fonts, spacing | `assets/css/main.css` (all tokens are at the top) |
+| Colors, fonts, spacing | `assets/css/main.css` (all tokens are at the top) |
 
 ### Adding a publication
 
@@ -130,11 +130,11 @@ index.md  research.md  publications.md  teaching.md  cv.md  404.html
 - **Self-hosted fonts.** Inter and Newsreader are served from `assets/fonts/` rather
   than Google Fonts: one less third-party request, nothing to break if that CDN is
   blocked, and no visitor IP handed to another origin. Both are SIL Open Font
-  License 1.1; the licences sit beside the font files.
+  License 1.1; the licenses sit beside the font files.
 - **Dark mode.** Follows the operating-system preference until the visitor clicks the
   toggle, after which their choice is remembered. The theme is applied before first
-  paint so there is no flash of the wrong colours.
+  paint so there is no flash of the wrong colors.
 - **No build step.** The CSS is plain CSS and the JavaScript is a single dependency-free
   file, so what is in this repository is exactly what ships.
 - **Accessibility.** Skip link, keyboard-visible focus rings, `aria-current` on the
-  active nav item, labelled controls, and a print stylesheet.
+  active nav item, labeled controls, and a print stylesheet.

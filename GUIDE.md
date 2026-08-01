@@ -68,7 +68,7 @@ G:\Website\
 ├── assets\
 │   ├── images\profile.jpg <- your sidebar photo
 │   ├── files\...CV.pdf    <- the downloadable CV
-│   ├── css\main.css       <- all colours, fonts and spacing
+│   ├── css\main.css       <- all colors, fonts and spacing
 │   ├── js\main.js         <- dark-mode toggle and mobile menu
 │   └── fonts\             <- the two fonts, served from your own site
 ├── _includes\  _layouts\  <- page scaffolding; leave these alone
@@ -116,7 +116,7 @@ Open your new file. The whole file is just this block. There is no body text.
 
 ```yaml
 ---
-title: "Exact title, capitalised exactly as the journal prints it"
+title: "Exact title, capitalized exactly as the journal prints it"
 authors: "Tanvir M. Mahim, Second Author, Third Author"
 venue: "IEEE Transactions on Something"
 detail: "12 (3), 456–789"
@@ -135,7 +135,7 @@ Field by field:
 | --- | --- |
 | `title` | The exact printed title, in quotes. |
 | `authors` | Everyone, in order, comma-separated. **Write your own name as exactly `Tanvir M. Mahim`** — the site finds that string and bolds it. Any other spelling will not be bolded. |
-| `venue` | Journal or full proceedings name. It is italicised for you. |
+| `venue` | Journal or full proceedings name. It is italicized for you. |
 | `detail` | `volume (issue), pages`, or an article number, or `pp. 1–6` for a conference. If nothing is assigned yet, write `""` and the site simply omits it. |
 | `year` | The year the site displays. For an online-first paper this is the **issue** year, not the online year. |
 | `date` | Controls sort order only. Format `YYYY-MM-DD`, no quotes. |
@@ -143,7 +143,7 @@ Field by field:
 | `publisher` | `IEEE`, `Elsevier`, `Wiley`, and so on. Add `· open access` if it is. |
 | `doi` | The bare DOI, no `https://doi.org/` in front. Shown on the button. |
 | `url` | The full clickable link, normally `https://doi.org/` plus the DOI. |
-| `note` | *Optional.* A small grey line under the citation, e.g. `"First published online 2 September 2025."` Delete the line if you do not need it. |
+| `note` | *Optional.* A small gray line under the citation, e.g. `"First published online 2 September 2025."` Delete the line if you do not need it. |
 
 ### Step 3 — publish
 
@@ -245,7 +245,7 @@ caption is where the detail goes: name the panels, give the numbers.
 
 ### Adding Code and Data buttons
 
-Every project ends with a row of buttons. Three colours are available:
+Every project ends with a row of buttons. Three colors are available:
 
 ```html
 <ul class="pub-actions">
@@ -405,10 +405,10 @@ The order here is the order on screen, in the header and the footer both. To add
 entry you must also create the page it points to; to remove one, delete its two
 lines.
 
-### Colours and fonts
+### Colors and fonts
 
-Everything visual is at the top of `assets\css\main.css`, in a block labelled
-**Design tokens**. The accent colour — links, the active menu item, the badges — is
+Everything visual is at the top of `assets\css\main.css`, in a block labeled
+**Design tokens**. The accent color — links, the active menu item, the badges — is
 `--accent`, defined twice: once under `[data-theme="light"]` and once under
 `[data-theme="dark"]`. Change both, or light and dark mode will disagree. The dark
 value needs to be lighter than the light one so it stays readable on a dark
@@ -598,7 +598,7 @@ That adds a new change undoing the old one, so the history stays honest.
 | Change the photo | `assets\images\profile.jpg` | `deploy.bat` |
 | Change title or links | `_config.yml` | `deploy.bat` |
 | Change the menu | `_data\navigation.yml` | `deploy.bat` |
-| Change colours | `assets\css\main.css` | `deploy.bat` |
+| Change colors | `assets\css\main.css` | `deploy.bat` |
 
 **Live site** — <https://tanvir-mahmud-mahim.github.io>
 **Build status** — <https://github.com/Tanvir-Mahmud-Mahim/Tanvir-Mahmud-Mahim.github.io/actions>
