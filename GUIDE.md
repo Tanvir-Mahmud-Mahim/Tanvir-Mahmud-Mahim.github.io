@@ -193,24 +193,47 @@ series of project blocks.
 
 ### The shape of a project
 
+Every project on the page is this same block, in this order: heading, meta line,
+figure, description, buttons.
+
 ```html
 <section class="project">
   <h3>Project or theme name</h3>
-  <p class="project-meta">With Dr. Someone, Department of EEE, BRAC University<span class="sep">|</span>July 2025 – present</p>
-  <ul class="workitems">
-    <li>One strand of the work, described in a sentence. <span class="tag tag-review">Under review</span></li>
-    <li>Another strand. No tag means it is simply ongoing.</li>
+  <p class="project-meta">Method &middot; platform &middot; collaborator<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
+
+  <figure class="project-figure">
+    <img src="{{ '/assets/images/research/my-figure.jpg' | relative_url }}"
+         alt="Plain description for screen readers."
+         width="1200" height="600" loading="lazy">
+    <figcaption><b>(a)</b> What panel a shows. <b>(b)</b> What panel b shows.</figcaption>
+  </figure>
+
+  <p>A paragraph saying what the work does and what it achieved, with the
+  numbers in <strong>bold</strong>.</p>
+
+  <ul class="pub-actions">
+    <li><a class="chip chip-code" href="https://github.com/..." rel="noopener">Code &middot; GitHub</a></li>
   </ul>
 </section>
 ```
 
 Copy an entire `<section>` block to add a project. The `<span class="sep">|</span>`
-in the middle of the meta line draws the thin divider between the collaborator and
-the dates, so keep it.
+in the middle of the meta line draws the thin divider, so keep it. The figure and
+the buttons are both optional: delete either block if a project has neither.
 
-### Adding or removing a work item
+### Using a bulleted list instead of a paragraph
 
-Copy a whole `<li>...</li>` line. Delete one to remove it.
+If a project is better described as several separate strands than as one
+paragraph, swap the `<p>` for this:
+
+```html
+<ul class="workitems">
+  <li>One strand of the work, in a sentence. <span class="tag tag-review">Under review</span></li>
+  <li>Another strand.</li>
+</ul>
+```
+
+Copy a whole `<li>...</li>` line to add a strand. Delete one to remove it.
 
 ### The status badge
 

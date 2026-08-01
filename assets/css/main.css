@@ -269,22 +269,6 @@ hr {
   margin: 2.6rem 0;
 }
 
-.lede {
-  font-size: var(--step-1);
-  line-height: 1.6;
-  color: var(--text);
-}
-
-.eyebrow {
-  font-family: var(--font-sans);
-  font-size: .74rem;
-  font-weight: 600;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--faint);
-  margin: 0 0 .7rem;
-}
-
 /* --------------------------------------------------------------------------
    4. Masthead & navigation
    -------------------------------------------------------------------------- */
@@ -473,33 +457,10 @@ hr {
   color: var(--faint);
 }
 
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  padding: .58rem 1.1rem;
-  border: 1px solid var(--accent);
-  border-radius: var(--radius-sm);
-  background: var(--accent);
-  color: var(--accent-contrast);
-  font-size: .9rem;
-  font-weight: 600;
-  transition: all .15s var(--ease);
-}
-.btn-primary:hover {
-  background: var(--accent-hover);
-  border-color: var(--accent-hover);
-  color: var(--accent-contrast);
-  text-decoration: none;
-}
-.btn-primary .ico { color: currentColor; }
-
 .btn-cv {
   display: inline-flex;
   align-items: center;
   gap: .5rem;
-  width: 100%;
-  justify-content: center;
   padding: .58rem .9rem;
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-sm);
@@ -516,6 +477,10 @@ hr {
   text-decoration: none;
 }
 .btn-cv:hover .ico { color: var(--accent-contrast); }
+
+/* In the sidebar rail the button fills the column. Used inline on the CV page
+   the same class keeps its natural width. */
+.sidebar .btn-cv { width: 100%; justify-content: center; }
 
 /* --------------------------------------------------------------------------
    7. Home: intro, interests, news
@@ -582,12 +547,6 @@ hr {
   white-space: nowrap;
 }
 .news .news-body { color: var(--text); }
-
-.news-more {
-  margin-top: .9rem;
-  font-size: .88rem;
-  color: var(--faint);
-}
 
 /* --------------------------------------------------------------------------
    8. Research highlights
@@ -962,7 +921,7 @@ a.chip:hover {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: .1rem .9rem;
   }
-  .btn-cv { grid-area: cv; }
+  .sidebar .btn-cv { grid-area: cv; }
 
   .nav-toggle {
     display: inline-grid;

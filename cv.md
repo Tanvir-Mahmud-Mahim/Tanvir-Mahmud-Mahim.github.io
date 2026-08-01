@@ -6,7 +6,7 @@ permalink: /cv/
 description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Research Assistant, Department of EEE, BRAC University."
 ---
 
-<p><a class="btn-primary" href="{{ site.author.cv | relative_url }}">
+<p><a class="btn-cv" href="{{ site.author.cv | relative_url }}">
   <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11M8 11l4 3.8 4-3.8"></path><path d="M4.5 17.5v2a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1v-2"></path></svg>
   Download the full CV (PDF)
 </a></p>
