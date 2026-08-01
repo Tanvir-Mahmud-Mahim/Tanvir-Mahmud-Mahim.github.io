@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tanvir-mahmud-mahim.github.io/sitemap.xml

@@ -1,0 +1,15 @@
+# Primary navigation. Order here is the order shown in the header and footer.
+- title: "About"
+  url: /
+
+- title: "Research"
+  url: /research/
+
+- title: "Publications"
+  url: /publications/
+
+- title: "Teaching"
+  url: /teaching/
+
+- title: "CV"
+  url: /cv/

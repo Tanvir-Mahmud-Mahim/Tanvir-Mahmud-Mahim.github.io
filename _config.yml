@@ -1,0 +1,83 @@
+# ---------------------------------------------------------------------------
+#  Site settings — Tanvir Mahmud Mahim
+#  Built for GitHub Pages (user site: Tanvir-Mahmud-Mahim.github.io)
+# ---------------------------------------------------------------------------
+
+title:            "Tanvir M. Mahim"
+name:             "Tanvir Mahmud Mahim"
+short_name:       "Tanvir M. Mahim"
+role:             "Adjunct Lecturer &amp; Research Assistant"
+affiliation:      "Department of EEE, BRAC University"
+location:         "Dhaka, Bangladesh"
+description:      >-
+  Personal academic website of Tanvir Mahmud Mahim — Adjunct Lecturer and Research
+  Assistant in the Department of Electrical and Electronic Engineering at BRAC
+  University, working on quantum optics and photonics, 2D quantum materials,
+  wide-bandgap semiconductor devices, MEMS, and machine learning for electronic
+  design automation.
+
+# The canonical address of the published site.
+url:              "https://tanvir-mahmud-mahim.github.io"
+baseurl:          ""
+repository:       "Tanvir-Mahmud-Mahim/Tanvir-Mahmud-Mahim.github.io"
+
+# ---------------------------------------------------------------------------
+#  Contact & profiles
+#  Every link below was checked before it was added. Anything unverified is
+#  left commented out rather than guessed at — uncomment once you have the URL.
+# ---------------------------------------------------------------------------
+author:
+  email_academic: "tanvir.mahim@bracu.ac.bd"
+  email_personal: "tanvirmahim14@gmail.com"
+  office:         "Room 4E-C55, BSRM School of Engineering, Merul Badda, Dhaka-1212"
+  googlescholar:  "https://scholar.google.com/citations?user=Zq7RPx4AAAAJ&hl=en"
+  github:         "https://github.com/Tanvir-Mahmud-Mahim"
+  linkedin:       "https://www.linkedin.com/in/tanvir-mahmud-mahim/"
+  researchgate:   "https://www.researchgate.net/profile/Tanvir-M-Mahim"
+  ieee:           "https://ieeexplore.ieee.org/author/37089995040"
+  orcid:          "https://orcid.org/0000-0002-4550-3248"
+  scopus:         "https://www.scopus.com/authid/detail.uri?authorId=58635579200"
+  wos:            "https://www.webofscience.com/wos/author/record/JMQ-6828-2023"
+  cv:             "/assets/files/Tanvir_Mahmud_Mahim_CV.pdf"
+
+# ---------------------------------------------------------------------------
+#  Build settings
+#  Only plugins on the GitHub Pages allow-list are used, so the site builds
+#  natively on GitHub Pages with no Actions workflow required.
+# ---------------------------------------------------------------------------
+markdown:         kramdown
+highlighter:      rouge
+permalink:        /:categories/:title/
+timezone:         Asia/Dhaka
+
+kramdown:
+  input:          GFM
+  auto_ids:       true
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  publications:
+    output:       false
+
+defaults:
+  - scope:
+      path:       ""
+      type:       "pages"
+    values:
+      layout:     "page"
+
+sass:
+  style:          compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - deploy.bat
+  - deploy.sh
+  - .sass-cache
