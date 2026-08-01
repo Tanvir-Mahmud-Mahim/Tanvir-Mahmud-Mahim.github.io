@@ -279,6 +279,13 @@ The About page uses exactly this to send each of its bolded area names to the
 matching section. If you rename a heading, keep its id — otherwise every link
 pointing at it breaks silently.
 
+A note on why this needs JavaScript: the Research page is very tall, and Chrome
+abandons its own jump to an anchor part-way through while web fonts swap and the
+layout settles, dumping you back at the top. `assets/js/main.js` therefore
+performs the jump itself and repeats it as the page finishes loading. It stops
+retrying the moment you scroll, so it never fights you. Nothing to configure —
+just do not delete that block if you edit the file.
+
 ### Moving a project to Completed
 
 Cut the whole `<section>` block and paste it below the `## Completed` heading. A

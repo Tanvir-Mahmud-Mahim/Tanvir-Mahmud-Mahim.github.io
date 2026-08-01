@@ -32,6 +32,54 @@
     else if (mq.addListener) { mq.addListener(onChange); }
   }
 
+  /* --------------------------------------------------- deep-link scrolling */
+  /* Landing on /research/#quantum-optics must put you AT that section.
+     Chrome starts its own animated jump because html{scroll-behavior:smooth},
+     then abandons it while web fonts swap and the (very tall) page settles —
+     leaving the visitor at the top. So we do the jump ourselves, with smooth
+     scrolling temporarily off, and repeat it as layout finishes: once now,
+     once on window load, once when fonts resolve. Any real scroll input from
+     the visitor cancels the remaining attempts so we never fight them. */
+  (function () {
+    if (!location.hash || location.hash.length < 2) { return; }
+
+    var target;
+    try { target = document.getElementById(decodeURIComponent(location.hash.slice(1))); }
+    catch (e) { return; }
+    if (!target) { return; }
+
+    var cancelled = false;
+    var cancel = function () { cancelled = true; };
+    ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (evt) {
+      window.addEventListener(evt, cancel, { passive: true, once: true });
+    });
+
+    var lastSet = null;
+
+    function jump() {
+      if (cancelled) { return; }
+      /* If the page has moved since our last jump, something other than us
+         moved it — almost certainly the visitor. Stand down. */
+      if (lastSet !== null && Math.abs(window.pageYOffset - lastSet) > 4) {
+        cancelled = true;
+        return;
+      }
+      var mast = document.querySelector('.masthead');
+      var offset = (mast ? mast.getBoundingClientRect().height : 60) + 28;
+      var y = Math.max(0, target.getBoundingClientRect().top + window.pageYOffset - offset);
+      var prev = root.style.scrollBehavior;
+      root.style.scrollBehavior = 'auto';       // never animate this one
+      window.scrollTo(0, y);
+      root.style.scrollBehavior = prev;
+      lastSet = Math.round(window.pageYOffset);
+    }
+
+    jump();
+    window.addEventListener('load', jump);
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(jump); }
+    setTimeout(jump, 250);
+  })();
+
   /* ------------------------------------------------------------------ nav */
   var navToggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('site-nav');
