@@ -8,5 +8,5 @@ date: 2024-07-11
 category: journal
 publisher: "IEEE"
 doi: "10.1109/JPHOTOV.2024.3421252"
-url: "https://doi.org/10.1109/JPHOTOV.2024.3421252"
+link: "https://doi.org/10.1109/JPHOTOV.2024.3421252"
 ---

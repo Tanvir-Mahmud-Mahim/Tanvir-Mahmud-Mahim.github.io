@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Research"
-subtitle: "Physics written in a differentiable form, so that devices can be designed rather than tuned."
+subtitle: "Device physics modeled from first principles, then run backwards to design the hardware."
 permalink: /research/
 description: "Research of Tanvir Mahmud Mahim: quantum optics and photonics, 2D quantum materials and MEMS, wide-bandgap devices and design automation, machine learning for control, and photovoltaic modeling. Code and data released openly."
 ---
 
-A device simulator answers one question: given this geometry, what does it do? The question I care about is the reverse one. Given this target, what geometry gets me there, and will it survive the fab? That reversal only works if the physics itself is differentiable, so most of my work consists of building simulators you can take gradients through: microcombs and quantum sensors, monolayer transistors and MEMS transducers, GaN circuits and analog blocks. Around each one sits an optimizer, either adjoint, generative or reinforcement-learned, that searches the design space directly under the constraints a real process imposes.
+I build device physics for microcombs and quantum sensors, for monolayer transistors and MEMS transducers, and for GaN circuits and analog blocks. Each one is modeled from first principles all the way to the numbers a bench or a circuit actually reports. Then I run it backwards: given a target, what geometry gets there, and will it survive the fab? That inversion needs the physics to be differentiable, so the simulators I write are ones you can take gradients through. Around each sits an optimizer, either adjoint, generative or reinforcement-learned, that searches the design space directly under the constraints a real process imposes.
 
 Work marked <span class="tag tag-review">Under review</span> is in peer review; the <a href="{{ '/publications/' | relative_url }}">Publications</a> page lists only accepted records. Code and datasets are released openly as each project matures.
 

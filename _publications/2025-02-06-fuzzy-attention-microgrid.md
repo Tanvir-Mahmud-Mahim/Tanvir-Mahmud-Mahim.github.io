@@ -8,5 +8,5 @@ date: 2025-02-06
 category: journal
 publisher: "IEEE"
 doi: "10.1109/TFUZZ.2025.3539325"
-url: "https://doi.org/10.1109/TFUZZ.2025.3539325"
+link: "https://doi.org/10.1109/TFUZZ.2025.3539325"
 ---

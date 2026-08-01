@@ -8,5 +8,5 @@ date: 2026-06-01
 category: journal
 publisher: "Elsevier"
 doi: "10.1016/j.jestch.2026.102435"
-url: "https://doi.org/10.1016/j.jestch.2026.102435"
+link: "https://doi.org/10.1016/j.jestch.2026.102435"
 ---

@@ -8,5 +8,5 @@ date: 2023-12-13
 category: conference
 publisher: "IEEE"
 doi: "10.1109/ICCIT60459.2023.10441318"
-url: "https://doi.org/10.1109/ICCIT60459.2023.10441318"
+link: "https://doi.org/10.1109/ICCIT60459.2023.10441318"
 ---

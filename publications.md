@@ -17,14 +17,14 @@ description: "Peer-reviewed publications by Tanvir Mahmud Mahim in IEEE Transact
   <li class="pub">
     <span class="pub-year">{{ pub.year }}</span>
     <div class="pub-body">
-      <a class="pub-title" href="{{ pub.url }}" rel="noopener">{{ pub.title }}</a>
+      <a class="pub-title" href="{{ pub.link }}" rel="noopener">{{ pub.title }}</a>
       <p class="pub-authors">{{ pub.authors | replace: 'Tanvir M. Mahim', '<span class="me">Tanvir M. Mahim</span>' }}</p>
       <p class="pub-venue"><em>{{ pub.venue }}</em>{% if pub.detail and pub.detail != "" %}, {{ pub.detail }}{% endif %} ({{ pub.year }}){% if pub.publisher %} · {{ pub.publisher }}{% endif %}</p>
       {% if pub.note %}<p class="pub-note">{{ pub.note }}</p>{% endif %}
       <ul class="pub-actions">
-        <li><a class="chip chip-paper" href="{{ pub.url }}" rel="noopener">DOI: {{ pub.doi }}</a></li>
+        <li><a class="chip chip-paper" href="{{ pub.link }}" rel="noopener">DOI: {{ pub.doi }}</a></li>
         {% if pub.code %}<li><a class="chip chip-code" href="{{ pub.code }}" rel="noopener">Code · GitHub</a></li>{% endif %}
-        {% if pub.data %}<li><a class="chip chip-data" href="{{ pub.data }}" rel="noopener">Data · Zenodo</a></li>{% endif %}
+        {% if pub.dataset %}<li><a class="chip chip-data" href="{{ pub.dataset }}" rel="noopener">Data · Zenodo</a></li>{% endif %}
       </ul>
     </div>
   </li>
@@ -38,14 +38,14 @@ description: "Peer-reviewed publications by Tanvir Mahmud Mahim in IEEE Transact
   <li class="pub">
     <span class="pub-year">{{ pub.year }}</span>
     <div class="pub-body">
-      <a class="pub-title" href="{{ pub.url }}" rel="noopener">{{ pub.title }}</a>
+      <a class="pub-title" href="{{ pub.link }}" rel="noopener">{{ pub.title }}</a>
       <p class="pub-authors">{{ pub.authors | replace: 'Tanvir M. Mahim', '<span class="me">Tanvir M. Mahim</span>' }}</p>
       <p class="pub-venue"><em>{{ pub.venue }}</em>{% if pub.detail and pub.detail != "" %}, {{ pub.detail }}{% endif %} ({{ pub.year }}){% if pub.publisher %} · {{ pub.publisher }}{% endif %}</p>
       {% if pub.note %}<p class="pub-note">{{ pub.note }}</p>{% endif %}
       <ul class="pub-actions">
-        <li><a class="chip chip-paper" href="{{ pub.url }}" rel="noopener">DOI: {{ pub.doi }}</a></li>
+        <li><a class="chip chip-paper" href="{{ pub.link }}" rel="noopener">DOI: {{ pub.doi }}</a></li>
         {% if pub.code %}<li><a class="chip chip-code" href="{{ pub.code }}" rel="noopener">Code · GitHub</a></li>{% endif %}
-        {% if pub.data %}<li><a class="chip chip-data" href="{{ pub.data }}" rel="noopener">Data · Zenodo</a></li>{% endif %}
+        {% if pub.dataset %}<li><a class="chip chip-data" href="{{ pub.dataset }}" rel="noopener">Data · Zenodo</a></li>{% endif %}
       </ul>
     </div>
   </li>

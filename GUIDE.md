@@ -125,7 +125,7 @@ date: 2026-11-04
 category: journal
 publisher: "IEEE"
 doi: "10.1109/EXAMPLE.2026.1234567"
-url: "https://doi.org/10.1109/EXAMPLE.2026.1234567"
+link: "https://doi.org/10.1109/EXAMPLE.2026.1234567"
 ---
 ```
 
@@ -142,7 +142,7 @@ Field by field:
 | `category` | Either `journal` or `conference`. Nothing else. This picks the section. |
 | `publisher` | `IEEE`, `Elsevier`, `Wiley`, and so on. Add `· open access` if it is. |
 | `doi` | The bare DOI, no `https://doi.org/` in front. Shown on the button. |
-| `url` | The full clickable link, normally `https://doi.org/` plus the DOI. |
+| `link` | The full clickable link, normally `https://doi.org/` plus the DOI. **Do not call this `url`.** Jekyll reserves `url` for a document's own address and will silently overwrite yours, pointing the button at a page that does not exist. |
 | `note` | *Optional.* A small gray line under the citation, e.g. `"First published online 2 September 2025."` Delete the line if you do not need it. |
 
 ### Step 3: publish
@@ -256,7 +256,7 @@ Every project ends with a row of buttons. Three colors are available:
 ```
 
 Delete any line you do not need. On the Publications page the same buttons appear
-automatically: add `code:` and `data:` lines to a paper's front matter in
+automatically: add `code:` and `dataset:` lines to a paper's front matter in
 `_publications/` and the chips render themselves.
 
 ### Linking to a research area from elsewhere

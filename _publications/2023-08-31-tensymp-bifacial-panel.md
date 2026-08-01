@@ -8,5 +8,5 @@ date: 2023-08-31
 category: conference
 publisher: "IEEE"
 doi: "10.1109/TENSYMP55890.2023.10223485"
-url: "https://doi.org/10.1109/TENSYMP55890.2023.10223485"
+link: "https://doi.org/10.1109/TENSYMP55890.2023.10223485"
 ---

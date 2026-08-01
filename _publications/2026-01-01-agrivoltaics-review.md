@@ -9,5 +9,5 @@ category: journal
 publisher: "Wiley · open access"
 note: "First published online 2 September 2025."
 doi: "10.1002/aesr.202500227"
-url: "https://doi.org/10.1002/aesr.202500227"
+link: "https://doi.org/10.1002/aesr.202500227"
 ---

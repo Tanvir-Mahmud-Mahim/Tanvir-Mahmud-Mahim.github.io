@@ -8,6 +8,6 @@ date: 2025-07-01
 category: journal
 publisher: "IEEE"
 doi: "10.1109/JSEN.2025.3569424"
-url: "https://doi.org/10.1109/JSEN.2025.3569424"
-data: "https://doi.org/10.5281/zenodo.21290617"
+link: "https://doi.org/10.1109/JSEN.2025.3569424"
+dataset: "https://doi.org/10.5281/zenodo.21290617"
 ---

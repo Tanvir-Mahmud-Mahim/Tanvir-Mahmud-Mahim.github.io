@@ -69,7 +69,7 @@ date: 2026-04-15
 category: journal              # journal  or  conference
 publisher: "IEEE"
 doi: "10.1109/EXAMPLE.2026.1234567"
-url: "https://doi.org/10.1109/EXAMPLE.2026.1234567"
+link: "https://doi.org/10.1109/EXAMPLE.2026.1234567"   # NOT "url" - Jekyll reserves that name
 ---
 ```
 

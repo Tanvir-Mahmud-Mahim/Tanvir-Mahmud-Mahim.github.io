@@ -8,5 +8,5 @@ date: 2023-08-29
 category: conference
 publisher: "IEEE"
 doi: "10.1109/ICRERA59003.2023.10269448"
-url: "https://doi.org/10.1109/ICRERA59003.2023.10269448"
+link: "https://doi.org/10.1109/ICRERA59003.2023.10269448"
 ---
