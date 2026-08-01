@@ -16,7 +16,7 @@ echo "============================================================"
 echo
 
 command -v git >/dev/null 2>&1 || { echo "[X] Git is not installed."; exit 1; }
-[ -f _config.yml ] || { echo "[X] _config.yml missing — run this from the website folder."; exit 1; }
+[ -f _config.yml ] || { echo "[X] _config.yml missing. Run this from the website folder."; exit 1; }
 
 if [ ! -d .git ]; then
   echo "[1/5] Creating the local repository..."

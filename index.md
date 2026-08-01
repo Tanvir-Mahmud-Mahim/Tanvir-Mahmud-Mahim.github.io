@@ -3,24 +3,24 @@ layout: page
 title: "About"
 hide_title: true
 permalink: /
-description: "Tanvir Mahmud Mahim — Adjunct Lecturer and Research Assistant, Department of EEE, BRAC University. Quantum optics and photonics, 2D quantum materials, MEMS, wide-bandgap devices, and machine learning for electronic design automation."
+description: "Tanvir Mahmud Mahim, Adjunct Lecturer and Research Assistant, Department of EEE, BRAC University. Quantum optics and photonics, 2D quantum materials, MEMS, wide-bandgap devices, and machine learning for electronic design automation."
 ---
 
 <h1 class="intro-name">Tanvir Mahmud Mahim</h1>
 
-<p class="intro-tagline">Adjunct Lecturer and Research Assistant, <strong>Department of Electrical and Electronic Engineering, BRAC University</strong>. I work on quantum optics and photonics, and on 2D quantum materials and MEMS — building device physics in a differentiable form so that hardware can be designed by optimization rather than by hand.</p>
+<p class="intro-tagline">Adjunct Lecturer and Research Assistant, <strong>Department of Electrical and Electronic Engineering, BRAC University</strong>. I work on quantum optics and photonics, and on 2D quantum materials and MEMS. I build device physics in a differentiable form, so that hardware can be designed by optimization instead of by hand.</p>
 
-I build device physics — squeezed-light sources and color-center sensors, monolayer transistors and MEMS transducers — modeled from first principles through to the numbers a bench or a circuit actually reports. Then I run it backwards: given a target, what geometry gets there, and will it survive the fab? That inversion needs the physics to be differentiable, so the simulators I write are ones you can take gradients through. Code and datasets are released openly.
+I build device physics for squeezed-light sources and color-center sensors, and for monolayer transistors and MEMS transducers. Each one is modeled from first principles all the way to the numbers a bench or a circuit actually reports. Then I run it backwards: given a target, what geometry gets there, and will it survive the fab? That inversion needs the physics to be differentiable, so the simulators I write are ones you can take gradients through. Code and datasets are released openly.
 
-<a href="{{ '/research/#quantum-optics' | relative_url }}"><strong>Quantum optics and photonics</strong></a>, with Dr. A. S. M. Mohsin. Full-vector mode solving, Lugiato–Lefever propagation, Heisenberg–Langevin noise — the optical stack built end to end and stopped only at what a bench can actually read. A Purcell-extraction ring in a 4H-SiC soliton-crystal microcomb carries detectable squeezing past the 3 dB limit to 8.5 dB; a diamond micromembrane NV sensor places single vortices in tantalum circuits to 13 nm. Where the instrument is the bottleneck, the learning goes inside it.
+<a href="{{ '/research/#quantum-optics' | relative_url }}"><strong>Quantum optics and photonics</strong></a>, with Dr. A. S. M. Mohsin. I build the optical stack end to end, from full-vector mode solving through Lugiato–Lefever propagation to Heisenberg–Langevin noise, and take it all the way to what a bench can actually read. A Purcell-extraction ring in a 4H-SiC soliton-crystal microcomb carries detectable squeezing past the 3 dB limit to 8.5 dB; a diamond micromembrane NV sensor places single vortices in tantalum circuits to 13 nm. Where the instrument is the bottleneck, the learning goes inside it.
 
-<a href="{{ '/research/#quantum-materials-mems' | relative_url }}"><strong>2D quantum materials and MEMS</strong></a>, with Prof. Md. Mosaddequr Rahman. Frozen-phonon DFT, two-valley Boltzmann transport, self-consistent electrostatics, TCAD — carried through to circuit numbers rather than stopped at a band structure. Two Raman modes in a monolayer nanoribbon separate edge charge from edge strain, turning a spectrum into an electrostatic measurement; 1% compression in a WSe<sub>2</sub> ferroelectric transistor doubles hole mobility and leaves the memory window intact.
+<a href="{{ '/research/#quantum-materials-mems' | relative_url }}"><strong>2D quantum materials and MEMS</strong></a>, with Prof. Md. Mosaddequr Rahman. Frozen-phonon DFT, two-valley Boltzmann transport, self-consistent electrostatics and TCAD, carried through to circuit numbers instead of stopping at a band structure. Two Raman modes in a monolayer nanoribbon separate edge charge from edge strain, turning a spectrum into an electrostatic measurement; 1% compression in a WSe<sub>2</sub> ferroelectric transistor doubles hole mobility and leaves the memory window intact.
 
 <a href="{{ '/research/#wbg-devices' | relative_url }}"><strong>Wide-bandgap devices and design automation</strong></a>, with Dr. Nadim Chowdhury at BUET. The same machinery pointed at circuits: adjoint co-design of a monolithic GaN-on-SOI fractional-N PLL, graph reinforcement learning with GlobalFoundries, Inc. for transistor sizing that transfers across nodes, and a 100 V GaN-on-Si HEMT taped out at X-FAB. The <a href="{{ '/research/' | relative_url }}">Research</a> page has all of it, with figures, code and data.
 
-I completed my B.Sc. in Electrical and Electronic Engineering at BRAC University in December 2022 with High Distinction, and joined the department first as a Teaching Assistant, then as a Research Assistant, and since June 2025 as an Adjunct Lecturer. My earlier work — reinforcement-learning fuzzy control of microgrids and multi-machine networks, and modeling of custom-built bifacial photovoltaic panels — was carried out with Dr. A. H. M. A. Rahim, who retired in December 2024.
+I completed my B.Sc. in Electrical and Electronic Engineering at BRAC University in December 2022 with High Distinction, and joined the department first as a Teaching Assistant, then as a Research Assistant, and since June 2025 as an Adjunct Lecturer. My earlier work was done with Dr. A. H. M. A. Rahim, who retired in December 2024: reinforcement-learning fuzzy control of microgrids and multi-machine networks, and modeling of custom-built bifacial photovoltaic panels.
 
-If your work touches any of this — or if you would like to collaborate — I would be glad to hear from you at [tanvir.mahim@bracu.ac.bd](mailto:tanvir.mahim@bracu.ac.bd).
+If your work touches any of this, or if you would like to collaborate, I would be glad to hear from you at [tanvir.mahim@bracu.ac.bd](mailto:tanvir.mahim@bracu.ac.bd).
 
 ## Research interests
 
@@ -54,7 +54,7 @@ If your work touches any of this — or if you would like to collaborate — I w
   </li>
   <li>
     <span class="news-date">Jul 2025</span>
-    <span class="news-body">Began research in quantum optics and photonics with Dr. A. S. M. Mohsin — soliton-crystal microcombs, NV micromembrane vortex sensing, and closed-loop machine learning for quantum photonic instrumentation. <a href="{{ '/research/' | relative_url }}">Read more</a></span>
+    <span class="news-body">Began research in quantum optics and photonics with Dr. A. S. M. Mohsin, covering soliton-crystal microcombs, NV micromembrane vortex sensing, and closed-loop machine learning for quantum photonic instrumentation. <a href="{{ '/research/' | relative_url }}">Read more</a></span>
   </li>
   <li>
     <span class="news-date">Jul 2025</span>
@@ -86,7 +86,7 @@ If your work touches any of this — or if you would like to collaborate — I w
   </li>
   <li>
     <span class="news-date">Aug 2023</span>
-    <span class="news-body">Profiled by the <strong>Aspire Institute</strong> in its <a href="https://www.youtube.com/shorts/wTAnvPs7qkI" rel="noopener">First-Gen Friday series</a>, during the Aspire Leaders Program — founded at Harvard University in 2017 and spun out as an independent institute in 2021.</span>
+    <span class="news-body">Profiled by the <strong>Aspire Institute</strong> in its <a href="https://www.youtube.com/shorts/wTAnvPs7qkI" rel="noopener">First-Gen Friday series</a>, during the Aspire Leaders Program, which was founded at Harvard University in 2017 and became an independent institute in 2021.</span>
   </li>
   <li>
     <span class="news-date">Dec 2022</span>

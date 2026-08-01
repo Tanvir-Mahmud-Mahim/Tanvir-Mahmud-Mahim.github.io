@@ -3,7 +3,7 @@ layout: page
 title: "Curriculum Vitae"
 subtitle: "A summary of education, appointments, skills and service. The full CV is available as a PDF."
 permalink: /cv/
-description: "Curriculum vitae of Tanvir Mahmud Mahim — Adjunct Lecturer and Research Assistant, Department of EEE, BRAC University."
+description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Research Assistant, Department of EEE, BRAC University."
 ---
 
 <p><a class="btn-primary" href="{{ site.author.cv | relative_url }}">
@@ -82,23 +82,23 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim — Adjunct Lecturer and R
 
 <div class="skill-grid">
   <div class="skill-card">
-    <h4>TCAD &amp; device simulation</h4>
+    <h3>TCAD &amp; device simulation</h3>
     <p>DEVSIM · Synopsys Sentaurus TCAD</p>
   </div>
   <div class="skill-card">
-    <h4>Multiphysics &amp; electromagnetics</h4>
+    <h3>Multiphysics &amp; electromagnetics</h3>
     <p>COMSOL Multiphysics · Ansys HFSS</p>
   </div>
   <div class="skill-card">
-    <h4>First-principles &amp; atomistic</h4>
+    <h3>First-principles &amp; atomistic</h3>
     <p>Density functional theory (Quantum ESPRESSO) · Wannierization (Wannier90) · Molecular dynamics (LAMMPS) · Micromagnetics (MuMax<sup>3</sup>)</p>
   </div>
   <div class="skill-card">
-    <h4>Circuit, layout &amp; EDA</h4>
+    <h3>Circuit, layout &amp; EDA</h3>
     <p>Cadence Virtuoso · Keysight ADS · Xyce · ngspice · OpenVAF · GDSFactory</p>
   </div>
   <div class="skill-card">
-    <h4>Machine learning</h4>
+    <h3>Machine learning</h3>
     <p>PyTorch · JAX, Optax, Flax · TensorFlow &amp; Keras · scikit-learn</p>
   </div>
 </div>
@@ -117,7 +117,7 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim — Adjunct Lecturer and R
   <div class="entry-when">Feb – Nov 2023</div>
   <div class="entry-what">
     <h3>Aspire Leaders Program</h3>
-    <p class="entry-where">Aspire Institute, Cambridge, USA — founded at Harvard University in 2017, independent since 2021</p>
+    <p class="entry-where">Aspire Institute, Cambridge, USA. Founded at Harvard University in 2017 and independent since 2021</p>
     <p>Profiled by the institute in its <a href="https://www.youtube.com/shorts/wTAnvPs7qkI" rel="noopener">First-Gen Friday</a> series.</p>
   </div>
 </section>
@@ -126,15 +126,15 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim — Adjunct Lecturer and R
 
 <div class="contact-grid">
   <div class="contact-card">
-    <h4>Office</h4>
+    <h3>Office</h3>
     <p>Room 4E-C55, Department of EEE<br>BSRM School of Engineering<br>BRAC University, Merul Badda<br>Dhaka-1212, Bangladesh</p>
   </div>
   <div class="contact-card">
-    <h4>Email</h4>
+    <h3>Email</h3>
     <p><a href="mailto:{{ site.author.email_academic }}">{{ site.author.email_academic }}</a><br><a href="mailto:{{ site.author.email_personal }}">{{ site.author.email_personal }}</a></p>
   </div>
   <div class="contact-card">
-    <h4>Profiles</h4>
+    <h3>Profiles</h3>
     <p><a href="{{ site.author.orcid }}" rel="noopener">ORCID</a> · <a href="{{ site.author.googlescholar }}" rel="noopener">Google Scholar</a><br><a href="{{ site.author.scopus }}" rel="noopener">Scopus</a> · <a href="{{ site.author.wos }}" rel="noopener">Web of Science</a> · <a href="{{ site.author.ieee }}" rel="noopener">IEEE Xplore</a><br><a href="{{ site.author.researchgate }}" rel="noopener">ResearchGate</a> · <a href="{{ site.author.github }}" rel="noopener">GitHub</a> · <a href="{{ site.author.linkedin }}" rel="noopener">LinkedIn</a></p>
   </div>
 </div>

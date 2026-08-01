@@ -1,5 +1,5 @@
 # ---------------------------------------------------------------------------
-#  Site settings — Tanvir Mahmud Mahim
+#  Site settings for Tanvir Mahmud Mahim
 #  Built for GitHub Pages (user site: Tanvir-Mahmud-Mahim.github.io)
 # ---------------------------------------------------------------------------
 
@@ -10,7 +10,7 @@ role:             "Adjunct Lecturer &amp; Research Assistant"
 affiliation:      "Department of EEE, BRAC University"
 location:         "Dhaka, Bangladesh"
 description:      >-
-  Personal academic website of Tanvir Mahmud Mahim — Adjunct Lecturer and Research
+  Personal academic website of Tanvir Mahmud Mahim, Adjunct Lecturer and Research
   Assistant in the Department of Electrical and Electronic Engineering at BRAC
   University, working on quantum optics and photonics, 2D quantum materials,
   wide-bandgap semiconductor devices, MEMS, and machine learning for electronic
@@ -24,7 +24,7 @@ repository:       "Tanvir-Mahmud-Mahim/Tanvir-Mahmud-Mahim.github.io"
 # ---------------------------------------------------------------------------
 #  Contact & profiles
 #  Every link below was checked before it was added. Anything unverified is
-#  left commented out rather than guessed at — uncomment once you have the URL.
+#  left commented out rather than guessed at. Uncomment once you have the URL.
 # ---------------------------------------------------------------------------
 author:
   email_academic: "tanvir.mahim@bracu.ac.bd"

@@ -34,12 +34,12 @@
 
   /* --------------------------------------------------- deep-link scrolling */
   /* Landing on /research/#quantum-optics must put you AT that section.
-     Chrome starts its own animated jump because html{scroll-behavior:smooth},
-     then abandons it while web fonts swap and the (very tall) page settles —
-     leaving the visitor at the top. So we do the jump ourselves, with smooth
-     scrolling temporarily off, and repeat it as layout finishes: once now,
-     once on window load, once when fonts resolve. Any real scroll input from
-     the visitor cancels the remaining attempts so we never fight them. */
+     Smooth scrolling is deliberately off in the CSS, so the browser's own jump
+     is instant and reliable. This is the belt-and-braces half: on a page this
+     tall, web fonts swapping and figures settling can move the target after
+     that first jump, so we redo it as layout finishes. Once now, once on window
+     load, once when fonts resolve. Any real scroll from the visitor cancels the
+     remaining attempts, so we never fight them. */
   (function () {
     if (!location.hash || location.hash.length < 2) { return; }
 
@@ -59,7 +59,7 @@
     function jump() {
       if (canceled) { return; }
       /* If the page has moved since our last jump, something other than us
-         moved it — almost certainly the visitor. Stand down. */
+         moved it, almost certainly the visitor. Stand down. */
       if (lastSet !== null && Math.abs(window.pageYOffset - lastSet) > 4) {
         canceled = true;
         return;

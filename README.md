@@ -1,10 +1,10 @@
 # tanvir-mahmud-mahim.github.io
 
-Personal academic website of **Tanvir Mahmud Mahim** — Adjunct Lecturer and Research
+Personal academic website of **Tanvir Mahmud Mahim**, Adjunct Lecturer and Research
 Assistant, Department of EEE, BRAC University.
 
 Built as a plain [Jekyll](https://jekyllrb.com/) site so that **GitHub Pages builds it
-natively** — no Actions workflow, no theme gem, no Sass or JavaScript build step.
+natively**, with no Actions workflow, no theme gem and no Sass or JavaScript build step.
 
 ---
 
@@ -17,10 +17,10 @@ serve it at `https://tanvir-mahmud-mahim.github.io`.
 
 1. Create the repository at <https://github.com/new>
    · Owner `Tanvir-Mahmud-Mahim` · Name `Tanvir-Mahmud-Mahim.github.io` · **Public**
-   · Do **not** tick "Add a README", "Add .gitignore" or "Choose a license" — this
+   · Do **not** tick "Add a README", "Add .gitignore" or "Choose a license". This
    folder already contains those files and an initialized repository would conflict.
 2. Double-click **`deploy.bat`** in this folder. It commits everything and pushes to
-   `main`. The first push asks you to sign in to GitHub — that is Git Credential
+   `main`. The first push asks you to sign in to GitHub. That is Git Credential
    Manager, and it only happens once.
 3. Go to the repository → **Settings → Pages**. Source should read
    *Deploy from a branch* → `main` / `/ (root)`. GitHub normally sets this
@@ -55,7 +55,7 @@ requires touching HTML or CSS.
 ### Adding a publication
 
 Create a new file in `_publications/` named `YYYY-MM-DD-short-slug.md`. The date is the
-publication date and controls the ordering — nothing else uses the filename. The whole
+publication date and controls the ordering. Nothing else uses the filename. The whole
 file is front matter; there is no body:
 
 ```yaml
@@ -63,7 +63,7 @@ file is front matter; there is no body:
 title: "Exact title as printed"
 authors: "Tanvir M. Mahim, Second Author, Third Author"
 venue: "IEEE Transactions on Something"
-detail: "12 (3), 456–789"      # volume (issue), pages — leave "" if not yet assigned
+detail: "12 (3), 456–789"      # volume (issue), pages, or "" if not yet assigned
 year: 2026
 date: 2026-04-15
 category: journal              # journal  or  conference
@@ -96,7 +96,7 @@ list item. The Publications page deliberately lists only published, citable reco
 
 ## Working on it locally (optional)
 
-You do not need this to publish — GitHub builds the site for you. But if you want a
+You do not need this to publish, because GitHub builds the site for you. But if you want a
 live preview while editing, install [Ruby+Devkit](https://rubyinstaller.org/) and then:
 
 ```bash

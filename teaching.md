@@ -6,7 +6,9 @@ permalink: /teaching/
 description: "Teaching and supervision by Tanvir Mahmud Mahim at the Department of Electrical and Electronic Engineering, BRAC University."
 ---
 
-I have taught in the Department of Electrical and Electronic Engineering at BRAC University continuously since January 2022 — first as a Teaching Assistant, then as a Research Assistant supporting undergraduate capstone groups, and since June 2025 as an Adjunct Lecturer.
+I have taught in the Department of Electrical and Electronic Engineering at BRAC University continuously since January 2022: first as a Teaching Assistant, then as a Research Assistant supporting undergraduate capstone groups, and since June 2025 as an Adjunct Lecturer.
+
+## Roles and courses
 
 <section class="entry">
   <div class="entry-when">Since Jun 2025</div>
@@ -27,7 +29,7 @@ I have taught in the Department of Electrical and Electronic Engineering at BRAC
   <div class="entry-what">
     <h3>Research Assistant</h3>
     <p class="entry-where">Department of EEE, BRAC University</p>
-    <p>Research collaboration with industry partners and international universities, and supervision support for several undergraduate capstone project groups — mostly on device modeling, machine-learning-assisted design, and power electronics.</p>
+    <p>Research collaboration with industry partners and international universities, and supervision support for several undergraduate capstone project groups, mostly on device modeling, machine-learning-assisted design, and power electronics.</p>
   </div>
 </section>
 
@@ -48,4 +50,4 @@ I have taught in the Department of Electrical and Electronic Engineering at BRAC
 
 ## Prospective students
 
-If you are a BRAC University undergraduate interested in device physics, photonics, MEMS or machine learning for design automation — particularly for a capstone project — you are welcome to email me at [tanvir.mahim@bracu.ac.bd](mailto:tanvir.mahim@bracu.ac.bd). The <a href="{{ '/research/' | relative_url }}">Research</a> page gives a sense of what is currently active.
+If you are a BRAC University undergraduate interested in device physics, photonics, MEMS or machine learning for design automation, and particularly if you are looking for a capstone project, you are welcome to email me at [tanvir.mahim@bracu.ac.bd](mailto:tanvir.mahim@bracu.ac.bd). The <a href="{{ '/research/' | relative_url }}">Research</a> page gives a sense of what is currently active.

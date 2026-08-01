@@ -6,13 +6,13 @@ permalink: /research/
 description: "Research of Tanvir Mahmud Mahim: quantum optics and photonics, 2D quantum materials and MEMS, wide-bandgap devices and design automation, machine learning for control, and photovoltaic modeling. Code and data released openly."
 ---
 
-A device simulator answers one question: given this geometry, what does it do? The question I care about is the inverse — given this target, what geometry gets me there, and will it survive the fab? That inversion is only tractable if the physics itself is differentiable, so most of my work consists of building simulators you can take gradients through: microcombs and quantum sensors, monolayer transistors and MEMS transducers, GaN circuits and analog blocks. Around each one sits an optimizer — adjoint, generative, or reinforcement-learned — that searches the design space directly, under the constraints a real process imposes.
+A device simulator answers one question: given this geometry, what does it do? The question I care about is the reverse one. Given this target, what geometry gets me there, and will it survive the fab? That reversal only works if the physics itself is differentiable, so most of my work consists of building simulators you can take gradients through: microcombs and quantum sensors, monolayer transistors and MEMS transducers, GaN circuits and analog blocks. Around each one sits an optimizer, either adjoint, generative or reinforcement-learned, that searches the design space directly under the constraints a real process imposes.
 
 Work marked <span class="tag tag-review">Under review</span> is in peer review; the <a href="{{ '/publications/' | relative_url }}">Publications</a> page lists only accepted records. Code and datasets are released openly as each project matures.
 
 <h2 id="quantum-optics">Quantum optics and photonics</h2>
 
-<p class="section-lead">With Dr. A. S. M. Mohsin, Department of EEE, BRAC University, since July 2025. Differentiable models of quantum photonic hardware — squeezed-light sources, color-center magnetometers, single-photon instrumentation — with learned controllers closing the loop around them.</p>
+<p class="section-lead">With Dr. A. S. M. Mohsin, Department of EEE, BRAC University, since July 2025. Differentiable models of quantum photonic hardware: squeezed-light sources, color-center magnetometers and single-photon instrumentation, with learned controllers closing the loop around them.</p>
 
 <section class="project">
   <h3>Beating the 3 dB squeezing-extraction limit in silicon-carbide microcombs</h3>
@@ -40,7 +40,7 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
     <figcaption><b>Target:</b> vortex matter in a patterned Ta film, from time-dependent Ginzburg–Landau simulation at measured parameters. <b>Platform:</b> a pick-and-place diamond micromembrane with NV centers 6 nm deep, held at 25 nm standoff. <b>Outcome:</b> an NV-plane field map inverted to 13 nm vortex localization, with <em>T</em>₁ and <em>T</em>₂ mapping onto vortex drag and pinning.</figcaption>
   </figure>
 
-  <p>An open-source simulation framework for a nanoscale quantum sensing platform that characterises vortex dynamics in superconducting tantalum circuits <em>in situ</em>. Time-dependent Ginzburg–Landau simulation, physics-informed inversion and nitrogen-vacancy magnetometry combine to localize individual vortices, identify their pinning states and quantify the dissipation they produce — a concrete route to studying the vortex-induced losses that limit superconducting quantum devices.</p>
+  <p>An open-source simulation framework for a nanoscale quantum sensing platform that characterizes vortex dynamics in superconducting tantalum circuits <em>in situ</em>. Time-dependent Ginzburg–Landau simulation, physics-informed inversion and nitrogen-vacancy magnetometry combine to localize individual vortices, identify their pinning states and quantify the dissipation they produce. That gives a concrete route to studying the vortex-induced losses that limit superconducting quantum devices.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/nv-membrane-vortex-sensing" rel="noopener">Code · GitHub</a></li>
@@ -49,7 +49,7 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
 </section>
 
 <section class="project">
-  <h3>SPARQ — autonomous triage of solid-state single-photon emitters</h3>
+  <h3>SPARQ: autonomous triage of solid-state single-photon emitters</h3>
   <p class="project-meta">With the University of Memphis, USA · spiking networks · Hanbury Brown–Twiss instrumentation<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
   <figure class="project-figure">
@@ -57,7 +57,7 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
     <figcaption><b>(a)</b> The closed loop: confocal emitter field → HBT detection → event-driven spiking front-end → soft actor–critic agent with prioritized replay, actuating a per-site photon budget. <b>(b)</b> Physics-in-the-loop training against a stochastic twin, with a WGAN-GP critic as sim-to-real diagnostic. <b>(c)</b> Level-structure graph conditioning that carries the estimator zero-shot across NV, hBN, GaN and SiV platforms.</figcaption>
   </figure>
 
-  <p>SPARQ turns Hanbury Brown–Twiss autocorrelation measurement from an offline fitting exercise into a closed-loop, event-driven instrument. At its center is a stochastic differentiable digital twin of the HBT measurement chain, validated against numerically exact master-equation solutions. A spiking neural network trained through that twin matches the accuracy of computationally intensive multi-start fitting while <strong>cutting measurement latency by 6×</strong> and supporting energy-efficient anytime inference. Adjoint optimization tunes excitation power, correlation window and estimator jointly — which matters most under photon-starved conditions — and a soft actor–critic agent with prioritized experience replay chooses which emitter to measure next, <strong>accelerating large-area screening by 1.7×</strong>. The framework transfers zero-shot to public quantum-dot data and, through platform-randomized graph conditioning, generalizes across emitter platforms it never saw in training.</p>
+  <p>SPARQ turns Hanbury Brown–Twiss autocorrelation measurement from an offline fitting exercise into a closed-loop, event-driven instrument. At its center is a stochastic differentiable digital twin of the HBT measurement chain, validated against numerically exact master-equation solutions. A spiking neural network trained through that twin matches the accuracy of computationally intensive multi-start fitting while <strong>cutting measurement latency by 6×</strong> and supporting energy-efficient anytime inference. Adjoint optimization tunes excitation power, correlation window and estimator together, which matters most under photon-starved conditions. A soft actor–critic agent with prioritized experience replay then chooses which emitter to measure next, <strong>accelerating large-area screening by 1.7×</strong>. The framework transfers zero-shot to public quantum-dot data and, through platform-randomized graph conditioning, generalizes across emitter platforms it never saw in training.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/a-spiking-RL-triage-of-solid-state-single-photon-emitters" rel="noopener">Code · GitHub</a></li>
@@ -66,15 +66,15 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
 </section>
 
 <section class="project">
-  <h3>PILOT-Q — photon-efficient neural inference at the standard quantum limit</h3>
+  <h3>PILOT-Q: photon-efficient neural inference at the standard quantum limit</h3>
   <p class="project-meta">With the University of Memphis, USA · photonic computing · shot-noise-limited operation<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
   <figure class="project-figure">
-    <img src="{{ '/assets/images/research/pilotq-photonic-inference.jpg' | relative_url }}" alt="PILOT-Q framework: delocalised photonic inference from a central light server to drone, camera and IoT nodes; one in-physics layer annotated with trim error, shot noise, dark counts and ADC quantisation; photon-budget-aware training; and closed-loop confidence-gated operation." width="974" height="706" loading="lazy">
-    <figcaption><b>(a)</b> Delocalised photonic inference: one central light server broadcasting weight-encoded light to remote nodes. <b>(b)</b> A single in-physics layer with its four impairments — weight-trim error, standard-quantum-limit shot noise, dark counts and <em>b</em>-bit ADC quantisation. <b>(c)</b> Photon-budget-aware training through the stochastic twin. <b>(d)</b> Confidence-gated operation, re-exposing only uncertain inputs at higher photon budget.</figcaption>
+    <img src="{{ '/assets/images/research/pilotq-photonic-inference.jpg' | relative_url }}" alt="PILOT-Q framework: delocalized photonic inference from a central light server to drone, camera and IoT nodes; one in-physics layer annotated with trim error, shot noise, dark counts and ADC quantization; photon-budget-aware training; and closed-loop confidence-gated operation." width="974" height="706" loading="lazy">
+    <figcaption><b>(a)</b> Delocalized photonic inference: one central light server broadcasting weight-encoded light to remote nodes. <b>(b)</b> A single in-physics layer with its four impairments: weight-trim error, standard-quantum-limit shot noise, dark counts and <em>b</em>-bit ADC quantization. <b>(c)</b> Photon-budget-aware training through the stochastic twin. <b>(d)</b> Confidence-gated operation, re-exposing only uncertain inputs at higher photon budget.</figcaption>
   </figure>
 
-  <p>PILOT-Q addresses inference on optical hardware where each multiply–accumulate is carried by a handful of photons. A differentiable stochastic twin of the optical broadcast chain models standard-quantum-limit shot noise, dark counts, residual weight-trim error and quantisation. Training through it lifts photon-starved accuracy <strong>from 51.6% to 78.6% at one photon per MAC</strong>, and reduces the photon budget needed for matched accuracy by <strong>1.4–3.1×</strong> across three public benchmarks. A confidence-gated controller reallocates photons to uncertain inputs — though oracle analysis shows the dominant gain comes from physics-aware training rather than run-time adaptivity, a negative result worth stating plainly, since it points future effort at the training loop rather than the controller.</p>
+  <p>PILOT-Q addresses inference on optical hardware where each multiply–accumulate is carried by a handful of photons. A differentiable stochastic twin of the optical broadcast chain models standard-quantum-limit shot noise, dark counts, residual weight-trim error and quantization. Training through it lifts photon-starved accuracy <strong>from 51.6% to 78.6% at one photon per MAC</strong>, and reduces the photon budget needed for matched accuracy by <strong>1.4–3.1×</strong> across three public benchmarks. A confidence-gated controller reallocates photons to uncertain inputs. Oracle analysis shows the dominant gain comes from physics-aware training rather than from run-time adaptivity. That is a negative result worth stating plainly, because it points future effort at the training loop rather than the controller.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/photon-budget-aware-closed-loop-operation-of-delocalized-photonic-neural-inference-at-the-SQL" rel="noopener">Code · GitHub</a></li>
@@ -83,7 +83,7 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
 </section>
 
 <section class="project">
-  <h3>FabGAN-ID — learned fabrication twins for yield-aware photonic design</h3>
+  <h3>FabGAN-ID: learned fabrication twins for yield-aware photonic design</h3>
   <p class="project-meta">Generative process models · differentiable CVaR optimization · photonic sensor front-ends<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
   <figure class="project-figure">
@@ -109,10 +109,10 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/raman-edge-charge-nanoribbon.jpg' | relative_url }}" alt="Tip-enhanced Raman measurement of a monolayer nanoribbon transistor, spectra comparing ribbon center and edge, a plot separating edge charge from edge strain, and normalized on-current versus nanoribbon width for two gate stacks." width="1076" height="672" loading="lazy">
-    <figcaption><b>(a)</b> Tip-enhanced Raman on a 1H-monolayer nanoribbon channel, with the edge damage halo and band-edge profile inset. <b>(b)</b> At the ribbon edge the A′₁ mode shifts by 0.5 cm⁻¹ while 2LA(M) does not — the signature that separates charge from strain. <b>(c)</b> Edge: charge, no strain. Interior: strain, no charge. <b>(d)</b> Width scaling — critical width falls from 252 nm on a 90 nm SiO₂ gate to 18 nm on a thin high-κ gate.</figcaption>
+    <figcaption><b>(a)</b> Tip-enhanced Raman on a 1H-monolayer nanoribbon channel, with the edge damage halo and band-edge profile inset. <b>(b)</b> At the ribbon edge the A′₁ mode shifts by 0.5 cm⁻¹ while 2LA(M) does not. That is the signature that separates charge from strain. <b>(c)</b> Edge: charge, no strain. Interior: strain, no charge. <b>(d)</b> Width scaling: critical width falls from 252 nm on a 90 nm SiO₂ gate to 18 nm on a thin high-κ gate.</figcaption>
   </figure>
 
-  <p>Edge charge and edge strain both shift Raman lines in monolayer transition-metal dichalcogenide nanoribbons, and telling them apart is what stands between a spectroscopic observation and a quantitative electrostatic diagnostic. First-principles frozen-phonon calculations show that the <strong>2LA(M) mode is strongly strain-sensitive while A′₁ responds mainly to carrier density</strong> — two phonons giving two independent readouts. Applied to tip-enhanced Raman data, the method quantifies edge charge accumulation and finds negligible edge strain, which explains the observed width-scaling behavior. Edge charge governs the depletion-to-enhancement transition on thick-oxide devices, while on high-κ gated transistors the critical width is set by patterning-induced damage rather than intrinsic defects — a distinction that changes what you would do about it in a process flow.</p>
+  <p>Edge charge and edge strain both shift Raman lines in monolayer transition-metal dichalcogenide nanoribbons, and telling them apart is what stands between a spectroscopic observation and a quantitative electrostatic diagnostic. First-principles frozen-phonon calculations show that the <strong>2LA(M) mode is strongly strain-sensitive while A′₁ responds mainly to carrier density</strong>. Two phonons give two independent readouts. Applied to tip-enhanced Raman data, the method quantifies edge charge accumulation and finds negligible edge strain, which explains the observed width-scaling behavior. Edge charge governs the depletion-to-enhancement transition on thick-oxide devices, while on high-κ gated transistors the critical width is set by patterning-induced damage rather than intrinsic defects. That distinction changes what you would do about it in a process flow.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/Width-scaling-in-monolayer-semiconductor-nanoribbon-transistors" rel="noopener">Code · GitHub</a></li>
@@ -128,7 +128,7 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
     <figcaption><b>(a)</b> Strained p-type MFMIS stack: monolayer WSe<sub>2</sub> channel, h-BN, floating gate and a CuInP<sub>2</sub>S<sub>6</sub> van der Waals ferroelectric under biaxial compression. <b>(b)</b> Compression lowers the Γ valley and suppresses intervalley scattering. <b>(c)</b> The multiscale chain, from strained two-valley transport through multidomain ferroelectric kinetics to nonvolatile-logic metrics.</figcaption>
   </figure>
 
-  <p>A multiscale simulation framework for a strain-engineered ferroelectric field-effect transistor built from a monolayer WSe<sub>2</sub> channel and a CuInP<sub>2</sub>S<sub>6</sub> van der Waals ferroelectric gate stack, coupling a calibrated two-valley Boltzmann transport model to self-consistent electrostatics and multidomain ferroelectric dynamics. <strong>One percent biaxial compressive strain more than doubles hole mobility</strong> and raises retained on-current by 1.8× while leaving the memory window intact — evidence that strain and ferroelectric polarization act as independent design parameters rather than competing ones. At circuit level, the resulting complementary nonvolatile inverters and latches recover their state after complete power loss, <strong>cut worst-case static power by eight orders of magnitude</strong> against prior CIPS latches, and improve the energy–delay product by 2.3×.</p>
+  <p>A multiscale simulation framework for a strain-engineered ferroelectric field-effect transistor built from a monolayer WSe<sub>2</sub> channel and a CuInP<sub>2</sub>S<sub>6</sub> van der Waals ferroelectric gate stack, coupling a calibrated two-valley Boltzmann transport model to self-consistent electrostatics and multidomain ferroelectric dynamics. <strong>One percent biaxial compressive strain more than doubles hole mobility</strong> and raises retained on-current by 1.8× while leaving the memory window intact. That is evidence that strain and ferroelectric polarization act as independent design parameters rather than competing ones. At circuit level, the resulting complementary nonvolatile inverters and latches recover their state after complete power loss, <strong>cut worst-case static power by eight orders of magnitude</strong> against prior CIPS latches, and improve the energy–delay product by 2.3×.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/Process-induced-compressive-strain-with-a-van-der-Waals-ferroelectric-gate-in-a-single-device" rel="noopener">Code · GitHub</a></li>
@@ -136,12 +136,12 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
 </section>
 
 <section class="project">
-  <h3>PARL-ID — fabrication-aware inverse design across MEMS and photonics</h3>
+  <h3>PARL-ID: fabrication-aware inverse design across MEMS and photonics</h3>
   <p class="project-meta">Physics-informed neural networks · neural adjoint · CVaR reinforcement learning<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/parl-id-inverse-design.jpg' | relative_url }}" alt="PARL-ID three-stage architecture: a multi-physics physics-informed neural network forward surrogate, a neural-adjoint inverse engine, and a reinforcement-learning fabrication loop, validated on a unit-cell CMUT testbench and photonic benchmarks." width="1190" height="688" loading="lazy">
-    <figcaption>Three stages: a multi-physics PINN forward surrogate with hard boundary-condition encoding, a neural-adjoint inverse engine performing projected gradient descent over the fabrication-feasible set, and a GCN-SAC fabrication loop whose reward is the tail risk (CVaR) over sampled process corruptions. One architecture, two sensor domains — MEMS ultrasonics and integrated photonics.</figcaption>
+    <figcaption>Three stages: a multi-physics PINN forward surrogate with hard boundary-condition encoding, a neural-adjoint inverse engine performing projected gradient descent over the fabrication-feasible set, and a GCN-SAC fabrication loop whose reward is the tail risk (CVaR) over sampled process corruptions. One architecture, two sensor domains: MEMS ultrasonics and integrated photonics.</figcaption>
   </figure>
 
   <p>PARL-ID unifies physics-informed neural networks, adjoint optimization and reinforcement learning into a single inverse-design framework for robust sensor design. Validated on CMUTs and on photonic benchmarks, it improves optimization efficiency while producing fabrication-tolerant designs that outperform conventional data-driven inverse design. It is the direct successor to the published CMUT framework below: where that work found the best network hierarchy for a nominal design, this one optimizes for the design that survives the process.</p>
@@ -161,7 +161,7 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
     <figcaption>The hierarchical inverse-design network. Unit-cell CMUT thickness parameters enter a stack of GRU layers, pass through an attention block, and emerge from fully connected dense layers as an optimized device profile. Figure from the <em>IEEE Sensors Journal</em> paper.</figcaption>
   </figure>
 
-  <p>Inverse design automates what is otherwise a manual sweep over microelectromechanical device profiles. In this published work a probabilistic search algorithm derives the optimum machine-learning architectural hierarchy — attentive gated recurrent layers feeding fully connected dense layers — which then maps a target acoustic response back to unit-cell CMUT geometry and maximizes membrane displacement without the exhaustive finite-element sweeps that unit-cell design normally demands.</p>
+  <p>Inverse design automates what is otherwise a manual sweep over microelectromechanical device profiles. In this published work a probabilistic search algorithm derives the best machine-learning architecture, which turns out to be attentive gated recurrent layers feeding fully connected dense layers. That network maps a target acoustic response back to unit-cell CMUT geometry and maximizes membrane displacement without the exhaustive finite-element sweeps that unit-cell design normally demands.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-paper" href="https://doi.org/10.1109/JSEN.2025.3569424" rel="noopener">Paper · IEEE Sensors Journal</a></li>
@@ -178,11 +178,11 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
   <p class="project-meta">200 V GaN-on-SOI · E-mode HEMT varactors · extreme-temperature timing · design partnership with the Palacios Group, MIT<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
   <figure class="project-figure">
-    <img src="{{ '/assets/images/research/gan-soi-pll-codesign.jpg' | relative_url }}" alt="Three panels: manual GaN PLL design failing to reach its 50 MHz target, the co-design engine combining a PINN varactor surrogate with adjoint gradients and reinforcement learning, and the resulting fractional-N synthesiser locking across 218 to 423 kelvin." width="1280" height="646" loading="lazy">
-    <figcaption><b>Problem:</b> manual design, with measured parasitics, mismatch and leakage, misses the 50 MHz target and only unlocks above 233 K. <b>Engine:</b> a PINN varactor surrogate <em>C</em>(<em>V</em>,<em>T</em>), a differentiable fractional-N loop and noise model, adjoint gradients over twelve design parameters, a GCN-SAC certificate and WGAN-GP variability — on an open toolchain of OpenVAF, ngspice and gdstk. <b>Result:</b> a synthesiser locking 10/10 at 46.5 MHz across 218–423 K.</figcaption>
+    <img src="{{ '/assets/images/research/gan-soi-pll-codesign.jpg' | relative_url }}" alt="Three panels: manual GaN PLL design failing to reach its 50 MHz target, the co-design engine combining a PINN varactor surrogate with adjoint gradients and reinforcement learning, and the resulting fractional-N synthesizer locking across 218 to 423 kelvin." width="1280" height="646" loading="lazy">
+    <figcaption><b>Problem:</b> manual design, with measured parasitics, mismatch and leakage, misses the 50 MHz target and only unlocks above 233 K. <b>Engine:</b> a PINN varactor surrogate <em>C</em>(<em>V</em>,<em>T</em>), a differentiable fractional-N loop and noise model, adjoint gradients over twelve design parameters, a GCN-SAC certificate and WGAN-GP variability, all on an open toolchain of OpenVAF, ngspice and gdstk. <b>Result:</b> a synthesizer locking 10/10 at 46.5 MHz across 218–423 K.</figcaption>
   </figure>
 
-  <p>A physics-informed machine-learning framework for the automated co-design of a monolithic fractional-N phase-locked loop in 200 V GaN-on-SOI technology. Physics-informed neural networks, adjoint-based gradient optimization and graph-neural reinforcement learning jointly optimize circuit performance, thermal robustness and manufacturability — three objectives normally traded off by hand, in sequence. The resulting PLL shows substantially reduced phase error and jitter, improved lock yield, a compact layout implementation, and reliable fractional-N operation across a wide temperature range.</p>
+  <p>A physics-informed machine-learning framework for the automated co-design of a monolithic fractional-N phase-locked loop in 200 V GaN-on-SOI technology. Physics-informed neural networks, adjoint-based gradient optimization and graph-neural reinforcement learning jointly optimize circuit performance, thermal robustness and manufacturability. Those three objectives are normally traded off by hand, one after another. The resulting PLL shows substantially reduced phase error and jitter, improved lock yield, a compact layout implementation, and reliable fractional-N operation across a wide temperature range.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/Physics-Informed-Machine-Learning-and-Adjoint-Co-Design-of-Monolithic-GaN-HEMT-Varactor-PLL" rel="noopener">Code · GitHub</a></li>
@@ -221,20 +221,20 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
 <section class="project">
   <h3>Adaptive fuzzy attention control of a microgrid under grid-bus fault</h3>
   <p class="project-meta">Double Q-learning · prioritized rewards · attention-weighted inference<span class="sep">|</span><span class="tag tag-published">Published · IEEE Trans. Fuzzy Systems 2025</span></p>
-  <p>A double Q-learning scheme with prioritized reward drives an attention-weighted fuzzy inference controller, keeping a microgrid stable through an extreme fault on the grid bus — the case where fixed-gain controllers fail, because the operating point moves further than they were tuned for.</p>
+  <p>A double Q-learning scheme with prioritized reward drives an attention-weighted fuzzy inference controller, keeping a microgrid stable through an extreme fault on the grid bus. That is the case where fixed-gain controllers fail, because the operating point moves further than they were tuned for.</p>
   <ul class="pub-actions">
     <li><a class="chip chip-paper" href="https://doi.org/10.1109/TFUZZ.2025.3539325" rel="noopener">Paper · IEEE TFS</a></li>
   </ul>
 </section>
 
-<h2 id="photovoltaics">Photovoltaic modeling — from cell physics to systems</h2>
+<h2 id="photovoltaics">Photovoltaic modeling: from cell physics to systems</h2>
 
 <p class="section-lead">With Dr. A. H. M. A. Rahim and Prof. Md. Mosaddequr Rahman, 2023–2026. A custom-built bifacial module, characterized experimentally and then modeled outward from the one-diode equations.</p>
 
 <section class="project">
   <h3>Weather-responsive efficiency model for a custom-built bifacial panel</h3>
   <p class="project-meta">One-diode model · air-pressure and humidity terms · multiple cell technologies<span class="sep">|</span><span class="tag tag-published">Published · IEEE J. Photovoltaics 2024</span></p>
-  <p>Standard efficiency-rating models take irradiance and ambient temperature and stop there. Starting from the derivation of the one-diode model toward a photovoltaic efficiency rating, this work adds air pressure and humidity as carefully constructed additional dimensions, and validates the result against modules built on several different cell technologies — including a bifacial panel built and characterized in-house.</p>
+  <p>Standard efficiency-rating models take irradiance and ambient temperature and stop there. Starting from the derivation of the one-diode model toward a photovoltaic efficiency rating, this work adds air pressure and humidity as carefully constructed additional dimensions, and validates the result against modules built on several different cell technologies, including a bifacial panel built and characterized in-house.</p>
   <ul class="pub-actions">
     <li><a class="chip chip-paper" href="https://doi.org/10.1109/JPHOTOV.2024.3421252" rel="noopener">Paper · IEEE JPV</a></li>
     <li><a class="chip chip-paper" href="https://doi.org/10.1109/TENSYMP55890.2023.10223485" rel="noopener">Panel build · IEEE TENSYMP</a></li>
@@ -244,14 +244,14 @@ Work marked <span class="tag tag-review">Under review</span> is in peer review; 
 <section class="project">
   <h3>Mono- and bifacial photovoltaic technologies compared</h3>
   <p class="project-meta">TOPCon · silicon heterojunction · next-generation bifacial cells<span class="sep">|</span><span class="tag tag-published">Published · IEEE J. Photovoltaics 2024</span></p>
-  <p>Next-generation bifacial cells are what high-efficiency modules will be built from. This review sets the emerging technologies — TOPCon, silicon heterojunction and others — against their monofacial equivalents on a common basis.</p>
+  <p>Next-generation bifacial cells are what high-efficiency modules will be built from. This review compares the emerging technologies, including TOPCon and silicon heterojunction, against their monofacial equivalents on a common basis.</p>
   <ul class="pub-actions">
     <li><a class="chip chip-paper" href="https://doi.org/10.1109/JPHOTOV.2024.3366698" rel="noopener">Paper · IEEE JPV</a></li>
   </ul>
 </section>
 
 <section class="project">
-  <h3>Agrivoltaics — challenges and prospects</h3>
+  <h3>Agrivoltaics: challenges and prospects</h3>
   <p class="project-meta">Dual land use · standards · community acceptance · policy<span class="sep">|</span><span class="tag tag-published">Published · Adv. Energy Sustain. Res. 2026</span></p>
   <p>Land has to do two jobs at once, and agri-photovoltaics is the arrangement that lets it. This review surveys recent agri-PV prospects across continents, along with the standards, acceptance and policy questions that decide whether the economic benefit reaches the people farming underneath.</p>
   <ul class="pub-actions">

@@ -3,7 +3,7 @@
 A practical manual for `tanvir-mahmud-mahim.github.io`. You do not need to know
 HTML, CSS or Jekyll to use it. Everything here is copy-and-edit.
 
-Keep this file in the website folder — it never appears on the live site.
+Keep this file in the website folder. It never appears on the live site.
 
 ---
 
@@ -29,8 +29,8 @@ Keep this file in the website folder — it never appears on the live site.
 
 Three steps, every single time, no exceptions:
 
-1. **Edit** a text file in `G:\Website` using Notepad, Notepad++, VS Code — anything
-   that saves plain text. Save it.
+1. **Edit** a text file in `G:\Website` using Notepad, Notepad++, VS Code, or
+   anything else that saves plain text. Save it.
 2. **Double-click `deploy.bat`** in that same folder. A black window opens, does its
    work, and says `Done.` Press any key to close it.
 3. **Wait about a minute**, then open <https://tanvir-mahmud-mahim.github.io> and
@@ -40,7 +40,7 @@ That is the entire loop. You never touch GitHub's website, and you never need to
 understand git.
 
 > **Why the wait?** You are not uploading a finished website. You are uploading the
-> ingredients — text files — and GitHub's servers assemble them into HTML pages for
+> ingredients, which are text files, and GitHub's servers assemble them into HTML pages for
 > you. That assembly takes roughly a minute. This is what "Jekyll" means in practice.
 
 ---
@@ -80,14 +80,14 @@ G:\Website\
 Two things worth understanding:
 
 **Folders beginning with an underscore are special.** Jekyll treats them as
-ingredients rather than pages. `_publications` is a *collection* — drop a file in and
+ingredients rather than pages. `_publications` is a *collection*. Drop a file in and
 it appears on the Publications page automatically, correctly sorted. You never edit
 `publications.md` to add a paper.
 
 **Files ending in `.md` are Markdown.** Mostly ordinary text: `**bold**`, `*italic*`,
 `[link text](https://address)`. Plain HTML works inside them too, which is why the
-News list and the research projects are written as HTML — they need more structure
-than Markdown offers.
+News list and the research projects are written as HTML, because they need more
+structure than Markdown offers.
 
 ---
 
@@ -95,7 +95,7 @@ than Markdown offers.
 
 This is the task you will do most often, and it is the easiest.
 
-### Step 1 — copy an existing file
+### Step 1: copy an existing file
 
 Go into `_publications\`. Copy any existing file and paste it back into the same
 folder. Rename the copy using this exact pattern:
@@ -105,12 +105,12 @@ YYYY-MM-DD-a-few-words.md
 ```
 
 for example `2026-11-04-gan-soi-pll.md`. The date at the front is what orders the
-list — newest at the top — so use the **publication date**, and if a paper is
+list, newest at the top, so use the **publication date**, and if a paper is
 online-first ahead of its issue, use the issue date and mention the online date in
 the `note` field. The words after the date are only for you; they never appear
 anywhere.
 
-### Step 2 — fill in the details
+### Step 2: fill in the details
 
 Open your new file. The whole file is just this block. There is no body text.
 
@@ -134,7 +134,7 @@ Field by field:
 | Field | What to write |
 | --- | --- |
 | `title` | The exact printed title, in quotes. |
-| `authors` | Everyone, in order, comma-separated. **Write your own name as exactly `Tanvir M. Mahim`** — the site finds that string and bolds it. Any other spelling will not be bolded. |
+| `authors` | Everyone, in order, comma-separated. **Write your own name as exactly `Tanvir M. Mahim`**. The site finds that string and bolds it. Any other spelling will not be bolded. |
 | `venue` | Journal or full proceedings name. It is italicized for you. |
 | `detail` | `volume (issue), pages`, or an article number, or `pp. 1–6` for a conference. If nothing is assigned yet, write `""` and the site simply omits it. |
 | `year` | The year the site displays. For an online-first paper this is the **issue** year, not the online year. |
@@ -145,7 +145,7 @@ Field by field:
 | `url` | The full clickable link, normally `https://doi.org/` plus the DOI. |
 | `note` | *Optional.* A small gray line under the citation, e.g. `"First published online 2 September 2025."` Delete the line if you do not need it. |
 
-### Step 3 — publish
+### Step 3: publish
 
 Save, double-click `deploy.bat`, wait a minute. The paper appears in the right
 section, in the right position, with your name bolded.
@@ -169,7 +169,7 @@ list of blocks that look like this:
 </li>
 ```
 
-**To add one:** copy a whole block — from `<li>` to `</li>` inclusive — and paste it
+**To add one:** copy a whole block, from `<li>` to `</li>` inclusive, and paste it
 directly *below* the line `<ul class="news">`. Newest goes at the top; the list does
 not sort itself. Then change the date and the text.
 
@@ -178,7 +178,7 @@ Inside `news-body` you may use:
 - `<em>Journal Name</em>` for italics
 - `<strong>Something</strong>` for bold
 - `<a href="{{ '/publications/' | relative_url }}">Details</a>` to link to another
-  page of your own site — copy that pattern exactly, including the braces
+  page of your own site. Copy that pattern exactly, including the braces
 - `<a href="https://example.com" rel="noopener">text</a>` for an outside link
 
 Ten to fifteen items is a comfortable length. When it gets long, delete the oldest
@@ -206,7 +206,7 @@ series of project blocks.
 
 Copy an entire `<section>` block to add a project. The `<span class="sep">|</span>`
 in the middle of the meta line draws the thin divider between the collaborator and
-the dates — keep it.
+the dates, so keep it.
 
 ### Adding or removing a work item
 
@@ -226,8 +226,8 @@ Swap the first for the second when a paper is accepted, and add the paper to
 
 ### Adding a figure to a project
 
-Put the image in `assets\images\research\` — JPEG or PNG, ideally 900–1300 px
-wide — then paste this block after the project's meta line:
+Put the image in `assets\images\research\`. JPEG or PNG is fine, ideally 900 to
+1300 px wide. Then paste this block after the project's meta line:
 
 ```html
 <figure class="project-figure">
@@ -238,7 +238,7 @@ wide — then paste this block after the project's meta line:
 </figure>
 ```
 
-Set `width` and `height` to the image's real pixel dimensions — the browser uses
+Set `width` and `height` to the image's real pixel dimensions. The browser uses
 them to reserve space so the page does not jump while loading. Keep
 `loading="lazy"`; it is why a page with a dozen figures still opens quickly. The
 caption is where the detail goes: name the panels, give the numbers.
@@ -276,15 +276,15 @@ The ids are `quantum-optics`, `quantum-materials-mems`, `wbg-devices`,
 ```
 
 The About page uses exactly this to send each of its bolded area names to the
-matching section. If you rename a heading, keep its id — otherwise every link
+matching section. If you rename a heading, keep its id. Otherwise every link
 pointing at it breaks silently.
 
 A note on why this needs JavaScript: the Research page is very tall, and Chrome
 abandons its own jump to an anchor part-way through while web fonts swap and the
 layout settles, dumping you back at the top. `assets/js/main.js` therefore
 performs the jump itself and repeats it as the page finishes loading. It stops
-retrying the moment you scroll, so it never fights you. Nothing to configure —
-just do not delete that block if you edit the file.
+retrying the moment you scroll, so it never fights you. There is nothing to
+configure. Just do not delete that block if you edit the file.
 
 ### Moving a project to Completed
 
@@ -302,7 +302,7 @@ plus DOI buttons:
 
 ## 6. Editing About, Teaching and CV
 
-**`index.md` — About.** The paragraphs below the front matter are ordinary Markdown:
+**`index.md`, the About page.** The paragraphs below the front matter are ordinary Markdown:
 just type. `**text**` makes bold. Leave a blank line between paragraphs. The research
 interests are a plain list of `<li>Something</li>` lines inside `<ul class="interests">`.
 
@@ -329,7 +329,7 @@ name chips are separate:
 </ul>
 ```
 
-The `<span>` inside the `<li>` is what draws the box — keep both.
+The `<span>` inside the `<li>` is what draws the box, so keep both.
 
 ---
 
@@ -339,7 +339,7 @@ The `<span>` inside the `<li>` is what draws the box — keep both.
 `Tanvir_Mahmud_Mahim_CV.pdf`. Overwrite it. Nothing else to change. If you would
 rather use a different filename, update the `cv:` line in `_config.yml` to match.
 
-**Photo.** Replace `assets\images\profile.jpg`. It must be **square** — the site
+**Photo.** Replace `assets\images\profile.jpg`. It must be **square**, because the site
 crops it to a circle, and a non-square image will look squashed. Around 480×480
 pixels is right; much larger only slows the page down. Frame it as a head-and-
 shoulders portrait, because a full-length photo shrinks your face to nothing at the
@@ -352,7 +352,7 @@ After either change, run `deploy.bat`. Browsers cache images aggressively, so pr
 
 ## 8. Changing your title, links or the menu
 
-### `_config.yml` — who you are
+### `_config.yml`: who you are
 
 This one file feeds the sidebar on every page, the browser tab titles, and the
 search-engine description. The lines you may want to change:
@@ -388,10 +388,10 @@ Each sidebar link only appears if its line has a value, so putting a `#` at the 
 of a line hides that link without deleting anything.
 
 **`_config.yml` is the one exception to the normal workflow.** If you ever preview
-locally, Jekyll does not notice changes to this file while running — stop it and
+locally, Jekyll does not notice changes to this file while running, so stop it and
 start it again. On the live site it makes no difference.
 
-### `_data\navigation.yml` — the menu
+### `_data\navigation.yml`: the menu
 
 ```yaml
 - title: "About"
@@ -408,7 +408,7 @@ lines.
 ### Colors and fonts
 
 Everything visual is at the top of `assets\css\main.css`, in a block labeled
-**Design tokens**. The accent color — links, the active menu item, the badges — is
+**Design tokens**. The accent color, which covers links, the active menu item and the badges, is
 `--accent`, defined twice: once under `[data-theme="light"]` and once under
 `[data-theme="dark"]`. Change both, or light and dark mode will disagree. The dark
 value needs to be lighter than the light one so it stays readable on a dark
@@ -437,7 +437,7 @@ Your push triggers a build. Watch it here:
 **<https://github.com/Tanvir-Mahmud-Mahim/Tanvir-Mahmud-Mahim.github.io/actions>**
 
 A yellow dot means building, green tick means live, red cross means the build
-failed — and GitHub emails you when that happens, with the reason. A red cross does
+failed, and GitHub emails you when that happens, with the reason. A red cross does
 **not** take your site down; the previously published version stays up until a good
 build replaces it. That is a useful safety net: a broken edit costs you nothing but
 the time to fix it.
@@ -457,8 +457,8 @@ With no label it records `Update site`, which is fine.
 
 ## 10. Previewing before you publish (optional)
 
-Not required — GitHub builds the site for you, and a bad build cannot break the live
-version. But if you are making a large change and want to see it first:
+This is not required. GitHub builds the site for you, and a bad build cannot break
+the live version. But if you are making a large change and want to see it first:
 
 1. Install **Ruby+Devkit** from <https://rubyinstaller.org/> (take the recommended
    version, and let it run `ridk install` at the end).
@@ -486,17 +486,17 @@ Remember that `_config.yml` changes need a restart.
 
 **`deploy.bat` flashes past too fast to read.**
 It always pauses at `Press any key to continue`. If it vanished instantly, it closed
-before reaching that line — open Command Prompt in the folder and type `deploy.bat`
+before reaching that line. Open Command Prompt in the folder and type `deploy.bat`
 to see the error text.
 
 **`fatal: Unable to create ... index.lock: File exists`**
-A previous git run was interrupted. Delete the file `G:\Website\.git\index.lock` —
-you may need to enable "Hidden items" in Explorer's View tab to see the `.git`
-folder — then run `deploy.bat` again. Only ever let `deploy.bat` drive git in this
+A previous git run was interrupted. Delete the file `G:\Website\.git\index.lock`.
+You may need to enable "Hidden items" in Explorer's View tab to see the `.git`
+folder. Then run `deploy.bat` again. Only ever let `deploy.bat` drive git in this
 folder; other tools reaching into `G:` cannot always clean up this lock.
 
 **`Updates were rejected because the remote contains work that you do not have`**
-Something changed on GitHub that is not in your folder — usually because you edited a
+Something changed on GitHub that is not in your folder, usually because you edited a
 file in GitHub's web editor. Either bring that change down first, or, if you are
 certain the folder is the version you want, run in Command Prompt:
 
@@ -512,7 +512,7 @@ and that a `date:` reads `2026-11-04` with no quotes. Fix and re-run `deploy.bat
 **The site builds, but my change is not there.**
 Press `Ctrl+F5`. If it still looks stale, open the Actions link above and confirm the
 newest run has a green tick and a recent timestamp. If there is no new run, the push
-never happened — re-run `deploy.bat` and read what it prints.
+never happened, so re-run `deploy.bat` and read what it prints.
 
 **My text appears with `<p>` and `<span>` showing as words.**
 An angle bracket is missing somewhere in the block you edited. Copy a working block
@@ -532,7 +532,7 @@ It must be spelled exactly `Tanvir M. Mahim`. Not `Tanvir Mahmud Mahim`, not
 `T. M. Mahim`.
 
 **The layout broke after I edited the CSS.**
-See the next section — reverting one file is a single command.
+See the next section. Reverting one file is a single command.
 
 ---
 
@@ -540,7 +540,7 @@ See the next section — reverting one file is a single command.
 
 Every publish is a save point, and nothing is ever really lost.
 
-**Undo edits you have not published yet** — throws away changes since the last
+**Undo edits you have not published yet.** This throws away changes since the last
 publish:
 
 ```
@@ -600,6 +600,6 @@ That adds a new change undoing the old one, so the history stays honest.
 | Change the menu | `_data\navigation.yml` | `deploy.bat` |
 | Change colors | `assets\css\main.css` | `deploy.bat` |
 
-**Live site** — <https://tanvir-mahmud-mahim.github.io>
-**Build status** — <https://github.com/Tanvir-Mahmud-Mahim/Tanvir-Mahmud-Mahim.github.io/actions>
-**Repository** — <https://github.com/Tanvir-Mahmud-Mahim/Tanvir-Mahmud-Mahim.github.io>
+**Live site:** <https://tanvir-mahmud-mahim.github.io>
+**Build status:** <https://github.com/Tanvir-Mahmud-Mahim/Tanvir-Mahmud-Mahim.github.io/actions>
+**Repository:** <https://github.com/Tanvir-Mahmud-Mahim/Tanvir-Mahmud-Mahim.github.io>
