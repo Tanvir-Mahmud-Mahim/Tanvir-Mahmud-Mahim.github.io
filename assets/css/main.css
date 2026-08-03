@@ -422,7 +422,7 @@ hr {
 
 .sidebar-links {
   list-style: none;
-  margin: 0 0 1.2rem;
+  margin: 0;
   padding: 0;
   border-top: 1px solid var(--border);
   padding-top: .85rem;
@@ -478,9 +478,6 @@ hr {
 }
 .btn-cv:hover .ico { color: var(--accent-contrast); }
 
-/* In the sidebar rail the button fills the column. Used inline on the CV page
-   the same class keeps its natural width. */
-.sidebar .btn-cv { width: 100%; justify-content: center; }
 
 /* --------------------------------------------------------------------------
    7. Home: intro, interests, news
@@ -903,8 +900,7 @@ a.chip:hover {
     grid-template-columns: 104px minmax(0, 1fr);
     grid-template-areas:
       "avatar identity"
-      "links  links"
-      "cv     cv";
+      "links  links";
     column-gap: 1.25rem;
     align-items: center;
     padding-bottom: 1.5rem;
@@ -916,12 +912,11 @@ a.chip:hover {
   .sidebar-links {
     grid-area: links;
     margin-top: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: .1rem .9rem;
   }
-  .sidebar .btn-cv { grid-area: cv; }
 
   .nav-toggle {
     display: inline-grid;
@@ -958,7 +953,7 @@ a.chip:hover {
   .wrap { padding-inline: 1.15rem; }
   .sidebar-inner {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "avatar" "identity" "links" "cv";
+    grid-template-areas: "avatar" "identity" "links";
     justify-items: start;
   }
   .avatar { margin-bottom: .9rem; }
