@@ -1,14 +1,12 @@
 ---
 layout: page
 title: "Research"
-subtitle: "Device physics modeled from first principles, and inverted to determine the designs that meet a specification."
+subtitle: "First-principles device physics carried from electronic structure to terminal behavior, and made differentiable so that it runs in both directions."
 permalink: /research/
 description: "Research of Tanvir Mahmud Mahim: squeezed-light photonics and NV sensing, electrons and phonons in 2D devices, differentiable design of GaN circuits, intelligent grid control, and photovoltaic modeling. Code and data released openly."
 ---
 
-The projects below are grouped into the four lines of work named in my curriculum vitae, followed by the photovoltaic modeling that preceded them. All of them rest on the same spine. Electronic structure is obtained from density functional theory and Wannier interpolation; carrier and phonon transport from envelope functions, self-consistent electrostatics and Boltzmann theory; electromechanical and optical response from finite-element multiphysics; and terminal behavior from compact models exercised in a circuit simulator and committed to layout. Nothing is fitted where it can be computed.
-
-Because that spine is differentiable from end to end, it does two jobs. Run forward it settles what a measurement means, which matters most where independent experiments on one sample return numbers that contradict each other. Run backward it converts a specification into a geometry, and holds the result to the variation a real fabrication run would impose rather than to a nominal tolerance. Adjoint methods, learned generative process twins and reinforcement learning supply the search; the physics supplies the gradients.
+The projects below are grouped into the four lines of work named in my curriculum vitae, followed by the photovoltaic modeling that preceded them. All rest on one chain: electronic structure from density functional theory and Wannier interpolation, transport from envelope functions and Boltzmann theory, electromechanical and optical response from finite-element multiphysics, and terminal behavior from compact models exercised in a circuit simulator. Nothing is fitted where it can be computed, and because the chain admits gradients throughout it also inverts, turning a specification into a geometry that holds under the variation a real process imposes.
 
 Work marked <span class="tag tag-review">Under review</span> is currently in peer review. The <a href="{{ '/publications/' | relative_url }}">Publications</a> page lists only accepted records. Code and datasets are released openly as each project reaches maturity.
 
