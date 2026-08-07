@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Research"
-subtitle: "Open problems recorded in the experimental literature, taken up with first-principles device models that are anchored to measurement and differentiable throughout."
+subtitle: "Device physics carried through the instrument, so that the model ends at the number a measurement returns."
 permalink: /research/
 description: "Research of Tanvir Mahmud Mahim: squeezed-light photonics and NV sensing, electrons and phonons in 2D devices, differentiable design of GaN circuits, intelligent grid control, and photovoltaic modeling. Code and data released openly."
 ---
 
-Each project below is built as one differentiable description of a device, complete from its electronic structure to its terminal behavior: nothing is fitted where it can be computed, and a specification can be inverted into a geometry.
+Each project below is built as one differentiable description running from a material's electronic structure to the quantity an instrument reports: nothing is fitted where it can be computed, and the chain inverts, whether for a hidden quantity or for a geometry.
 
 Work marked <span class="tag tag-review">Under review</span> is currently in peer review. The <a href="{{ '/publications/' | relative_url }}">Publications</a> page lists only accepted records. Code and datasets are released openly as each project reaches maturity.
 
@@ -112,7 +112,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <p class="project-meta">Six-band envelope functions · self-consistent Poisson · polarization-induced 2DHG · magnetotransport<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
   <figure class="project-figure">
-    <img src="{{ '/assets/images/research/gan-2dhg-hole-masses.png' | relative_url }}" alt="Two panels: the GaN on AlN heterostructure carrying the polarization-induced two-dimensional hole gas with the computed hole distribution inset, and a chart of what quantum oscillations, cyclotron resonance and two-carrier Hall measurement each return, the four places their results disagree, and which of those this work resolves." width="1550" height="794" loading="lazy">
+    <img src="{{ '/assets/images/research/gan-2dhg-hole-masses.png' | relative_url }}" alt="Two panels: the GaN on AlN heterostructure carrying the polarization-induced two-dimensional hole gas with the computed hole distribution inset, and a chart of what quantum oscillations, cyclotron resonance and two-carrier Hall measurement each return, the four places their results disagree, and which of those this work resolves." width="1600" height="873" loading="lazy">
     <figcaption><b>(a)</b> The heterostructure on which all three experiments were performed. The hole gas is balanced by the fixed polarization charge at an atomically sharp interface, giving a confining field of 8.0 MV cm<sup>-1</sup>; the inset shows the hole distribution computed here, of root-mean-square width 0.36 nm. <b>(b)</b> What each probe returns, the four places where the reported parameters disagree, and which of those this work resolves. No device is proposed or fabricated.</figcaption>
   </figure>
 
