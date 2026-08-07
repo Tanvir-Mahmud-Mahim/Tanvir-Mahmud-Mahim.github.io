@@ -6,9 +6,9 @@ permalink: /research/
 description: "Research of Tanvir Mahmud Mahim: squeezed-light photonics and NV sensing, electrons and phonons in 2D devices, differentiable design of GaN circuits, intelligent grid control, and photovoltaic modeling. Code and data released openly."
 ---
 
-My research develops the device physics of microcombs and quantum sensors, of nitride and monolayer channels, of microelectromechanical transducers, and of GaN circuits and analog blocks. Each device is modeled from first principles through to the quantities that an experimental measurement or a circuit simulation actually reports, which is what makes a model answerable to data. Where independent measurements of the same system disagree, that calculation can then be used to establish which of the reported quantities the band structure explains and which belong instead to the conditions of the measurement.
+The projects below are grouped into the four lines of work named in my curriculum vitae, followed by the photovoltaic modeling that preceded them. All of them rest on the same spine. Electronic structure is obtained from density functional theory and Wannier interpolation; carrier and phonon transport from envelope functions, self-consistent electrostatics and Boltzmann theory; electromechanical and optical response from finite-element multiphysics; and terminal behavior from compact models exercised in a circuit simulator and committed to layout. Nothing is fitted where it can be computed.
 
-The same models are also inverted: given a target specification, the objective is to determine the geometry that achieves it and to establish whether that geometry remains viable under realistic process variation. Because this inversion requires the governing physics to be differentiable, the simulators are constructed to admit gradients throughout, and each is paired with an optimizer, whether adjoint, generative or reinforcement-learned, that searches the design space directly under the constraints imposed by a realistic fabrication process.
+Because that spine is differentiable from end to end, it does two jobs. Run forward it settles what a measurement means, which matters most where independent experiments on one sample return numbers that contradict each other. Run backward it converts a specification into a geometry, and holds the result to the variation a real fabrication run would impose rather than to a nominal tolerance. Adjoint methods, learned generative process twins and reinforcement learning supply the search; the physics supplies the gradients.
 
 Work marked <span class="tag tag-review">Under review</span> is currently in peer review. The <a href="{{ '/publications/' | relative_url }}">Publications</a> page lists only accepted records. Code and datasets are released openly as each project reaches maturity.
 
@@ -103,14 +103,14 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="quantum-materials-mems">Electrons and phonons in 2D devices</h2>
 
-<p class="section-lead">Conducted with Prof. Md. Mosaddequr Rahman, Department of EEE, BRAC University, since July 2024. This work follows carriers and lattice vibrations through nitride and monolayer channels, from envelope functions and phonon eigenvectors upward to the masses, lifetimes and circuit-level metrics that experiments report, and applies physics-in-the-loop inverse design to micromachined transducers.</p>
+<p class="section-lead">Conducted with Prof. Md. Mosaddequr Rahman, Department of EEE, BRAC University, from July 2024 to July 2026. This work follows carriers and lattice vibrations through nitride and monolayer channels, from envelope functions and phonon eigenvectors upward to the masses, lifetimes and circuit-level metrics that experiments report, and applies physics-in-the-loop inverse design to micromachined transducers.</p>
 
 <section class="project">
   <h3>Resolving the conflicting hole masses of the GaN/AlN two-dimensional hole gas</h3>
   <p class="project-meta">Six-band envelope functions · self-consistent Poisson · polarization-induced 2DHG · magnetotransport<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
   <figure class="project-figure">
-    <img src="{{ '/assets/images/research/gan-2dhg-hole-masses.jpg' | relative_url }}" alt="Two panels: the GaN on AlN heterostructure carrying the polarization-induced two-dimensional hole gas with the computed hole distribution inset, and a chart of what quantum oscillations, cyclotron resonance and two-carrier Hall measurement each return, the four places their results disagree, and which of those this work resolves." width="1280" height="692" loading="lazy">
+    <img src="{{ '/assets/images/research/gan-2dhg-hole-masses.png' | relative_url }}" alt="Two panels: the GaN on AlN heterostructure carrying the polarization-induced two-dimensional hole gas with the computed hole distribution inset, and a chart of what quantum oscillations, cyclotron resonance and two-carrier Hall measurement each return, the four places their results disagree, and which of those this work resolves." width="1550" height="794" loading="lazy">
     <figcaption><b>(a)</b> The heterostructure on which all three experiments were performed. The hole gas is balanced by the fixed polarization charge at an atomically sharp interface, giving a confining field of 8.0 MV cm<sup>-1</sup>; the inset shows the hole distribution computed here, of root-mean-square width 0.36 nm. <b>(b)</b> What each probe returns, the four places where the reported parameters disagree, and which of those this work resolves. No device is proposed or fabricated.</figcaption>
   </figure>
 
@@ -191,7 +191,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="wbg-devices">Differentiable design of GaN circuits</h2>
 
-<p class="section-lead">Conducted with Dr. Nadim Chowdhury, Department of EEE, BUET, since May 2025. This work carries gradients through the compact models and the loop equations of a GaN circuit, so that the circuit may be designed by optimization, and develops reinforcement-learning methods that transfer across process nodes.</p>
+<p class="section-lead">Conducted with Dr. Nadim Chowdhury, Department of EEE, BUET, from May 2025 to June 2026. This work carries gradients through the compact models and the loop equations of a GaN circuit, so that the circuit may be designed by optimization, and develops reinforcement-learning methods that transfer across process nodes.</p>
 
 <section class="project">
   <h3>Co-designing a monolithic GaN-on-SOI fractional-N PLL</h3>
@@ -227,7 +227,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="control-energy">Intelligent grid control</h2>
 
-<p class="section-lead">Conducted with Dr. A. H. M. A. Rahim (retired December 2024) between 2023 and 2024. This work develops controllers that adapt their own inference rules, applied to grid-connected machines under fault conditions.</p>
+<p class="section-lead">Conducted with Dr. A. H. M. A. Rahim (retired December 2024) from May 2023 to June 2024. This work develops controllers that adapt their own inference rules, applied to grid-connected machines under fault conditions.</p>
 
 <section class="project">
   <h3>Fuzzy inference with reinforcement learning for DFIG low-voltage ride-through</h3>

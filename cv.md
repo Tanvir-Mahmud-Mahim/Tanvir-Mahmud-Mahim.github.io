@@ -18,7 +18,7 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Rese
   <div class="entry-what">
     <h3>B.Sc. in Electrical and Electronic Engineering</h3>
     <p class="entry-where">BRAC University, Dhaka, Bangladesh</p>
-    <p>CGPA 3.77 / 4.00 · average marks 86.20% · academic honors: <strong>High Distinction</strong>. Certified by World Education Services (WES) as equivalent to a US bachelor's degree. Undergraduate thesis supervised by Dr. A. H. M. A. Rahim and archived in the BRAC University institutional repository.</p>
+    <p>CGPA 3.77 / 4.00 · average marks 86.20% · academic honors: <strong>High Distinction</strong>. Certified by World Education Services as <a href="https://www.credly.com/badges/f8ed9ef3-e9d6-4a4f-8dab-9d6756c2fff4/public_url" rel="noopener">equivalent to a US bachelor's degree</a>. Undergraduate thesis, <a href="http://hdl.handle.net/10361/22445" rel="noopener"><em>Design and Implementation of an Optimized Solar Home System for Urban Areas Using Bifacial Photovoltaic Panel</em></a>, supervised by Dr. A. H. M. A. Rahim and archived in the BRAC University institutional repository.</p>
   </div>
 </section>
 
