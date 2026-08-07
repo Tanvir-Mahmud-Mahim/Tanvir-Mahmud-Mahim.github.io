@@ -288,14 +288,14 @@ Each of the five area headings on `research.md` is written as raw HTML with a
 fixed id, so other pages can jump straight to it:
 
 ```html
-<h2 id="quantum-optics">Quantum optics and photonics</h2>
+<h2 id="quantum-optics">Squeezed-light photonics and NV sensing</h2>
 ```
 
 The ids are `quantum-optics`, `quantum-materials-mems`, `wbg-devices`,
 `control-energy` and `photovoltaics`. Link to one like this:
 
 ```html
-<a href="{{ '/research/#quantum-optics' | relative_url }}">Quantum optics</a>
+<a href="{{ '/research/#quantum-optics' | relative_url }}">Squeezed-light photonics</a>
 ```
 
 The About page uses exactly this to send each of its bolded area names to the

@@ -11,5 +11,9 @@ Thumbs.db
 # Local one-time setup bundle (safe to delete)
 _setup/
 
-# Your original full-size photo — the cropped web version is assets/images/profile.jpg
+# Staging folder for files cleared out of this directory. Delete it in Explorer
+# whenever you see it; nothing inside is needed by the site.
+_to_delete/
+
+# Your original full-size photo. The cropped web version is assets/images/profile.jpg
 Profile_pic.jpg

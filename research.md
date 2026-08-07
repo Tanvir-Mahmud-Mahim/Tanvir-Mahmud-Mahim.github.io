@@ -3,16 +3,18 @@ layout: page
 title: "Research"
 subtitle: "Device physics modeled from first principles, and inverted to determine the designs that meet a specification."
 permalink: /research/
-description: "Research of Tanvir Mahmud Mahim: quantum optics and photonics, 2D quantum materials and MEMS, wide-bandgap devices and design automation, machine learning for control, and photovoltaic modeling. Code and data released openly."
+description: "Research of Tanvir Mahmud Mahim: squeezed-light photonics and NV sensing, electrons and phonons in 2D devices, differentiable design of GaN circuits, intelligent grid control, and photovoltaic modeling. Code and data released openly."
 ---
 
-My research develops the device physics of microcombs and quantum sensors, of monolayer transistors and microelectromechanical transducers, and of GaN circuits and analog blocks. Each device is modeled from first principles through to the quantities that an experimental measurement or a circuit simulation reports. The models are then inverted: given a target specification, the objective is to determine the geometry that achieves it and to establish whether that geometry remains viable under realistic process variation. Because this inversion requires the governing physics to be differentiable, the simulators are constructed to admit gradients throughout, and each is paired with an optimizer, whether adjoint, generative or reinforcement-learned, that searches the design space directly under the constraints imposed by a realistic fabrication process.
+My research develops the device physics of microcombs and quantum sensors, of nitride and monolayer channels, of microelectromechanical transducers, and of GaN circuits and analog blocks. Each device is modeled from first principles through to the quantities that an experimental measurement or a circuit simulation actually reports, which is what makes a model answerable to data. Where independent measurements of the same system disagree, that calculation can then be used to establish which of the reported quantities the band structure explains and which belong instead to the conditions of the measurement.
+
+The same models are also inverted: given a target specification, the objective is to determine the geometry that achieves it and to establish whether that geometry remains viable under realistic process variation. Because this inversion requires the governing physics to be differentiable, the simulators are constructed to admit gradients throughout, and each is paired with an optimizer, whether adjoint, generative or reinforcement-learned, that searches the design space directly under the constraints imposed by a realistic fabrication process.
 
 Work marked <span class="tag tag-review">Under review</span> is currently in peer review. The <a href="{{ '/publications/' | relative_url }}">Publications</a> page lists only accepted records. Code and datasets are released openly as each project reaches maturity.
 
-<h2 id="quantum-optics">Quantum optics and photonics</h2>
+<h2 id="quantum-optics">Squeezed-light photonics and NV sensing</h2>
 
-<p class="section-lead">Conducted with Dr. A. S. M. Mohsin, Department of EEE, BRAC University, since July 2025. This work develops differentiable models of quantum photonic hardware, including squeezed-light sources, color-center magnetometers and single-photon instrumentation, together with learned controllers that close the loop around them.</p>
+<p class="section-lead">Conducted with Dr. A. S. M. Mohsin, Department of EEE, BRAC University, since July 2025. This work develops differentiable models of quantum photonic hardware, including squeezed-light sources, nitrogen-vacancy magnetometers and single-photon instrumentation, together with learned controllers that close the loop around them.</p>
 
 <section class="project">
   <h3>Exceeding the 3 dB squeezing-extraction limit in silicon-carbide microcombs</h3>
@@ -99,9 +101,27 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   </ul>
 </section>
 
-<h2 id="quantum-materials-mems">2D quantum materials and MEMS</h2>
+<h2 id="quantum-materials-mems">Electrons and phonons in 2D devices</h2>
 
-<p class="section-lead">Conducted with Prof. Md. Mosaddequr Rahman, Department of EEE, BRAC University, since July 2024. This work treats monolayer transition-metal-dichalcogenide devices from first principles through to circuit-level metrics, and applies physics-in-the-loop inverse design to micromachined transducers.</p>
+<p class="section-lead">Conducted with Prof. Md. Mosaddequr Rahman, Department of EEE, BRAC University, since July 2024. This work follows carriers and lattice vibrations through nitride and monolayer channels, from envelope functions and phonon eigenvectors upward to the masses, lifetimes and circuit-level metrics that experiments report, and applies physics-in-the-loop inverse design to micromachined transducers.</p>
+
+<section class="project">
+  <h3>Resolving the conflicting hole masses of the GaN/AlN two-dimensional hole gas</h3>
+  <p class="project-meta">Six-band envelope functions · self-consistent Poisson · polarization-induced 2DHG · magnetotransport<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
+
+  <figure class="project-figure">
+    <img src="{{ '/assets/images/research/gan-2dhg-hole-masses.jpg' | relative_url }}" alt="Two panels: the GaN on AlN heterostructure carrying the polarization-induced two-dimensional hole gas with the computed hole distribution inset, and a chart of what quantum oscillations, cyclotron resonance and two-carrier Hall measurement each return, the four places their results disagree, and which of those this work resolves." width="1280" height="692" loading="lazy">
+    <figcaption><b>(a)</b> The heterostructure on which all three experiments were performed. The hole gas is balanced by the fixed polarization charge at an atomically sharp interface, giving a confining field of 8.0 MV cm<sup>-1</sup>; the inset shows the hole distribution computed here, of root-mean-square width 0.36 nm. <b>(b)</b> What each probe returns, the four places where the reported parameters disagree, and which of those this work resolves. No device is proposed or fabricated.</figcaption>
+  </figure>
+
+  <p>Quantum oscillations in pulsed fields to 72 T, terahertz cyclotron resonance to 31 T and a two-carrier analysis of the Hall effect have all been applied to the same polarization-induced GaN/AlN two-dimensional hole gas, and the band-resolved parameters they return disagree. This work solves the six-band envelope-function problem self-consistently with Poisson's equation at the measured sheet density, with a finite AlN barrier and <strong>no adjustable quantity</strong>, so that any difference in conclusion follows from the analysis rather than from the inputs. The calculation reproduces both measured masses, giving a heavy-hole mass of 1.92 to 1.99 <em>m</em><sub>0</sub> across the published range of the valence band offset against a measured 1.92 ± 0.16 <em>m</em><sub>0</sub>, and a zero-field light-hole mass of 0.26 to 0.33 <em>m</em><sub>0</sub> against the 0.30 <em>m</em><sub>0</sub> obtained by extrapolating the measurement to zero field. The band structure is therefore not in question, and the reported light-hole mass of 0.53 <em>m</em><sub>0</sub> is <strong>a property of the field dependence rather than of the dispersion</strong>. The heavy-hole masses returned by the two magneto-optical probes differ by a third because at the highest field applied the heavy-hole cyclotron product <em>ω</em><sub>c</sub><em>τ</em> is 0.82, so that the resonance is overdamped, whereas the light-hole product is 3.8 and the light masses agree to seven percent.</p>
+
+  <p>Turning to scattering, the ratio of transport to quantum lifetime carries neither the disorder amplitude nor the effective mass, and therefore isolates the range of the disorder; its measured value requires forward-peaked long-range scattering rather than the short-range mechanism to which it has been attributed. With the interband Bloch overlap computed from the envelope functions rather than carried as a parameter, no elastic mechanism reproduces the measured ratios of both subbands, the closest simultaneous account being wrong by a factor of two, which places the two-carrier decomposition of the mobilities itself under question. The density dependence of both masses is predicted as a direct test.</p>
+
+  <ul class="pub-actions">
+    <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/gan-2dhg-masses-lifetimes" rel="noopener">Code · GitHub</a></li>
+  </ul>
+</section>
 
 <section class="project">
   <h3>Two Raman phonons that measure edge charge in monolayer nanoribbon transistors</h3>
@@ -169,9 +189,9 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   </ul>
 </section>
 
-<h2 id="wbg-devices">Wide-bandgap devices and design automation</h2>
+<h2 id="wbg-devices">Differentiable design of GaN circuits</h2>
 
-<p class="section-lead">Conducted with Dr. Nadim Chowdhury, Department of EEE, BUET, since May 2025. This work applies gradient-based design to GaN circuits and develops reinforcement-learning methods that transfer across process nodes.</p>
+<p class="section-lead">Conducted with Dr. Nadim Chowdhury, Department of EEE, BUET, since May 2025. This work carries gradients through the compact models and the loop equations of a GaN circuit, so that the circuit may be designed by optimization, and develops reinforcement-learning methods that transfer across process nodes.</p>
 
 <section class="project">
   <h3>Co-designing a monolithic GaN-on-SOI fractional-N PLL</h3>
@@ -205,7 +225,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   </ul>
 </section>
 
-<h2 id="control-energy">Machine learning for control and energy systems</h2>
+<h2 id="control-energy">Intelligent grid control</h2>
 
 <p class="section-lead">Conducted with Dr. A. H. M. A. Rahim (retired December 2024) between 2023 and 2024. This work develops controllers that adapt their own inference rules, applied to grid-connected machines under fault conditions.</p>
 

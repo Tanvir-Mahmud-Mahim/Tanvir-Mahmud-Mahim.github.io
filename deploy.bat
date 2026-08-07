@@ -39,6 +39,13 @@ if not exist ".git" (
   echo  [1/5] Local repository already exists.
 )
 
+rem Git deletes its own index.lock when it exits cleanly, so one left behind means
+rem a previous run was interrupted. Left in place it blocks every later git command.
+if exist ".git\index.lock" (
+  echo        Clearing a stale .git\index.lock left by an interrupted run...
+  del /f /q ".git\index.lock" >nul 2>&1
+)
+
 echo  [2/5] Checking the remote...
 git remote get-url origin >nul 2>&1
 if errorlevel 1 (
