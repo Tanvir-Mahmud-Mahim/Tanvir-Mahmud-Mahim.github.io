@@ -50,4 +50,4 @@ I have held teaching responsibilities in the Department of Electrical and Electr
 
 ## Prospective students
 
-BRAC University undergraduates with an interest in device physics, photonics, MEMS or machine learning for design automation are welcome to contact me, particularly those seeking a capstone project, at [tanvir.mahim@bracu.ac.bd](mailto:tanvir.mahim@bracu.ac.bd). The <a href="{{ '/research/' | relative_url }}">Research</a> page indicates which topics are currently active.
+BRAC University undergraduates with an interest in device physics, quantum photonics, 2D materials or machine learning for design automation are welcome to contact me, particularly those seeking a capstone project, at [tanvir.mahim@bracu.ac.bd](mailto:tanvir.mahim@bracu.ac.bd). The <a href="{{ '/research/' | relative_url }}">Research</a> page indicates which topics are currently active, and every project on it carries open code that a capstone can build upon.

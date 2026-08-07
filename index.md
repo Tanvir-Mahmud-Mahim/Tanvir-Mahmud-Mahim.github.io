@@ -10,7 +10,7 @@ description: "Tanvir Mahmud Mahim, Adjunct Lecturer and Research Assistant, Depa
 
 <p class="intro-tagline">Adjunct Lecturer and Research Assistant, <strong>Department of Electrical and Electronic Engineering, BRAC University</strong>. I build first-principles, differentiable models of quantum and wide-bandgap devices that do not stop at the device. They are carried through the instrument, and end at the number a measurement actually returns.</p>
 
-Modeling the probe alongside the sample has three consequences. A measurement becomes invertible: two phonons whose strain and doping responses differ turn published Raman maps into 2.3 × 10<sup>12</sup> cm<sup>-2</sup> of edge charge, a quantity no experiment had isolated. An instrument becomes auditable: the calculation that returns the GaN/AlN hole masses also returns the cyclotron product, and at 0.82 the resonance is overdamped, so the disputed mass is a property of the probe and not of the band structure. An experiment becomes designable: with the detection chain itself differentiable, adjoint gradients tune the excitation, the correlation window and the estimator together. In quantum hardware the measurement, rather than the fabrication, is increasingly the step that limits progress, and that is the direction this work is taking.
+Each device I study is described once, from the electronic structure of its material to the signal its measurement produces, and nothing is fitted that can be computed. Run forward, such a model adjudicates: when independent experiments on one sample disagree, it separates what the material fixes from what the probe contributes. Run backward, it designs: because the physics admits gradients throughout, a specification becomes a geometry, and the experiment becomes as much an object of optimization as the device it studies. This method has carried my work through 2D and GaN electronics to quantum photonics, and it is aimed at the step that now limits quantum hardware: the measurement itself.
 
 <a href="{{ '/research/#quantum-optics' | relative_url }}"><strong>Squeezed-light photonics and NV sensing</strong></a>, conducted with Dr. A. S. M. Mohsin. Vortex motion is a confirmed loss channel in the tantalum films that hold record transmon coherence, yet no probe reports which vortex sits where or how strongly it is pinned. A diamond micromembrane placed on the film by pick-and-place transfer reads 8 mT per vortex at 25 nm standoff, locates each to 13 nm and classifies pinning-site occupancy without error, while spin relaxation and spin-echo dephasing separate the viscous drag from the pinning stiffness. Where the measurement is itself the bottleneck, the learning goes inside the instrument: an event-driven estimator matches a strong multi-start fit six times faster and commits at 312 ms.
 
@@ -56,7 +56,7 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
   </li>
   <li>
     <span class="news-date">Jul 2025</span>
-    <span class="news-body">Began research in quantum optics and photonics with Dr. A. S. M. Mohsin, covering soliton-crystal microcombs, NV micromembrane vortex sensing, and closed-loop machine learning for quantum photonic instrumentation. <a href="{{ '/research/' | relative_url }}">Read more</a></span>
+    <span class="news-body">Began research on squeezed-light photonics and NV sensing with Dr. A. S. M. Mohsin, covering soliton-crystal microcombs, NV micromembrane vortex sensing, and closed-loop machine learning for quantum photonic instrumentation. <a href="{{ '/research/' | relative_url }}">Read more</a></span>
   </li>
   <li>
     <span class="news-date">Jul 2025</span>
@@ -68,7 +68,7 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
   </li>
   <li>
     <span class="news-date">May 2025</span>
-    <span class="news-body">Started work on wide-bandgap electronic devices with Dr. Nadim Chowdhury at BUET, including a collaboration with <strong>GlobalFoundries, Inc.</strong> (Santa Clara, USA) on graph reinforcement learning for transferable analog transistor sizing.</span>
+    <span class="news-body">Started work on the differentiable design of GaN circuits with Dr. Nadim Chowdhury at BUET, including a collaboration with <strong>GlobalFoundries, Inc.</strong> (Santa Clara, USA) on graph reinforcement learning for transferable analog transistor sizing.</span>
   </li>
   <li>
     <span class="news-date">Feb 2025</span>
@@ -76,7 +76,7 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
   </li>
   <li>
     <span class="news-date">Jul 2024</span>
-    <span class="news-body">Began research on 2D quantum materials and MEMS with Prof. Md. Mosaddequr Rahman, spanning nanoribbon transistors, ferroelectric WSe<sub>2</sub> logic, and fabrication-aware inverse design.</span>
+    <span class="news-body">Began research on electrons and phonons in 2D devices with Prof. Md. Mosaddequr Rahman, spanning nanoribbon transistors, ferroelectric WSe<sub>2</sub> logic, and fabrication-aware inverse design.</span>
   </li>
   <li>
     <span class="news-date">Jul 2024</span>
