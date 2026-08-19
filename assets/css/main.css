@@ -976,3 +976,37 @@ a.chip:hover {
   body { color: #000; background: #fff; font-size: 11pt; }
   a { color: #000; text-decoration: underline; }
 }
+
+/* --------------------------------------------------------------------------
+   12. Support / donate button (Software page)
+   -------------------------------------------------------------------------- */
+
+.btn-support {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .62rem 1.15rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-size: .9rem;
+  font-weight: 650;
+  letter-spacing: .01em;
+  transition: all .15s var(--ease);
+}
+a.btn-support:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--accent-contrast);
+  text-decoration: none;
+}
+.support-cta {
+  margin: 1.1rem 0 .4rem;
+}
+.support-cta .support-note {
+  display: block;
+  margin-top: .5rem;
+  font-size: .8rem;
+  color: var(--muted);
+}
