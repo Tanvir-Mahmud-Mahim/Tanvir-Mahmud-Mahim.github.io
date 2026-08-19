@@ -292,7 +292,7 @@ fixed id, so other pages can jump straight to it:
 ```
 
 The ids are `quantum-optics`, `quantum-materials-mems`, `wbg-devices`,
-`control-energy` and `photovoltaics`. Link to one like this:
+`control-energy`, `photovoltaics` and `software`. Link to one like this:
 
 ```html
 <a href="{{ '/research/#quantum-optics' | relative_url }}">Squeezed-light photonics</a>

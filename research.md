@@ -282,3 +282,34 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
     <li><a class="chip chip-paper" href="https://doi.org/10.1002/aesr.202500227" rel="noopener">Paper · Wiley AESR (open access)</a></li>
   </ul>
 </section>
+
+<h2 id="software">Open-source software</h2>
+
+<p class="section-lead">Beyond the per-paper repositories above, three general-purpose tools distilled from this research are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization. Each is an early release (v0.1) with a working, tested core, and the test suites run on GitHub's own infrastructure at every change.</p>
+
+<section class="project">
+  <h3>ramansep</h3>
+  <p class="project-meta">Raman spectroscopy of 2D materials · linear inversion · uncertainty propagation</p>
+  <p>Separates strain from carrier density in Raman maps of 2D materials by a two-mode linear inversion, with propagated uncertainties and conditioning diagnostics. This is the material-agnostic engine behind the nanoribbon edge-charge analysis above.</p>
+  <ul class="pub-actions">
+    <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/ramansep" rel="noopener">Code · GitHub</a></li>
+  </ul>
+</section>
+
+<section class="project">
+  <h3>kpenvelope</h3>
+  <p class="project-meta">Six-band k·p · self-consistent Poisson · wurtzite heterostructures</p>
+  <p>A six-band k·p envelope-function solver for wurtzite heterostructures, solved self-consistently with Poisson's equation for polarization-induced carrier gases. This is the engine class behind the GaN/AlN hole-mass analysis above.</p>
+  <ul class="pub-actions">
+    <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/kpenvelope" rel="noopener">Code · GitHub</a></li>
+  </ul>
+</section>
+
+<section class="project">
+  <h3>sqzcomb</h3>
+  <p class="project-meta">Lugiato–Lefever · linearized quantum noise · detected squeezing spectra</p>
+  <p>Computes the output squeezing spectra a homodyne detector would report from Kerr-microcomb steady states, through linearized fluctuation analysis and input-output theory. Its test suite reproduces the closed-form parametric-oscillator spectrum and recovers the 3 dB extraction limit at critical coupling from the machinery itself.</p>
+  <ul class="pub-actions">
+    <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/sqzcomb" rel="noopener">Code · GitHub</a></li>
+  </ul>
+</section>

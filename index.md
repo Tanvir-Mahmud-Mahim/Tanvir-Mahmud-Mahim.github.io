@@ -39,6 +39,10 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
 
 <ul class="news">
   <li>
+    <span class="news-date">Aug 2026</span>
+    <span class="news-body">Released three open-source research tools under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization: <strong>ramansep</strong>, <strong>kpenvelope</strong> and <strong>sqzcomb</strong>, each with a tested core and continuous integration. <a href="{{ '/research/#software' | relative_url }}">Details</a></span>
+  </li>
+  <li>
     <span class="news-date">Jun 2026</span>
     <span class="news-body">Our paper on adaptive Takagi–Sugeno–Kang fuzzy inference with reinforcement learning for low-voltage ride-through of DFIG wind turbines is published in <em>Engineering Science and Technology, an International Journal</em>. <a href="{{ '/publications/' | relative_url }}">Details</a></span>
   </li>
