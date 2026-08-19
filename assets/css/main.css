@@ -1010,3 +1010,33 @@ a.btn-support:hover {
   font-size: .8rem;
   color: var(--muted);
 }
+
+/* Support page card */
+.support-card {
+  margin: 1.6rem 0 2.2rem;
+  border: 1px solid var(--border-strong);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--bg-raised);
+  box-shadow: var(--shadow);
+}
+.support-card-body { padding: 1.5rem 1.7rem 1.4rem; }
+.support-card-title {
+  margin: 0 0 .55rem;
+  font-size: 1.35rem;
+}
+.support-card-text {
+  margin: 0 0 1.1rem;
+  max-width: 46rem;
+}
+.btn-support-lg {
+  padding: .78rem 1.6rem;
+  font-size: 1rem;
+  border-radius: var(--radius-sm);
+}
+.support-fineprint {
+  margin: .8rem 0 0;
+  font-size: .78rem;
+  color: var(--muted);
+  max-width: 44rem;
+}

@@ -48,16 +48,8 @@ Issues and pull requests are welcome on each repository. The contribution bar is
 
 ## Support this work
 
-This software is developed at the Department of Electrical and Electronic Engineering, BRAC University, and released openly under the Apache-2.0 license.
+This software is developed at the Department of Electrical and Electronic Engineering, BRAC University, and released openly under the Apache-2.0 license. The <a href="{{ '/support/' | relative_url }}">Support</a> page lists every way to help, from citing the tools to a small monthly donation.
 
 <p class="support-cta">
-  <a class="btn-support" href="https://www.patreon.com/u40002728" rel="noopener">Donate via Patreon</a>
-  <span class="support-note">Small monthly contributions fund compute time and open-access publication fees. All payment handling happens on Patreon's own platform; this site is static HTML and never collects payment data.</span>
+  <a class="btn-support" href="{{ '/support/' | relative_url }}">Support this work</a>
 </p>
-
-Support also reaches this work in two other ways:
-
-<ul>
-  <li><strong>Use it and cite it.</strong> Citations and issue reports are the strongest support an early research tool can receive.</li>
-  <li><strong>Institutional and grant support.</strong> For collaboration, sponsored development of these tools, or grant partnerships, write to <a href="mailto:tanvir.mahim@bracu.ac.bd">tanvir.mahim@bracu.ac.bd</a>.</li>
-</ul>
