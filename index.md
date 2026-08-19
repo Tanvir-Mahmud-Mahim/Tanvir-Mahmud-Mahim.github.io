@@ -40,7 +40,7 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
 <ul class="news">
   <li>
     <span class="news-date">Aug 2026</span>
-    <span class="news-body">Released three open-source research tools under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization: <strong>ramansep</strong>, <strong>kpenvelope</strong> and <strong>sqzcomb</strong>, each with a tested core and continuous integration. <a href="{{ '/research/#software' | relative_url }}">Details</a></span>
+    <span class="news-body">Released three open-source research tools under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization: <strong>ramansep</strong>, <strong>kpenvelope</strong> and <strong>sqzcomb</strong>, each with a tested core and continuous integration. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Jun 2026</span>

@@ -199,7 +199,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <section class="project">
   <h3>Co-designing a monolithic GaN-on-SOI fractional-N PLL</h3>
-  <p class="project-meta">200 V GaN-on-SOI · E-mode HEMT varactors · extreme-temperature timing · design partnership with the Palacios Group, MIT<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
+  <p class="project-meta">200 V GaN-on-SOI · E-mode HEMT varactors · extreme-temperature timing<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/gan-soi-pll-codesign.jpg' | relative_url }}" alt="Three panels: manual GaN PLL design failing to reach its 50 MHz target, the co-design engine combining a PINN varactor surrogate with adjoint gradients and reinforcement learning, and the resulting fractional-N synthesizer locking across 218 to 423 kelvin." width="1280" height="646" loading="lazy">
@@ -285,31 +285,4 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="software">Open-source software</h2>
 
-<p class="section-lead">Beyond the per-paper repositories above, three general-purpose tools distilled from this research are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization. Each is an early release (v0.1) with a working, tested core, and the test suites run on GitHub's own infrastructure at every change.</p>
-
-<section class="project">
-  <h3>ramansep</h3>
-  <p class="project-meta">Raman spectroscopy of 2D materials · linear inversion · uncertainty propagation</p>
-  <p>Separates strain from carrier density in Raman maps of 2D materials by a two-mode linear inversion, with propagated uncertainties and conditioning diagnostics. This is the material-agnostic engine behind the nanoribbon edge-charge analysis above.</p>
-  <ul class="pub-actions">
-    <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/ramansep" rel="noopener">Code · GitHub</a></li>
-  </ul>
-</section>
-
-<section class="project">
-  <h3>kpenvelope</h3>
-  <p class="project-meta">Six-band k·p · self-consistent Poisson · wurtzite heterostructures</p>
-  <p>A six-band k·p envelope-function solver for wurtzite heterostructures, solved self-consistently with Poisson's equation for polarization-induced carrier gases. This is the engine class behind the GaN/AlN hole-mass analysis above.</p>
-  <ul class="pub-actions">
-    <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/kpenvelope" rel="noopener">Code · GitHub</a></li>
-  </ul>
-</section>
-
-<section class="project">
-  <h3>sqzcomb</h3>
-  <p class="project-meta">Lugiato–Lefever · linearized quantum noise · detected squeezing spectra</p>
-  <p>Computes the output squeezing spectra a homodyne detector would report from Kerr-microcomb steady states, through linearized fluctuation analysis and input-output theory. Its test suite reproduces the closed-form parametric-oscillator spectrum and recovers the 3 dB extraction limit at critical coupling from the machinery itself.</p>
-  <ul class="pub-actions">
-    <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/sqzcomb" rel="noopener">Code · GitHub</a></li>
-  </ul>
-</section>
+<p class="section-lead">Beyond the per-paper repositories above, three general-purpose tools distilled from this research, <strong>ramansep</strong>, <strong>kpenvelope</strong> and <strong>sqzcomb</strong>, are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization, with tested cores, continuous integration and archived DOIs. They now have a page of their own: <a href="{{ '/software/' | relative_url }}">Software</a>.</p>
