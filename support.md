@@ -19,6 +19,16 @@ The three tools on the <a href="{{ '/software/' | relative_url }}">Software</a> 
   </div>
 </div>
 
+## Worked guides
+
+Three in-depth worked guides are available for one-time purchase on the same Patreon page. Each is built directly on the corresponding open-source tool: every figure is computed by the released package, and the complete figure script is reprinted in the appendix, so each document can be re-derived rather than merely read. The tools themselves, and everything needed to use them, remain free.
+
+<ul>
+  <li><a href="https://www.patreon.com/u40002728/posts/squeezed-light-167169759" rel="noopener"><strong>Squeezed light from Kerr microcombs: a worked design study</strong></a> (sqzcomb, 11 pages). From Lugiato&#8209;Lefever steady states to the squeezing a homodyne detector reports: bistability, the 3 dB extraction limit, and twin-beam squeezing of comb sideband pairs.</li>
+  <li><a href="https://www.patreon.com/u40002728/posts/strain-or-charge-167170030" rel="noopener"><strong>Strain or charge? Two-mode Raman separation in practice</strong></a> (ramansep, 10 pages). Turning two peak-shift maps of monolayer MoS<sub>2</sub> into strain and carrier-density maps with defensible, Monte&#8209;Carlo&#8209;verified error bars.</li>
+  <li><a href="https://www.patreon.com/u40002728/posts/holes-in-well-k-167170105" rel="noopener"><strong>Holes in a polarization well: six-band k·p subband physics of GaN/AlN</strong></a> (kpenvelope, 9 pages). From cited band parameters to self-consistent subbands, with the limitations stated before the results.</li>
+</ul>
+
 ## Where the money goes
 
 Spending follows the same discipline as the code, and supporters are acknowledged in release notes:
