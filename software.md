@@ -35,7 +35,7 @@ Three general-purpose tools distilled from the <a href="{{ '/research/' | relati
 <section class="project">
   <h3>sqzcomb</h3>
   <p class="project-meta">Lugiato–Lefever · linearized quantum noise · detected squeezing spectra</p>
-  <p>Computes the output squeezing spectra a homodyne detector would report from Kerr-microcomb steady states, through linearized fluctuation analysis and input-output theory. Its test suite reproduces the closed-form parametric-oscillator spectrum to ten decimal places and recovers the 3 dB extraction limit at critical coupling from the machinery itself.</p>
+  <p>Computes the output squeezing spectra a homodyne detector would report from Kerr-microcomb steady states, through linearized fluctuation analysis and input-output theory. Its test suite reproduces the closed-form parametric-oscillator spectrum to ten decimal places and recovers the 3 dB extraction limit at critical coupling from the machinery itself. Version 0.2 adds the photonic molecule, two coupled rings in which the auxiliary ring acts as the extraction channel, with the test suite driving a coupled design to 6 dB of detected squeezing past that single-ring limit.</p>
   <p><code>pip install sqzcomb</code></p>
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/sqzcomb" rel="noopener">Code · GitHub</a></li>
