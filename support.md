@@ -29,6 +29,16 @@ Three in-depth worked guides are available for one-time purchase on the same Pat
   <li><a href="https://www.patreon.com/u40002728/posts/holes-in-well-k-167170105" rel="noopener"><strong>Holes in a polarization well: six-band k·p subband physics of GaN/AlN</strong></a> (kpenvelope, 9 pages). From cited band parameters to self-consistent subbands, with the limitations stated before the results.</li>
 </ul>
 
+## Courses
+
+Beyond the guides, complete written courses are available for one-time purchase: six modules each, with solved problem sets and runnable code labs, and a standard the guides share: every stated formula and number is verified by an included script that recomputes the whole document, so each course can be re-derived rather than merely read. No videos, no certificates, no promised outcomes; the tools themselves stay free.
+
+<ul>
+  <li><a href="https://www.patreon.com/u40002728/posts/designing-light-167172541" rel="noopener"><strong>Designing squeezed-light microcomb sources</strong></a> (sqzcomb, 19 pages + 3 code labs). From the quantum optics of detection to a finished device design: steady states, the extraction limit, twin-beam combs, and a complete worked design lab.</li>
+  <li><a href="https://www.patreon.com/u40002728/posts/strain-and-in-2d-167173553" rel="noopener"><strong>Strain and charge in 2D materials</strong></a> (ramansep, 13 pages + 3 code labs). From phonon physics to defensible error bars: choosing mode pairs by noise amplification, Monte&#8209;Carlo&#8209;verified uncertainties, detection-limit planning, and bounding what is not measured.</li>
+  <li><a href="https://www.patreon.com/u40002728/posts/holes-in-k-p-167173678" rel="noopener"><strong>Holes in wurtzite heterostructures</strong></a> (kpenvelope, 13 pages + 3 code labs). From the bulk valence Hamiltonian to a self-consistent two-dimensional hole gas: cited parameters, checkable discretization, and why a hole mass is not one number.</li>
+</ul>
+
 ## Where the money goes
 
 Spending follows the same discipline as the code, and supporters are acknowledged in release notes:
