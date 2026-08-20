@@ -40,6 +40,10 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
 <ul class="news">
   <li>
     <span class="news-date">Aug 2026</span>
+    <span class="news-body">All three research tools are now installable directly from PyPI (<code>pip install ramansep</code>, <code>kpenvelope</code>, <code>sqzcomb</code>) through automated, tested release pipelines. sqzcomb v0.2 adds the photonic molecule, with its test suite driving a coupled two-ring design past the single-ring 3 dB detected-squeezing limit. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+  </li>
+  <li>
+    <span class="news-date">Aug 2026</span>
     <span class="news-body">Released three open-source research tools under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization: <strong>ramansep</strong>, <strong>kpenvelope</strong> and <strong>sqzcomb</strong>, each with a tested core and continuous integration. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
