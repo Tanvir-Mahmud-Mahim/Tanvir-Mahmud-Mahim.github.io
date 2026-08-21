@@ -3,10 +3,10 @@ layout: page
 title: "Software"
 subtitle: "General-purpose research tools, released with tests, archived with DOIs."
 permalink: /software/
-description: "Open-source software by Tanvir Mahmud Mahim: ramansep, kpenvelope and sqzcomb, tools for Raman analysis of 2D materials, wurtzite k·p subband physics and squeezed-light microcomb design, maintained under the TaN-MM-Org organization."
+description: "Open-source software by Tanvir Mahmud Mahim: ramansep, kpenvelope, sqzcomb and absnoise, tools for Raman analysis of 2D materials, wurtzite k·p subband physics, squeezed-light microcomb design and Andreev thermal detectors, maintained under the TaN-MM-Org organization."
 ---
 
-Three general-purpose tools distilled from the <a href="{{ '/research/' | relative_url }}">research projects</a> are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization and installable directly from <a href="https://pypi.org/" rel="noopener">PyPI</a>. Each follows the same released-with-tests practice: every physical claim in a release is backed by a test that runs publicly on GitHub's infrastructure at every change, closed-form limits are reproduced by the machinery rather than asserted, and each release is archived on Zenodo under its own DOI. Shipped material constants are cited to their sources, and each package states plainly what it does not yet do.
+Four general-purpose tools distilled from the <a href="{{ '/research/' | relative_url }}">research projects</a> are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization and installable directly from <a href="https://pypi.org/" rel="noopener">PyPI</a>. Each follows the same released-with-tests practice: every physical claim in a release is backed by a test that runs publicly on GitHub's infrastructure at every change, closed-form limits are reproduced by the machinery rather than asserted, and each release is archived on Zenodo under its own DOI. Shipped material constants are cited to their sources, and each package states plainly what it does not yet do.
 
 <section class="project">
   <h3>ramansep</h3>
@@ -41,6 +41,18 @@ Three general-purpose tools distilled from the <a href="{{ '/research/' | relati
     <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/sqzcomb" rel="noopener">Code · GitHub</a></li>
     <li><a class="chip chip-data" href="https://pypi.org/project/sqzcomb/" rel="noopener">Install · PyPI</a></li>
     <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.22015375" rel="noopener">Archive · Zenodo DOI</a></li>
+  </ul>
+</section>
+
+<section class="project">
+  <h3>absnoise</h3>
+  <p class="project-meta">Andreev bound states · occupation noise · thermal-detector budgets</p>
+  <p>Computes the Andreev level structure of ballistic proximity Josephson junctions, the intrinsic occupation-noise limit of Andreev thermometry, and the resulting detector budgets: temperature resolution, resonator frequency-noise spectra and matched-filter calorimetric energy resolution. It ships six cited graphene junction contact recipes, and its test suite anchors twenty-eight closed forms, from the short-junction spectrum and the solved BCS gap equation to the exact saturation of the Cauchy&#8209;Schwarz resolution bound.</p>
+  <p><code>pip install absnoise</code></p>
+  <ul class="pub-actions">
+    <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/absnoise" rel="noopener">Code · GitHub</a></li>
+    <li><a class="chip chip-data" href="https://pypi.org/project/absnoise/" rel="noopener">Install · PyPI</a></li>
+    <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.22048608" rel="noopener">Archive · Zenodo DOI</a></li>
   </ul>
 </section>
 
