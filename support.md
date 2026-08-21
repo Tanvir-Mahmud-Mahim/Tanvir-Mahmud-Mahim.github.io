@@ -6,7 +6,7 @@ permalink: /support/
 description: "Support the open-source research software of Tanvir Mahmud Mahim: ramansep, kpenvelope and sqzcomb. Donate via Patreon, cite the tools, or partner institutionally."
 ---
 
-The three tools on the <a href="{{ '/software/' | relative_url }}">Software</a> page, <strong>ramansep</strong>, <strong>kpenvelope</strong> and <strong>sqzcomb</strong>, are developed at the Department of Electrical and Electronic Engineering, BRAC University, and released openly under the Apache-2.0 license: every physical claim backed by a public test, every release archived under a DOI, every constant cited to its source. Support of any kind keeps that standard funded.
+The four tools on the <a href="{{ '/software/' | relative_url }}">Software</a> page, <strong>ramansep</strong>, <strong>kpenvelope</strong>, <strong>sqzcomb</strong> and <strong>absnoise</strong>, are developed at the Department of Electrical and Electronic Engineering, BRAC University, and released openly under the Apache-2.0 license: every physical claim backed by a public test, every release archived under a DOI, every constant cited to its source. Support of any kind keeps that standard funded.
 
 <div class="support-card">
   <div class="support-card-body">
@@ -21,12 +21,13 @@ The three tools on the <a href="{{ '/software/' | relative_url }}">Software</a> 
 
 ## Worked guides
 
-Three in-depth worked guides are available for one-time purchase on the same Patreon page. Each is built directly on the corresponding open-source tool: every figure is computed by the released package, and the complete figure script is reprinted in the appendix, so each document can be re-derived rather than merely read. The tools themselves, and everything needed to use them, remain free.
+Four in-depth worked guides are available for one-time purchase on the same Patreon page. Each is built directly on the corresponding open-source tool: every figure is computed by the released package, and the complete figure script is reprinted in the appendix, so each document can be re-derived rather than merely read. The tools themselves, and everything needed to use them, remain free.
 
 <ul>
   <li><a href="https://www.patreon.com/u40002728/posts/squeezed-light-167169759" rel="noopener"><strong>Squeezed light from Kerr microcombs: a worked design study</strong></a> (sqzcomb, 11 pages). From Lugiato&#8209;Lefever steady states to the squeezing a homodyne detector reports: bistability, the 3 dB extraction limit, and twin-beam squeezing of comb sideband pairs.</li>
   <li><a href="https://www.patreon.com/u40002728/posts/strain-or-charge-167170030" rel="noopener"><strong>Strain or charge? Two-mode Raman separation in practice</strong></a> (ramansep, 10 pages). Turning two peak-shift maps of monolayer MoS<sub>2</sub> into strain and carrier-density maps with defensible, Monte&#8209;Carlo&#8209;verified error bars.</li>
   <li><a href="https://www.patreon.com/u40002728/posts/holes-in-well-k-167170105" rel="noopener"><strong>Holes in a polarization well: six-band k·p subband physics of GaN/AlN</strong></a> (kpenvelope, 9 pages). From cited band parameters to self-consistent subbands, with the limitations stated before the results.</li>
+  <li><a href="https://www.patreon.com/u40002728/posts/andreev-noise-in-167321303" rel="noopener"><strong>Andreev occupation noise in practice: a worked design study</strong></a> (absnoise, 10 pages). From a measured graphene junction recipe to the sensitivity limit of a proximity Josephson thermal detector: the exact level structure, the Cauchy&#8209;Schwarz resolution bound and its saturation, the device budget, and a nonlinear single-photon click.</li>
 </ul>
 
 ## Courses
@@ -37,6 +38,7 @@ Beyond the guides, complete written courses are available for one-time purchase:
   <li><a href="https://www.patreon.com/u40002728/posts/designing-light-167172541" rel="noopener"><strong>Designing squeezed-light microcomb sources</strong></a> (sqzcomb, 19 pages + 3 code labs). From the quantum optics of detection to a finished device design: steady states, the extraction limit, twin-beam combs, and a complete worked design lab.</li>
   <li><a href="https://www.patreon.com/u40002728/posts/strain-and-in-2d-167173553" rel="noopener"><strong>Strain and charge in 2D materials</strong></a> (ramansep, 13 pages + 3 code labs). From phonon physics to defensible error bars: choosing mode pairs by noise amplification, Monte&#8209;Carlo&#8209;verified uncertainties, detection-limit planning, and bounding what is not measured.</li>
   <li><a href="https://www.patreon.com/u40002728/posts/holes-in-k-p-167173678" rel="noopener"><strong>Holes in wurtzite heterostructures</strong></a> (kpenvelope, 13 pages + 3 code labs). From the bulk valence Hamiltonian to a self-consistent two-dimensional hole gas: cited parameters, checkable discretization, and why a hole mass is not one number.</li>
+  <li><a href="https://www.patreon.com/u40002728/posts/andreev-thermal-167321545" rel="noopener"><strong>Andreev thermal detectors: from bound states to single-photon clicks</strong></a> (absnoise, 9 pages + 3 code labs). From bound-state scattering theory to nonlinear click simulations: the gap equation done properly, the resolution bound and its worst case, the full device budget, and the matched-level design condition.</li>
 </ul>
 
 ## Where the money goes
