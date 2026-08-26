@@ -35,7 +35,7 @@ Four general-purpose tools distilled from the <a href="{{ '/research/' | relativ
 <section class="project">
   <h3>sqzcomb</h3>
   <p class="project-meta">Lugiato–Lefever · linearized quantum noise · detected squeezing spectra</p>
-  <p>Computes the output squeezing spectra a homodyne detector would report from Kerr-microcomb steady states, through linearized fluctuation analysis and input-output theory. Its test suite reproduces the closed-form parametric-oscillator spectrum to ten decimal places and recovers the 3 dB extraction limit at critical coupling from the machinery itself. Version 0.2 adds the photonic molecule, two coupled rings in which the auxiliary ring acts as the extraction channel, with the test suite driving a coupled design to 6 dB of detected squeezing past that single-ring limit.</p>
+  <p>Computes the output squeezing spectra a homodyne detector would report from Kerr-microcomb steady states, through linearized fluctuation analysis and input-output theory. Its test suite reproduces the closed-form parametric-oscillator spectrum to ten decimal places and recovers the 3 dB extraction limit at critical coupling from the machinery itself. It includes the photonic molecule, two coupled rings in which the auxiliary ring acts as the extraction channel, with the test suite driving a coupled design to 6 dB of detected squeezing past that single-ring limit; the current release extends the molecule to multimode operation, with joint twin-beam quadratures read across sideband pairs.</p>
   <p><code>pip install sqzcomb</code></p>
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/sqzcomb" rel="noopener">Code · GitHub</a></li>
@@ -47,7 +47,7 @@ Four general-purpose tools distilled from the <a href="{{ '/research/' | relativ
 <section class="project">
   <h3>absnoise</h3>
   <p class="project-meta">Andreev bound states · occupation noise · thermal-detector budgets</p>
-  <p>Computes the Andreev level structure of ballistic proximity Josephson junctions, the intrinsic occupation-noise limit of Andreev thermometry, and the resulting detector budgets: temperature resolution, resonator frequency-noise spectra and matched-filter calorimetric energy resolution. It ships six cited graphene junction contact recipes, and its test suite anchors twenty-eight closed forms, from the short-junction spectrum and the solved BCS gap equation to the exact saturation of the Cauchy&#8209;Schwarz resolution bound.</p>
+  <p>Computes the Andreev level structure of ballistic proximity Josephson junctions, the intrinsic occupation-noise limit of Andreev thermometry, and the resulting detector budgets: temperature resolution, resonator frequency-noise spectra and matched-filter calorimetric energy resolution. It ships six cited graphene junction contact recipes, and its test suite anchors the closed forms of the theory, from the short-junction spectrum and the solved BCS gap equation to the exact saturation of the Cauchy&#8209;Schwarz resolution bound.</p>
   <p><code>pip install absnoise</code></p>
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/absnoise" rel="noopener">Code · GitHub</a></li>

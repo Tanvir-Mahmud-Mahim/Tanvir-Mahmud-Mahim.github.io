@@ -25,6 +25,15 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Rese
 ## Honors and awards
 
 <section class="entry">
+  <div class="entry-when">2025 and 2026</div>
+  <div class="entry-what">
+    <h3>Quality Journal Publication Award</h3>
+    <p class="entry-where"><a href="https://www.bracu.ac.bd/research/rmc" rel="noopener">Research Metrics Committee</a>, BRAC University</p>
+    <p>Awarded in two successive cycles for publications in Q1 journals, those ranked in the top quartile of their field. The award recognizes research published with at least one BRAC University affiliation and aligned with the university's research priorities.</p>
+  </div>
+</section>
+
+<section class="entry">
   <div class="entry-when">2020 – 2022</div>
   <div class="entry-what">
     <h3>Vice Chancellor's and Dean's List Award</h3>

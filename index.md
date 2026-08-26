@@ -40,6 +40,14 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
 <ul class="news">
   <li>
     <span class="news-date">Aug 2026</span>
+    <span class="news-body">Received the <strong>Quality Journal Publication Award</strong> from the <a href="https://www.bracu.ac.bd/research/rmc" rel="noopener">Research Metrics Committee</a> of BRAC University for a second successive cycle. The award recognizes research published in Q1 journals, those ranked in the top quartile of their field.</span>
+  </li>
+  <li>
+    <span class="news-date">Aug 2026</span>
+    <span class="news-body">Released <strong>absnoise</strong>, a fourth open-source tool, covering the occupation noise of Andreev bound states and the sensitivity limits of the proximity Josephson thermal detectors built on them. All four tools are installable from PyPI and archived on Zenodo under versioned DOIs. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+  </li>
+  <li>
+    <span class="news-date">Aug 2026</span>
     <span class="news-body">All three research tools are now installable directly from PyPI (<code>pip install ramansep</code>, <code>kpenvelope</code>, <code>sqzcomb</code>) through automated, tested release pipelines. sqzcomb v0.2 adds the photonic molecule, with its test suite driving a coupled two-ring design past the single-ring 3 dB detected-squeezing limit. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
@@ -53,6 +61,10 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
   <li>
     <span class="news-date">Dec 2025</span>
     <span class="news-body">Joined <strong>GIXSystems.ai</strong> (USA) as a consultant, working on the technology development of a 100 V GaN-on-Si power HEMT discrete device, with tape-out at X-FAB in Erfurt, Germany.</span>
+  </li>
+  <li>
+    <span class="news-date">Late 2025</span>
+    <span class="news-body">Received the <strong>Quality Journal Publication Award</strong> from the <a href="https://www.bracu.ac.bd/research/rmc" rel="noopener">Research Metrics Committee</a> of BRAC University, for research published in Q1 journals.</span>
   </li>
   <li>
     <span class="news-date">Sep 2025</span>
