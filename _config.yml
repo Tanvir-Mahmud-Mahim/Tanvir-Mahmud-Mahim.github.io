@@ -12,10 +12,10 @@ location:         "Dhaka, Bangladesh"
 description:      >-
   Personal academic website of Tanvir Mahmud Mahim, Adjunct Lecturer and Research
   Assistant in the Department of Electrical and Electronic Engineering at BRAC
-  University. Device models carried without a break from electronic structure to
-  circuit behavior, and kept differentiable: squeezed-light photonics and NV
-  sensing, electrons and phonons in 2D devices, differentiable design of GaN
-  circuits, and intelligent grid control.
+  University. Physics-based device models that run unbroken from a material's
+  electronic structure to the number a measurement returns: squeezed-light
+  photonics and NV sensing, electrons and phonons in 2D devices, differentiable
+  design of GaN circuits, and intelligent grid control.
 
 # The canonical address of the published site.
 url:              "https://tanvir-mahmud-mahim.github.io"
