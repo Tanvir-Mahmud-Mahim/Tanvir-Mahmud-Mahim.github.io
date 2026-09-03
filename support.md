@@ -3,10 +3,10 @@ layout: page
 title: "Support"
 subtitle: "Independent research software, kept open by the people who use it."
 permalink: /support/
-description: "Support the open-source research software of Tanvir Mahmud Mahim: ramansep, kpenvelope and sqzcomb. Donate via Patreon, cite the tools, or partner institutionally."
+description: "Support the open-source research software of Tanvir Mahmud Mahim: ramansep, kpenvelope, sqzcomb, absnoise, cavsqueeze and sparq-triage. Donate via Patreon, cite the tools, or partner institutionally."
 ---
 
-The four tools on the <a href="{{ '/software/' | relative_url }}">Software</a> page, <strong>ramansep</strong>, <strong>kpenvelope</strong>, <strong>sqzcomb</strong> and <strong>absnoise</strong>, are developed at the Department of Electrical and Electronic Engineering, BRAC University, and released openly under the Apache-2.0 license: every physical claim backed by a public test, every release archived under a DOI, every constant cited to its source. Support of any kind keeps that standard funded.
+The six tools on the <a href="{{ '/software/' | relative_url }}">Software</a> page — <strong>ramansep</strong>, <strong>kpenvelope</strong>, <strong>sqzcomb</strong>, <strong>absnoise</strong>, <strong>cavsqueeze</strong> and <strong>SPARQ</strong> — are developed at the Department of Electrical and Electronic Engineering, BRAC University, and released openly under the Apache-2.0 license: every physics claim backed by a public test, every release archived under a DOI, every constant cited to its source. Support of any kind keeps that standard funded.
 
 <div class="support-card">
   <div class="support-card-body">
@@ -24,15 +24,15 @@ The four tools on the <a href="{{ '/software/' | relative_url }}">Software</a> p
 Four in-depth worked guides are available for one-time purchase on the same Patreon page. Each is built directly on the corresponding open-source tool: every figure is computed by the released package, and the complete figure script is reprinted in the appendix, so each document can be re-derived rather than merely read. The tools themselves, and everything needed to use them, remain free.
 
 <ul>
-  <li><a href="https://www.patreon.com/u40002728/posts/squeezed-light-167169759" rel="noopener"><strong>Squeezed light from Kerr microcombs: a worked design study</strong></a> (sqzcomb, 11 pages). From Lugiato&#8209;Lefever steady states to the squeezing a homodyne detector reports: bistability, the 3 dB extraction limit, and twin-beam squeezing of comb sideband pairs.</li>
+  <li><a href="https://www.patreon.com/u40002728/posts/squeezed-light-167169759" rel="noopener"><strong>Squeezed light from Kerr microcombs: a worked design study</strong></a> (sqzcomb, 11 pages). From steady states to the squeezing a detector reports: bistability, the 3 dB extraction limit, and twin-beam squeezing of comb sideband pairs.</li>
   <li><a href="https://www.patreon.com/u40002728/posts/strain-or-charge-167170030" rel="noopener"><strong>Strain or charge? Two-mode Raman separation in practice</strong></a> (ramansep, 10 pages). Turning two peak-shift maps of monolayer MoS<sub>2</sub> into strain and carrier-density maps with defensible, Monte&#8209;Carlo&#8209;verified error bars.</li>
   <li><a href="https://www.patreon.com/u40002728/posts/holes-in-well-k-167170105" rel="noopener"><strong>Holes in a polarization well: six-band k·p subband physics of GaN/AlN</strong></a> (kpenvelope, 9 pages). From cited band parameters to self-consistent subbands, with the limitations stated before the results.</li>
-  <li><a href="https://www.patreon.com/u40002728/posts/andreev-noise-in-167321303" rel="noopener"><strong>Andreev occupation noise in practice: a worked design study</strong></a> (absnoise, 10 pages). From a measured graphene junction recipe to the sensitivity limit of a proximity Josephson thermal detector: the exact level structure, the Cauchy&#8209;Schwarz resolution bound and its saturation, the device budget, and a nonlinear single-photon click.</li>
+  <li><a href="https://www.patreon.com/u40002728/posts/andreev-noise-in-167321303" rel="noopener"><strong>Andreev occupation noise in practice: a worked design study</strong></a> (absnoise, 10 pages). From a measured graphene junction recipe to the sensitivity limit of a superconducting thermal detector: the exact level structure, the resolution bound and when it is reached, the device budget, and a nonlinear single-photon click.</li>
 </ul>
 
 ## Courses
 
-Beyond the guides, complete written courses are available for one-time purchase: six modules each, with solved problem sets and runnable code labs, and a standard the guides share: every stated formula and number is verified by an included script that recomputes the whole document, so each course can be re-derived rather than merely read. No videos, no certificates, no promised outcomes; the tools themselves stay free.
+Beyond the guides, complete written courses are available for one-time purchase: six modules each, with solved problem sets and runnable code labs, and the same standard the guides follow — every stated formula and number is verified by an included script that recomputes the whole document, so each course can be re-derived rather than merely read. No videos, no certificates, no promised outcomes; the tools themselves stay free.
 
 <ul>
   <li><a href="https://www.patreon.com/u40002728/posts/designing-light-167172541" rel="noopener"><strong>Designing squeezed-light microcomb sources</strong></a> (sqzcomb, 19 pages + 3 code labs). From the quantum optics of detection to a finished device design: steady states, the extraction limit, twin-beam combs, and a complete worked design lab.</li>
