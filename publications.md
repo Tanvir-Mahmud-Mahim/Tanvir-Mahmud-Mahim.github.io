@@ -3,7 +3,7 @@ layout: page
 title: "Publications"
 subtitle: "Peer-reviewed journal articles and conference papers, newest first."
 permalink: /publications/
-description: "Peer-reviewed publications by Tanvir Mahmud Mahim in IEEE Transactions on Fuzzy Systems, IEEE Sensors Journal, IEEE Journal of Photovoltaics, Advanced Energy and Sustainability Research, and Engineering Science and Technology."
+description: "Peer-reviewed publications by Tanvir Mahmud Mahim in Optics Express, IEEE Transactions on Fuzzy Systems, IEEE Sensors Journal, IEEE Journal of Photovoltaics, Advanced Energy and Sustainability Research, and Engineering Science and Technology."
 ---
 
 {% assign pubs = site.publications | sort: 'date' | reverse %}

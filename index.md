@@ -12,7 +12,7 @@ description: "Tanvir Mahmud Mahim, Adjunct Lecturer and Research Assistant, Depa
 
 Each device I study is described once, from the electronic structure of its material to the signal its measurement produces. Nothing is adjusted by hand that could instead be computed. A model built this way works in both directions. Run forward, it acts as a referee: when independent experiments on the same sample disagree, it can tell how much of the answer comes from the material and how much from the measurement itself. Run backward, it designs: every step of the model can be differentiated, so a target specification can be turned directly into a device geometry — and the measurement setup becomes something to optimize, not just the device. This approach has carried my work from 2D and GaN electronics to quantum photonics, and it is now aimed at the step that limits quantum hardware most: the measurement itself.
 
-<a href="{{ '/research/#quantum-optics' | relative_url }}"><strong>Squeezed-light photonics and NV sensing</strong></a>, conducted with Dr. A. S. M. Mohsin. Vortices — tiny whirlpools of magnetic flux — are a confirmed source of energy loss in the tantalum films that hold the record for superconducting-qubit coherence. Yet no existing probe can report which vortex sits where, or how strongly it is held in place. A thin diamond membrane laid on the film can. It senses a field of 8 mT per vortex from 25 nm away, pinpoints each vortex to within 13 nm, and tells without error whether a trapping site is occupied; two independent noise measurements then separate how much a vortex drags from how firmly it is pinned. And where the measurement itself is the bottleneck, the learning moves inside the instrument: an event-driven estimator matches a strong conventional fit six times faster, committing its decision 312 ms into the exposure.
+<a href="{{ '/research/#quantum-optics' | relative_url }}"><strong>Squeezed-light photonics and NV sensing</strong></a>, conducted with Dr. A. S. M. Mohsin. The strand's first published result, in <em>Optics Express</em> (2026): adding a second ring to a silicon-carbide microcomb lets it release 7.9 dB of squeezed light, where a single ring can never exceed 3 dB. The strand's other front is sensing. Vortices — tiny whirlpools of magnetic flux — are a confirmed source of energy loss in the tantalum films that hold the record for superconducting-qubit coherence. Yet no existing probe can report which vortex sits where, or how strongly it is held in place. A thin diamond membrane laid on the film can. It senses a field of 8 mT per vortex from 25 nm away, pinpoints each vortex to within 13 nm, and tells without error whether a trapping site is occupied; two independent noise measurements then separate how much a vortex drags from how firmly it is pinned. And where the measurement itself is the bottleneck, the learning moves inside the instrument: an event-driven estimator matches a strong conventional fit six times faster, committing its decision 312 ms into the exposure.
 
 <a href="{{ '/research/#quantum-materials-mems' | relative_url }}"><strong>Electrons and phonons in 2D devices</strong></a>, conducted with Prof. Md. Mosaddequr Rahman. Charge carriers and lattice vibrations are followed through nitride and single-layer channels starting from the underlying quantum states, not from shortcuts. Three findings stand out. In the GaN/AlN system, the measured carrier lifetimes point to disorder that deflects carriers only gently, through small angles — not the short-range mechanism the data had been attributed to — and no single elastic scattering mechanism explains both subbands at once, which puts the standard two-carrier reading of the mobility data in question. In patterned monolayers, our two-phonon method measures the electric charge trapped at a cut edge: charge of that size explains a reported switch in transistor behaviour (from depletion- to enhancement-mode) on thick-oxide devices, yet has no electrostatic effect on a modern thin-gate device, where the damage left by the etch sets the size limit instead. And in a WSe<sub>2</sub> ferroelectric transistor, one percent of compression more than doubles the hole mobility while moving the 1.24 V memory window by only about three percent — so strain and polarization can be tuned independently rather than trading off against each other.
 
@@ -29,8 +29,8 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
 <ul class="interests">
   <li>Quantum Optics and Photonics</li>
   <li>2D Quantum Materials</li>
-  <li>Microelectromechanical Systems (MEMS)</li>
   <li>Wide Bandgap (WBG) Semiconductor Devices</li>
+  <li>Quantum Physics</li>
   <li>Electronic Design Automation (EDA)</li>
   <li>Machine Learning</li>
 </ul>
@@ -38,6 +38,10 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
 ## News
 
 <ul class="news">
+  <li>
+    <span class="news-date">Sep 2026</span>
+    <span class="news-body">Our paper <strong>"Overcoming the 3 dB squeezing extraction limit in silicon carbide microcombs with a photonic molecule"</strong> is published in <em>Optics Express</em> (open access). A second ring lets a microcomb release 7.9 dB of squeezed light, where a single ring can never exceed 3 dB. <a href="https://doi.org/10.1364/OE.612248" rel="noopener">Paper</a> · <a href="{{ '/publications/' | relative_url }}">Details</a></span>
+  </li>
   <li>
     <span class="news-date">Sep 2026</span>
     <span class="news-body">The open-source family grows to six tools: <strong>cavsqueeze</strong> (spin squeezing of large ensembles in resonators) and <strong>SPARQ</strong> (automated screening of single-photon emitters) join ramansep, kpenvelope, sqzcomb and absnoise on PyPI, each tested in public and archived with a DOI. <a href="{{ '/software/' | relative_url }}">Details</a></span>
