@@ -3,10 +3,10 @@ layout: page
 title: "Software"
 subtitle: "General-purpose research tools, released with tests, archived with DOIs."
 permalink: /software/
-description: "Open-source software by Tanvir Mahmud Mahim: ramansep, kpenvelope, sqzcomb, absnoise, cavsqueeze and sparq-triage — tools for Raman analysis of 2D materials, nitride semiconductor physics, squeezed-light microcombs, superconducting thermal detectors, spin squeezing and single-photon-emitter screening, maintained under the TaN-MM-Org organization."
+description: "Open-source software by Tanvir Mahmud Mahim: ramansep, kpenvelope, sqzcomb, absnoise, cavsqueeze, sparq-triage and hamop — tools for Raman analysis of 2D materials, nitride semiconductor physics, squeezed-light microcombs, superconducting thermal detectors, spin squeezing, single-photon-emitter screening and tight-binding materials modelling, maintained under the TaN-MM-Org organization."
 ---
 
-Six research tools grew out of the <a href="{{ '/research/' | relative_url }}">research projects</a>. All are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization and installable with a single <a href="https://pypi.org/" rel="noopener">pip</a> command. They share one rule: every physics claim in a release is backed by an automated test that runs publicly at every change, textbook results are reproduced by the code rather than assumed, every built-in physical constant carries a citation to its source, and each release is archived on Zenodo under its own DOI. Each package also states plainly what it does not do yet.
+Seven research tools grew out of the <a href="{{ '/research/' | relative_url }}">research projects</a>. All are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization and installable with a single <a href="https://pypi.org/" rel="noopener">pip</a> command. They share one rule: every physics claim in a release is backed by an automated test that runs publicly at every change, textbook results are reproduced by the code rather than assumed, every built-in physical constant carries a citation to its source, and each release is archived on Zenodo under its own DOI. Each package also states plainly what it does not do yet.
 
 <section class="project">
 <h3>ramansep</h3>
@@ -77,6 +77,18 @@ Six research tools grew out of the <a href="{{ '/research/' | relative_url }}">r
 <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/sparq-triage" rel="noopener">Code · GitHub</a></li>
 <li><a class="chip chip-data" href="https://pypi.org/project/sparq-triage/" rel="noopener">Install · PyPI</a></li>
 <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.22278041" rel="noopener">Archive · Zenodo DOI</a></li>
+</ul>
+</section>
+
+<section class="project">
+<h3>hamop</h3>
+<p class="project-meta">Materials modelling · one model, every property</p>
+<p>Many properties of a material — its electronic energy levels, how it absorbs light, how well it carries current, even subtle "topological" properties — are usually computed by separate programs with separate conventions, and the answers can quietly drift apart. hamop computes all of them from one and the same simple model of electrons hopping between atoms, so they cannot disagree with each other by construction. It handles magnetic fields, spin, disorder and very large systems, and its defining habit is distrust of itself: every physical claim in the package is pinned by an automated test against an exact textbook result — over a hundred of them — and several key quantities are computed by two independent routes that must agree. It was distilled from the modelling pipeline behind the MoS<sub>2</sub> defect study, generalized so any material model can be pushed through it.</p>
+<p><code>pip install hamop</code></p>
+<ul class="pub-actions">
+<li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/hamop" rel="noopener">Code · GitHub</a></li>
+<li><a class="chip chip-data" href="https://pypi.org/project/hamop/" rel="noopener">Install · PyPI</a></li>
+<li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.22311381" rel="noopener">Archive · Zenodo DOI</a></li>
 </ul>
 </section>
 
