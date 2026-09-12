@@ -3,10 +3,10 @@ layout: page
 title: "Software"
 subtitle: "General-purpose research tools, released with tests, archived with DOIs."
 permalink: /software/
-description: "Open-source software by Tanvir Mahmud Mahim: ramansep, kpenvelope, sqzcomb, absnoise, cavsqueeze, sparq-triage and hamop — tools for Raman analysis of 2D materials, nitride semiconductor physics, squeezed-light microcombs, superconducting thermal detectors, spin squeezing, single-photon-emitter screening and tight-binding materials modelling, maintained under the TaN-MM-Org organization."
+description: "Open-source software by Tanvir Mahmud Mahim: ramansep, kpenvelope, sqzcomb, absnoise, cavsqueeze, sparq-triage, hamop and fabtwin — tools for Raman analysis of 2D materials, nitride semiconductor physics, squeezed-light microcombs, superconducting thermal detectors, spin squeezing, single-photon-emitter screening, materials modelling and yield-aware photonic design, maintained under the TaN-MM-Org organization."
 ---
 
-Seven research tools grew out of the <a href="{{ '/research/' | relative_url }}">research projects</a>. All are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization and installable with a single <a href="https://pypi.org/" rel="noopener">pip</a> command. They share one rule: every physics claim in a release is backed by an automated test that runs publicly at every change, textbook results are reproduced by the code rather than assumed, every built-in physical constant carries a citation to its source, and each release is archived on Zenodo under its own DOI. Each package also states plainly what it does not do yet.
+Eight research tools grew out of the <a href="{{ '/research/' | relative_url }}">research projects</a>. All are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization and installable with a single <a href="https://pypi.org/" rel="noopener">pip</a> command. They share one rule: every physics claim in a release is backed by an automated test that runs publicly at every change, textbook results are reproduced by the code rather than assumed, every built-in physical constant carries a citation to its source, and each release is archived on Zenodo under its own DOI. Each package also states plainly what it does not do yet.
 
 <section class="project">
 <h3>ramansep</h3>
@@ -89,6 +89,18 @@ Seven research tools grew out of the <a href="{{ '/research/' | relative_url }}"
 <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/hamop" rel="noopener">Code · GitHub</a></li>
 <li><a class="chip chip-data" href="https://pypi.org/project/hamop/" rel="noopener">Install · PyPI</a></li>
 <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.22311381" rel="noopener">Archive · Zenodo DOI</a></li>
+</ul>
+</section>
+
+<section class="project">
+<h3>fabtwin</h3>
+<p class="project-meta">Optical coatings · designing for the factory's real errors</p>
+<p>Optical filters are built by depositing many thin layers, and no deposition machine hits its targets exactly. The errors are not simple random scatter: they drift, they depend on the recipe, and it is the rare bad runs — not the average one — that decide how many manufactured devices actually work. fabtwin learns a machine's error behaviour from its own production logs, then redesigns the filter so that even the worst runs come out well. The optics behind it is exact, and every derivative it uses is worked out by hand and cross-checked against an independent method. Grown out of our FabGAN-ID paper (<em>IEEE Sensors Journal</em>, 2026), it accepts any lab's own logged data through a documented file format, and states plainly what a model learned from logs can and cannot promise.</p>
+<p><code>pip install fabtwin</code></p>
+<ul class="pub-actions">
+<li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/fabtwin" rel="noopener">Code · GitHub</a></li>
+<li><a class="chip chip-data" href="https://pypi.org/project/fabtwin/" rel="noopener">Install · PyPI</a></li>
+<li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.22697049" rel="noopener">Archive · Zenodo DOI</a></li>
 </ul>
 </section>
 
