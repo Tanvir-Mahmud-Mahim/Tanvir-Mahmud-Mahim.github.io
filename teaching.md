@@ -6,7 +6,7 @@ permalink: /teaching/
 description: "Teaching and supervision by Tanvir Mahmud Mahim at the Department of Electrical and Electronic Engineering, BRAC University."
 ---
 
-I have taught in the Department of Electrical and Electronic Engineering at BRAC University continuously since January 2022 — first as a Teaching Assistant, then as a Research Assistant supporting undergraduate capstone groups, and since June 2025 as an Adjunct Lecturer.
+I have taught in the Department of Electrical and Electronic Engineering at BRAC University continuously since January 2022: first as a Teaching Assistant, then as a Research Assistant supporting undergraduate capstone groups, and since June 2025 as an Adjunct Lecturer.
 
 ## Roles and courses
 
