@@ -3,10 +3,12 @@ layout: page
 title: "Software"
 subtitle: "General-purpose research tools, released with tests, archived with DOIs."
 permalink: /software/
-description: "Open-source software by Tanvir Mahmud Mahim: ramansep, kpenvelope, sqzcomb, absnoise, cavsqueeze, sparq-triage, hamop and fabtwin: tools for Raman analysis of 2D materials, nitride semiconductor physics, squeezed-light microcombs, superconducting thermal detectors, spin squeezing, single-photon-emitter screening, materials modelling and yield-aware photonic design, maintained under the TaN-MM-Org organization."
+description: "Open-source software by Tanvir Mahmud Mahim: ramansep, kpenvelope, sqzcomb, absnoise, cavsqueeze, sparq-triage, hamop, fabtwin, vacspin and labplan: tools for Raman analysis of 2D materials, nitride semiconductor physics, squeezed-light microcombs, superconducting thermal detectors, spin squeezing, single-photon-emitter screening, materials modelling, yield-aware photonic design, colour-centre spin-photon interfaces and measurement planning, maintained under the TaN-MM-Org organization."
 ---
 
-Eight research tools grew out of the <a href="{{ '/research/' | relative_url }}">research projects</a>. All are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization and installable with a single <a href="https://pypi.org/" rel="noopener">pip</a> command. They share one rule: every physics claim in a release is backed by an automated test that runs publicly at every change, textbook results are reproduced by the code rather than assumed, every built-in physical constant carries a citation to its source, and each release is archived on Zenodo under its own DOI. Each package also states plainly what it does not do yet.
+Ten research tools grew out of the <a href="{{ '/research/' | relative_url }}">research projects</a>. All are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization and installable with a single <a href="https://pypi.org/" rel="noopener">pip</a> command. They share one rule: every physics claim in a release is backed by an automated test that runs publicly at every change, textbook results are reproduced by the code rather than assumed, every built-in physical constant carries a citation to its source, and each release is archived on Zenodo under its own DOI. Each package also states plainly what it does not do yet.
+
+Every package now also carries a laboratory layer: before a measurement is taken, it can tell you which settings to measure and how many repeats a target error bar will cost, and afterwards it fits your own data with honest uncertainties, refusing (with an explanation) whenever the data cannot actually determine what you asked for. The tenth tool, labplan, is that layer extracted into a standalone engine that works with any model you can write as a Python function.
 
 <section class="project">
 <h3>ramansep</h3>
@@ -81,6 +83,18 @@ Eight research tools grew out of the <a href="{{ '/research/' | relative_url }}"
 </section>
 
 <section class="project">
+<h3>vacspin</h3>
+<p class="project-meta">Diamond colour centres · spin-photon interfaces</p>
+<p>Certain atomic-scale defects in diamond, such as the silicon-vacancy, germanium-vacancy and tin-vacancy centres, act as tiny quantum memories that talk to light, which makes them building blocks for quantum networks. vacspin computes how such a centre behaves in a real, imperfect sample: how strain in the crystal and applied magnetic fields shift its energy levels, how cleanly it can be read out in a single shot, and how the fluorescence budget splits between its optical transitions. Every built-in parameter set is a measured, cited value (the silicon-, germanium- and tin-vacancy centres ship with parameters from the defining experiments), and for centres whose parameters are not yet fully measured, the package documents what is known instead of shipping half a parameter set.</p>
+<p><code>pip install vacspin</code></p>
+<ul class="pub-actions">
+<li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/vacspin" rel="noopener">Code · GitHub</a></li>
+<li><a class="chip chip-data" href="https://pypi.org/project/vacspin/" rel="noopener">Install · PyPI</a></li>
+<li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.22819698" rel="noopener">Archive · Zenodo DOI</a></li>
+</ul>
+</section>
+
+<section class="project">
 <h3>hamop</h3>
 <p class="project-meta">Materials modelling · one model, every property</p>
 <p>Many properties of a material (its electronic energy levels, how it absorbs light, how well it carries current, even subtle "topological" properties) are usually computed by separate programs with separate conventions, and the answers can quietly drift apart. hamop computes all of them from one and the same simple model of electrons hopping between atoms, so they cannot disagree with each other by construction. It handles magnetic fields, spin, disorder and very large systems, and its defining habit is distrust of itself: every physical claim in the package is pinned by an automated test against an exact textbook result (over a hundred such tests), and several key quantities are computed by two independent routes that must agree. It was distilled from the modelling pipeline behind the MoS<sub>2</sub> defect study, generalized so any material model can be pushed through it.</p>
@@ -101,6 +115,17 @@ Eight research tools grew out of the <a href="{{ '/research/' | relative_url }}"
 <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/fabtwin" rel="noopener">Code · GitHub</a></li>
 <li><a class="chip chip-data" href="https://pypi.org/project/fabtwin/" rel="noopener">Install · PyPI</a></li>
 <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.22697049" rel="noopener">Archive · Zenodo DOI</a></li>
+</ul>
+</section>
+
+<section class="project">
+<h3>labplan</h3>
+<p class="project-meta">Any experiment · plan, fit, and certify a calibration</p>
+<p>The question every lab faces before every calibration: which settings should we measure, and how many repeats will the error bar we need actually cost? labplan answers it for any instrument or experiment you can describe with a Python function. It plans the measurement before you take it (telling you which settings are most informative and pricing your target error bar in repeats, exactly), fits your data with honest uncertainties once you have it, refuses with an explanation when the data cannot determine what you asked for, and wraps the result in distribution-free error bounds whose coverage holds no matter how wrong the model is. It then writes the record an audit or a lab notebook actually needs: values with error bars, a fingerprint of the raw data, software versions, timestamp and operator. It needs nothing beyond NumPy, and a literature reference is a required field of every model, not a comment.</p>
+<p><code>pip install labplan</code></p>
+<ul class="pub-actions">
+<li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/labplan" rel="noopener">Code · GitHub</a></li>
+<li><a class="chip chip-data" href="https://pypi.org/project/labplan/" rel="noopener">Install · PyPI</a></li>
 </ul>
 </section>
 

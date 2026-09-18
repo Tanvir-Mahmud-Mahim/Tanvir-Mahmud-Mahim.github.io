@@ -40,6 +40,10 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
 <ul class="news">
   <li>
     <span class="news-date">Sep 2026</span>
+    <span class="news-body">The open-source family is now ten tools: <strong>vacspin</strong> (diamond colour-centre spin-photon interfaces, with cited parameters for the silicon-, germanium- and tin-vacancy centres) and <strong>labplan</strong> (plan, fit and certify a calibration of any user-supplied model) join the eight released earlier. Every package now carries a laboratory layer that plans measurements before they are taken and calibrates from the lab's own data with honest uncertainties. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+  </li>
+  <li>
+    <span class="news-date">Sep 2026</span>
     <span class="news-body">A complete written course now covers all eight open-source tools: <strong>Research-Grade Computational Physics in Python</strong>, a 66-page book with 25 runnable code lessons, one module per tool. Every number printed in the book was produced by running the included scripts against the released packages, and each script checks its own textbook results. Available in the <a href="https://www.patreon.com/u40002728" rel="noopener">Patreon shop</a>.</span>
   </li>
   <li>
