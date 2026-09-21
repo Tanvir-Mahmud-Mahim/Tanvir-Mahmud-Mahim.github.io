@@ -3,12 +3,12 @@ layout: page
 title: "Software"
 subtitle: "General-purpose research tools, released with tests, archived with DOIs."
 permalink: /software/
-description: "Open-source software by Tanvir Mahmud Mahim: ramansep, kpenvelope, sqzcomb, absnoise, cavsqueeze, sparq-triage, hamop, fabtwin, vacspin and labplan: tools for Raman analysis of 2D materials, nitride semiconductor physics, squeezed-light microcombs, superconducting thermal detectors, spin squeezing, single-photon-emitter screening, materials modelling, yield-aware photonic design, colour-centre spin-photon interfaces and measurement planning, maintained under the TaN-MM-Org organization."
+description: "Open-source software by Tanvir Mahmud Mahim: ramansep, kpenvelope, sqzcomb, absnoise, cavsqueeze, sparq-triage, hamop, fabtwin, vacspin, labplan, fracpll and lockkernel: tools for Raman analysis of 2D materials, nitride semiconductor physics, squeezed-light microcombs, superconducting thermal detectors, spin squeezing, single-photon-emitter screening, materials modelling, yield-aware photonic design, colour-centre spin-photon interfaces, measurement planning, fractional-N frequency-synthesizer design and synchronization transitions, maintained under the TaN-MM-Org organization."
 ---
 
-Ten research tools grew out of the <a href="{{ '/research/' | relative_url }}">research projects</a>. All are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization and installable with a single <a href="https://pypi.org/" rel="noopener">pip</a> command. They share one rule: every physics claim in a release is backed by an automated test that runs publicly at every change, textbook results are reproduced by the code rather than assumed, every built-in physical constant carries a citation to its source, and each release is archived on Zenodo under its own DOI. Each package also states plainly what it does not do yet.
+Twelve research tools grew out of the <a href="{{ '/research/' | relative_url }}">research projects</a>. All are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization and installable with a single <a href="https://pypi.org/" rel="noopener">pip</a> command. They share one rule: every physics claim in a release is backed by an automated test that runs publicly at every change, textbook results are reproduced by the code rather than assumed, every built-in physical constant carries a citation to its source, and each release is archived on Zenodo under its own DOI. Each package also states plainly what it does not do yet.
 
-Every package now also carries a laboratory layer: before a measurement is taken, it can tell you which settings to measure and how many repeats a target error bar will cost, and afterwards it fits your own data with honest uncertainties, refusing (with an explanation) whenever the data cannot actually determine what you asked for. The tenth tool, labplan, is that layer extracted into a standalone engine that works with any model you can write as a Python function.
+Every package now also carries a laboratory layer: before a measurement is taken, it can tell you which settings to measure and how many repeats a target error bar will cost, and afterwards it fits your own data with honest uncertainties, refusing (with an explanation) whenever the data cannot actually determine what you asked for. One of the tools, labplan, is that layer extracted into a standalone engine that works with any model you can write as a Python function.
 
 <section class="project">
 <h3>ramansep</h3>
@@ -119,6 +119,30 @@ Every package now also carries a laboratory layer: before a measurement is taken
 </section>
 
 <section class="project">
+<h3>fracpll</h3>
+<p class="project-meta">Frequency synthesizers · loop design from measured pieces</p>
+<p>Almost every radio, radar and fast chip contains a phase-locked loop: a circuit that multiplies a clean reference clock up to the gigahertz frequency the system actually needs. Designing one raises the same questions in every technology: is the loop stable, and by how much? How much noise does the fractional divider add? What does the closed loop do to the oscillator noise you measured, and how much timing jitter comes out? Will it lock, and where does charge-pump leakage park the phase? fracpll answers all of these from measured pieces: your tuning curves, your noise points, your pump current, each behind a mandatory provenance field. It computes the divider control sequence with exact integer arithmetic (its average is exact as a fraction, not approximately), validates the noise formula against a simulation of that exact sequence, and refuses, with an explanation, wherever its averaged model stops being trustworthy. Distilled from the GaN-on-SOI PLL co-design study on the Research page, and usable for any charge-pump loop in any technology.</p>
+<p><code>pip install fracpll</code></p>
+<ul class="pub-actions">
+<li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/fracpll" rel="noopener">Code · GitHub</a></li>
+<li><a class="chip chip-data" href="https://pypi.org/project/fracpll/" rel="noopener">Install · PyPI</a></li>
+<li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.22829473" rel="noopener">Archive · Zenodo DOI</a></li>
+</ul>
+</section>
+
+<section class="project">
+<h3>lockkernel</h3>
+<p class="project-meta">Synchronization transitions · exact thresholds and exponents</p>
+<p>Fireflies, heart cells, power grids and laser arrays all do the same thing: above a critical coupling strength, a crowd of individually different oscillators suddenly starts beating together. How sharply that order grows near the onset is set by a single object, the locking kernel: how well one oscillator follows the crowd as a function of how detuned it is. lockkernel computes the whole transition exactly for any frequency spread and any kernel, with no fitting and no simulation error near the critical point, at essentially unlimited numerical precision. And it works in reverse for the lab: given a measured synchronization curve, it fits the threshold and the growth exponent with honest error bars, tells you what the exponent reveals about the underlying kernel, refuses to over-claim when the data cannot distinguish the candidates, and prices how many measurement points a target error bar will cost. It is the maintained distribution of the reference code behind the locking-kernel universality study, with the same tests.</p>
+<p><code>pip install lockkernel</code></p>
+<ul class="pub-actions">
+<li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/lockkernel" rel="noopener">Code · GitHub</a></li>
+<li><a class="chip chip-data" href="https://pypi.org/project/lockkernel/" rel="noopener">Install · PyPI</a></li>
+<li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.22829483" rel="noopener">Archive · Zenodo DOI</a></li>
+</ul>
+</section>
+
+<section class="project">
 <h3>labplan</h3>
 <p class="project-meta">Any experiment · plan, fit, and certify a calibration</p>
 <p>The question every lab faces before every calibration: which settings should we measure, and how many repeats will the error bar we need actually cost? labplan answers it for any instrument or experiment you can describe with a Python function. It plans the measurement before you take it (telling you which settings are most informative and pricing your target error bar in repeats, exactly), fits your data with honest uncertainties once you have it, refuses with an explanation when the data cannot determine what you asked for, and wraps the result in distribution-free error bounds whose coverage holds no matter how wrong the model is. It then writes the record an audit or a lab notebook actually needs: values with error bars, a fingerprint of the raw data, software versions, timestamp and operator. It needs nothing beyond NumPy, and a literature reference is a required field of every model, not a comment.</p>
@@ -126,6 +150,7 @@ Every package now also carries a laboratory layer: before a measurement is taken
 <ul class="pub-actions">
 <li><a class="chip chip-code" href="https://github.com/TaN-MM-Org/labplan" rel="noopener">Code · GitHub</a></li>
 <li><a class="chip chip-data" href="https://pypi.org/project/labplan/" rel="noopener">Install · PyPI</a></li>
+<li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.22826765" rel="noopener">Archive · Zenodo DOI</a></li>
 </ul>
 </section>
 

@@ -40,6 +40,10 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
 <ul class="news">
   <li>
     <span class="news-date">Sep 2026</span>
+    <span class="news-body">Two new tools join the open-source family, now twelve: <strong>fracpll</strong> (design a fractional-N frequency synthesizer from your own measured tuning curves and noise numbers, with the loop model refusing outside its own validity) and <strong>lockkernel</strong> (exact thresholds and exponents of synchronization transitions, plus fits of measured synchronization curves with honest error bars). fracpll grows out of the GaN-on-SOI PLL co-design study on the Research page, and lockkernel is the maintained release of the reference code behind the locking-kernel universality study; both follow the same rule as the rest: every claim is pinned by a public test to a closed form or an exact simulation. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+  </li>
+  <li>
+    <span class="news-date">Sep 2026</span>
     <span class="news-body">The open-source family is now ten tools: <strong>vacspin</strong> (diamond colour-centre spin-photon interfaces, with cited parameters for the silicon-, germanium- and tin-vacancy centres) and <strong>labplan</strong> (plan, fit and certify a calibration of any user-supplied model) join the eight released earlier. Every package now carries a laboratory layer that plans measurements before they are taken and calibrates from the lab's own data with honest uncertainties. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>

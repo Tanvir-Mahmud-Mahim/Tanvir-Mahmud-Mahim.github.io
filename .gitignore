@@ -17,3 +17,7 @@ _to_delete/
 
 # Your original full-size photo. The cropped web version is assets/images/profile.jpg
 Profile_pic.jpg
+
+# Local working notes, not part of the site
+Claude outputs/
+_to_delete/
