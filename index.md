@@ -40,7 +40,11 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
 <ul class="news">
   <li>
     <span class="news-date">Sep 2026</span>
-    <span class="news-body">Two new tools join the open-source family, now twelve: <strong>fracpll</strong> (design a fractional-N frequency synthesizer from your own measured tuning curves and noise numbers, with the loop model refusing outside its own validity) and <strong>lockkernel</strong> (exact thresholds and exponents of synchronization transitions, plus fits of measured synchronization curves with honest error bars). fracpll grows out of the GaN-on-SOI PLL co-design study on the Research page, and lockkernel is the maintained release of the reference code behind the locking-kernel universality study; both follow the same rule as the rest: every claim is pinned by a public test to a closed form or an exact simulation. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+    <span class="news-body">The documentation of all twelve open-source tools has been rewritten in plain language, with worked examples whose printed output is checked by running them. Checking every document line by line against its code also found real bugs; each is fixed, with a new test, in a patch release of every tool, and the release notes list them. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+  </li>
+  <li>
+    <span class="news-date">Sep 2026</span>
+    <span class="news-body">Two new tools join the open-source family, now twelve: <strong>fracpll</strong> (design a fractional-N frequency synthesizer from your own measured tuning curves and noise numbers, with the loop model refusing outside its own validity) and <strong>lockkernel</strong> (exact thresholds and exponents of synchronization transitions, plus fits of measured synchronization curves with honest error bars). fracpll grows out of the GaN-on-SOI PLL co-design study on the Research page, and lockkernel is the maintained release of the reference code behind the locking-kernel universality study; both follow the same rule as the rest: their main results are checked by public tests against closed forms or exact simulations. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Sep 2026</span>
