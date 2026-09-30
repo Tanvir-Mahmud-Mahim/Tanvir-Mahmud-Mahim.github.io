@@ -3,16 +3,16 @@ layout: page
 title: "Research"
 subtitle: "Device physics carried through the instrument, so that the model ends at the number a measurement returns."
 permalink: /research/
-description: "Research of Tanvir Mahmud Mahim: squeezed-light photonics and NV sensing, electrons and phonons in 2D devices, differentiable design of GaN circuits, intelligent grid control, and photovoltaic modeling. Code and data released openly."
+description: "Research of Tanvir Mahmud Mahim: squeezed-light microcombs, diamond quantum sensing and photonic machine learning; GaN and 2D semiconductor devices and physics-guided design; and learning-based grid control and bifacial photovoltaics. Code and data released openly."
 ---
 
 Each project below is built as a single description that runs from a material's electronic structure to the quantity an instrument reports: nothing is fitted where it can be computed. And because the model's sensitivities can be traced end to end, the chain also runs in reverse: to recover a hidden quantity from data, or to turn a target specification into a geometry.
 
 Work marked <span class="tag tag-review">Under review</span> is currently in peer review. The <a href="{{ '/publications/' | relative_url }}">Publications</a> page lists only accepted records. Code and datasets are released openly as each project reaches maturity.
 
-<h2 id="quantum-optics">Squeezed-light photonics and NV sensing</h2>
+<h2 id="quantum-optics">Squeezed-light microcombs, diamond quantum sensing and photonic machine learning</h2>
 
-<p class="section-lead">Conducted with Dr. A. S. M. Mohsin, Department of EEE, BRAC University, since July 2025. This work develops models of quantum photonic hardware, together with learned controllers that close the loop around it: squeezed-light sources, nitrogen-vacancy (NV) diamond magnetometers and single-photon instruments.</p>
+<p class="section-lead">Conducted with Dr. A. S. M. Mohsin, Department of EEE, BRAC University, since January 2025. This work develops models of quantum photonic hardware, together with learned controllers that close the loop around it: squeezed-light sources, nitrogen-vacancy (NV) diamond magnetometers and single-photon instruments.</p>
 
 <section class="project">
   <h3>Overcoming the 3 dB squeezing extraction limit in silicon-carbide microcombs</h3>
@@ -104,9 +104,9 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   </ul>
 </section>
 
-<h2 id="quantum-materials-mems">Electrons and phonons in 2D devices</h2>
+<h2 id="quantum-materials-mems">GaN and 2D semiconductor devices and physics-guided design</h2>
 
-<p class="section-lead">Conducted with Prof. Md. Mosaddequr Rahman, Department of EEE, BRAC University, from July 2024 to July 2026. This work follows charge carriers and lattice vibrations (phonons) through nitride and single-layer semiconductor channels, from the underlying quantum states up to the masses, lifetimes and circuit-level numbers experiments report, and applies physics-in-the-loop inverse design to micromachined transducers.</p>
+<p class="section-lead">Conducted with Prof. Md. Mosaddequr Rahman, Department of EEE, BRAC University, from July 2024 to July 2026. This work follows charge carriers and lattice vibrations (phonons) through nitride and single-layer semiconductor channels, from the underlying quantum states up to the masses, lifetimes and circuit-level numbers experiments report, and applies physics-in-the-loop inverse design to micromachined transducers. A collaboration with Dr. Nadim Chowdhury at BUET carries the same physics-guided approach into circuit design, described at the end of this section.</p>
 
 <section class="project">
   <h3>Resolving the conflicting hole masses of the GaN/AlN two-dimensional hole gas</h3>
@@ -194,9 +194,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   </ul>
 </section>
 
-<h2 id="wbg-devices">Differentiable design of GaN circuits</h2>
-
-<p class="section-lead">Conducted with Dr. Nadim Chowdhury, Department of EEE, BUET, from May 2025 to June 2026. This work carries gradients through the compact models and the loop equations of a GaN circuit, so that the circuit can be designed by optimization, and develops reinforcement-learning methods that transfer across process nodes.</p>
+<p class="section-lead sub-lead" id="wbg-devices"><strong>Physics-guided circuit design.</strong> Conducted in collaboration with Dr. Nadim Chowdhury, Department of EEE, BUET, from May 2025 to June 2026. This work carries gradients through the compact models and the loop equations of a GaN circuit, so that the circuit can be designed by optimization, and develops reinforcement-learning methods that transfer across process nodes.</p>
 
 <section class="project">
   <h3>Co-designing a monolithic GaN-on-SOI fractional-N PLL</h3>
@@ -216,7 +214,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <section class="project">
   <h3>Transferable analog transistor sizing with graph reinforcement learning</h3>
-  <p class="project-meta">With GlobalFoundries, Inc., Santa Clara, USA · interval type-2 fuzzy rewards · 180/130/65/45 nm<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
+  <p class="project-meta">With GlobalFoundries, Inc., USA · interval type-2 fuzzy rewards · 180/130/65/45 nm<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/graph-rl-transistor-sizing.jpg' | relative_url }}" alt="Transistor sizing loop: a circuit graph encoded by a graph convolutional network feeds a soft actor-critic agent driving ngspice across open PDKs, with an interval type-2 fuzzy reward and a physics-in-the-loop adjoint supplying exact gradients to the actor." width="1131" height="522" loading="lazy">
@@ -230,9 +228,9 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   </ul>
 </section>
 
-<h2 id="control-energy">Intelligent grid control</h2>
+<h2 id="control-energy">Learning-based grid control and bifacial photovoltaics</h2>
 
-<p class="section-lead">Conducted with Dr. A. H. M. A. Rahim (retired December 2024) from May 2023 to June 2024. This work develops controllers that adapt their own inference rules, applied to grid-connected machines under fault conditions.</p>
+<p class="section-lead">Conducted with Dr. A. H. M. A. Rahim (retired December 2024) from May 2023 to June 2024. This work develops controllers that adapt their own inference rules, applied to grid-connected machines under fault conditions, and a custom-built bifacial solar module.</p>
 
 <section class="project">
   <h3>Fuzzy inference with reinforcement learning for DFIG low-voltage ride-through</h3>
@@ -252,9 +250,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   </ul>
 </section>
 
-<h2 id="photovoltaics">Photovoltaic modeling: from cell physics to systems</h2>
-
-<p class="section-lead">Conducted with Dr. A. H. M. A. Rahim and Prof. Md. Mosaddequr Rahman between 2023 and 2026. A custom-built bifacial module was characterized experimentally and then modeled from the one-diode equations upward.</p>
+<p class="section-lead sub-lead" id="photovoltaics"><strong>Bifacial photovoltaics.</strong> Conducted with Dr. A. H. M. A. Rahim and Prof. Md. Mosaddequr Rahman. A custom-built bifacial module was characterized experimentally and then modeled from the one-diode equations upward. The agrivoltaics review that closes this section is a later publication, written with Prof. Md. Mosaddequr Rahman and Dr. A. S. Nazmul Huda.</p>
 
 <section class="project">
   <h3>Weather-responsive efficiency model for a custom-built bifacial panel</h3>
@@ -286,4 +282,4 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="software">Open-source software</h2>
 
-<p class="section-lead">Beyond the per-paper repositories above, eight general-purpose tools distilled from this research (<strong>ramansep</strong>, <strong>kpenvelope</strong>, <strong>sqzcomb</strong>, <strong>absnoise</strong>, <strong>cavsqueeze</strong>, <strong>SPARQ</strong>, <strong>hamop</strong> and <strong>fabtwin</strong>) are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization, with tested cores, continuous integration and archived DOIs. They have a page of their own: <a href="{{ '/software/' | relative_url }}">Software</a>.</p>
+<p class="section-lead">Beyond the per-paper repositories above, twelve general-purpose tools distilled from this research (<strong>ramansep</strong>, <strong>kpenvelope</strong>, <strong>sqzcomb</strong>, <strong>absnoise</strong>, <strong>cavsqueeze</strong>, <strong>SPARQ</strong>, <strong>hamop</strong>, <strong>fabtwin</strong>, <strong>vacspin</strong>, <strong>labplan</strong>, <strong>fracpll</strong> and <strong>lockkernel</strong>) are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization, with tested cores, continuous integration and archived DOIs. They have a page of their own: <a href="{{ '/software/' | relative_url }}">Software</a>.</p>

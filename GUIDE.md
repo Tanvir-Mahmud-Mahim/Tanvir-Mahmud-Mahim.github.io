@@ -284,18 +284,22 @@ automatically: add `code:` and `dataset:` lines to a paper's front matter in
 
 ### Linking to a research area from elsewhere
 
-Each of the five area headings on `research.md` is written as raw HTML with a
-fixed id, so other pages can jump straight to it:
+Each of the three research-area headings on `research.md`, and the software
+heading, is written as raw HTML with a fixed id, so other pages can jump straight
+to it:
 
 ```html
-<h2 id="quantum-optics">Squeezed-light photonics and NV sensing</h2>
+<h2 id="quantum-optics">Squeezed-light microcombs, diamond quantum sensing and photonic machine learning</h2>
 ```
 
-The ids are `quantum-optics`, `quantum-materials-mems`, `wbg-devices`,
-`control-energy`, `photovoltaics` and `software`. Link to one like this:
+The area ids are `quantum-optics`, `quantum-materials-mems` and `control-energy`,
+and the software section is `software`. Two sub-parts inside an area carry ids of
+their own on their lead paragraphs: `wbg-devices` (physics-guided circuit design,
+inside the GaN and 2D area) and `photovoltaics` (bifacial photovoltaics, inside
+the grid-control area). Link to one like this:
 
 ```html
-<a href="{{ '/research/#quantum-optics' | relative_url }}">Squeezed-light photonics</a>
+<a href="{{ '/research/#quantum-optics' | relative_url }}">Squeezed-light microcombs</a>
 ```
 
 The About page uses exactly this to send each of its bolded area names to the
