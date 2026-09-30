@@ -40,6 +40,10 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
 <ul class="news">
   <li>
     <span class="news-date">Sep 2026</span>
+    <span class="news-body">All twelve open-source tools have new releases. Most fix results that could be wrong without a warning, and several add tools for working with measured lab data; each release lists its changes with before-and-after numbers, and every new result is checked by public tests. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+  </li>
+  <li>
+    <span class="news-date">Sep 2026</span>
     <span class="news-body">The documentation of all twelve open-source tools has been rewritten in plain language, with worked examples whose printed output is checked by running them. Checking every document line by line against its code also found real bugs; each is fixed, with a new test, in a patch release of every tool, and the release notes list them. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
