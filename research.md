@@ -99,18 +99,23 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <section class="project">
   <h3>FabGAN-ID: learned fabrication twins for yield-aware photonic design</h3>
-  <p class="project-meta">Generative process models · differentiable CVaR optimization · photonic sensor front-ends<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
+  <p class="project-meta">Generative process models · differentiable CVaR optimization · multilayer photonic sensor filters<span class="sep">|</span><span class="tag tag-published">Published · IEEE Sensors Journal 2026</span></p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/fabgan-id-yield-aware.jpg' | relative_url }}" alt="FabGAN-ID pipeline from process traces through a GAN fabrication twin and a differentiable CVaR loop to a yield-qualified sensor, with plots showing the learned twin reproducing heavy error tails and the yield tail lifted by 7.2 percent." width="925" height="706" loading="lazy">
-    <figcaption>Process traces feed a conditional GAN fabrication twin, which sits inside a differentiable conditional-value-at-risk loop. <b>Left:</b> the learned twin reproduces the heavy tails of the true thickness-error distribution that Gaussian models miss. <b>Right:</b> the 5% CVaR yield floor of a 532 nm notch filter, lifted by 7.2 points over the nominal design.</figcaption>
+    <figcaption>Process traces feed a conditional GAN fabrication twin, which sits inside a differentiable conditional-value-at-risk (CVaR) loop. <b>Left:</b> the learned twin reproduces the heavy tails of the true thickness-error distribution. <b>Right:</b> on the true process, the lower-tail merit (CVaR at 5%) of a 532 nm notch filter rises by 7.2% over the nominal design. Graphical abstract of the <em>IEEE Sensors Journal</em> paper.</figcaption>
   </figure>
 
-  <p>Designs that must survive manufacturing variation are usually optimized against the assumption that the variation is Gaussian (bell-shaped and independent). Real fabrication error is not: it is systematic, correlated and heavy-tailed, and that is what actually governs yield. FabGAN-ID learns the real distribution from the factory's own record, using a generative network (a conditional, moment-matched Wasserstein GAN) trained on only <strong>400 historical process traces</strong>. Placed inside a fully differentiable optimization loop with an exact physics solver, the learned model lets the designer optimize the worst-case tail of the yield directly (conditional value-at-risk). That <strong>improves the yield floor of a 532 nm fluorescence-rejection notch filter by 7.2%</strong> over the nominal design, and outperforms every Gaussian-based robustification method on the true fabrication process. It also supports analytic policy-gradient optimization of specification-conditioned correction policies, where model-free reinforcement learning fails. Released with 48,300 spectra and 400 fabrication traces.</p>
+  <p>A multilayer optical filter is a stack of thin layers, and no deposition machine builds exactly the stack it is asked for. Designs that must survive this are usually optimized against an assumed error model, most often independent Gaussian (bell-shaped) errors. Real deposition errors are different. They are systematic, correlated between layers, dependent on the design, skewed and heavy-tailed, and the manufacturing yield is decided in that tail.</p>
+
+  <p>FabGAN-ID replaces the assumed error model with a learned one: a conditional, moment-matched Wasserstein GAN trained on only <strong>400 process traces</strong> of a variable-index SiN<sub>x</sub> multilayer platform. On the statistics that decide yield (the 5th percentile and the CVaR, the average over the worst 5%), its error is <strong>34 to 38% lower</strong> than that of the best of eight standard density models fitted to the same data. Because the optical solver and the GAN are both differentiable, the design is optimized through both at once. On a held-out true process, this raises the lower-tail merit of a 532 nm fluorescence-rejection notch filter by <strong>7.2%</strong> over the nominal design. That matches an independent oracle that knows the true process, and beats every robust design built on a Gaussian error model. The simulated pass/fail yield rises from <strong>0.16% to 63.7%</strong>.</p>
+
+  <p>The study is fully simulation-based: the traces come from a virtual process, and the next step is to learn the twin from real wafer data. In an exploratory comparison, the same gradients also train correction policies, where model-free reinforcement learning did not converge. Neural surrogates of the optics failed on held-out designs and ran 18 times slower than the exact solver. The benchmark (300 spectra, 48,300 wavelength and transmittance samples, and 400 traces) is released openly.</p>
 
   <ul class="pub-actions">
+    <li><a class="chip chip-paper" href="https://doi.org/10.1109/JSEN.2026.3732239" rel="noopener">Paper · IEEE Sensors Journal</a></li>
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/Learned-generative-process-twins-for-yield-aware-inverse-design-of-multilayer-photonic-sensor" rel="noopener">Code · GitHub</a></li>
-    <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.21315794" rel="noopener">Data · Zenodo</a></li>
+    <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.21315793" rel="noopener">Data · Zenodo</a></li>
   </ul>
 </section>
 
@@ -164,7 +169,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <section class="project">
   <h3>What sets the memory window of a 2D ferroelectric transistor</h3>
-  <p class="project-meta">CuInP<sub>2</sub>S<sub>6</sub> ferroelectric · monolayer WSe<sub>2</sub> · memory window · strain and interface traps<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
+  <p class="project-meta">CuInP<sub>2</sub>S<sub>6</sub> ferroelectric · monolayer WSe<sub>2</sub> · memory window · strain and interface traps<span class="sep">|</span><span class="tag tag-published">In press · Materials Today Communications 2026</span></p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/wse2-cips-mfmis-fefet.png' | relative_url }}" alt="Device concept: a strained monolayer WSe2 channel under h-BN, a floating metal gate, a 30 nm CuInP2S6 ferroelectric and a top gate, with a legend of the layers; the light K and heavy Gamma valence-band valleys, pushed apart by compression; and the simulation chain from strained transport to nonvolatile logic." width="1600" height="696" loading="lazy">
@@ -175,11 +180,12 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
   <p>This work derives a simple formula for the window, read at a fixed current. It holds when the internal floating gate is an ideal conductor, the ferroelectric carries no extra charge, and the current depends on the channel in the same way on both sweeps. Then the channel's own properties cancel out. The window depends only on the ferroelectric thickness, its switched polarization, and the charge trapped at the channel surface. In simulation the formula agrees with the full model to 0.02%, even while strain changes the hole mobility 26-fold. This checks the maths of the model, not the physics.</p>
 
-  <p>The channel still matters, but only in limited ways. It acts through the polarization left behind after programming. The window stays independent of the channel only when two things hold. The channel must take on charge about ten times more easily than the h-BN layer at full programming. And the read current must stay below the point where switching starts. On the channel side, trapped interface charge is the main limit: the window loses less than 6% up to about 10<sup>12</sup> traps per cm<sup>2</sup> per eV, a level that clean h-BN interfaces meet.</p>
+  <p>The channel still matters, but only in limited ways. It acts through the polarization left behind after programming. The window stays independent of the channel only when two things hold. The channel must take on charge about ten times more easily than the h-BN layer at full programming. And the read current must stay below the point where switching starts. On the channel side, trapped interface charge is the main limit: the window loses less than 6% up to about 10<sup>12</sup> traps per cm<sup>2</sup> per eV, a level that h-BN interfaces meet but CVD-grown channels do not.</p>
 
   <p>In the model, strain therefore becomes a pure transport knob. At 1% compression, the hole mobility rises 2.38 times and the stored read current <strong>1.90 times, while the 1.434 V window moves by only 0.22%</strong>. Projected circuits, with an assumed n-type partner transistor, keep their state through power loss, with a static noise margin of 642 mV. Their worst-case static power is 5.0 fW, against 1.8 µW if the same stage used the 5 MΩ load resistor of an earlier CIPS inverter. The work is theoretical: no device was made. It proposes a single fabrication run that could prove these predictions wrong.</p>
 
   <ul class="pub-actions">
+    <li><a class="chip chip-paper" href="https://doi.org/10.1016/j.mtcomm.2026.116333" rel="noopener">Paper · Materials Today Communications</a></li>
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/Process-induced-compressive-strain-with-a-van-der-Waals-ferroelectric-gate-in-a-single-device" rel="noopener">Code · GitHub</a></li>
     <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.22084359" rel="noopener">Data · Zenodo</a></li>
   </ul>
