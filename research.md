@@ -169,7 +169,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <section class="project">
   <h3>What sets the memory window of a 2D ferroelectric transistor</h3>
-  <p class="project-meta">CuInP<sub>2</sub>S<sub>6</sub> ferroelectric · monolayer WSe<sub>2</sub> · memory window · strain and interface traps<span class="sep">|</span><span class="tag tag-published">In press · Materials Today Communications 2026</span></p>
+  <p class="project-meta">CuInP<sub>2</sub>S<sub>6</sub> ferroelectric · monolayer WSe<sub>2</sub> · memory window · strain and interface traps<span class="sep">|</span><span class="tag tag-published">Published · Materials Today Communications 2026</span></p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/wse2-cips-mfmis-fefet.png' | relative_url }}" alt="Device concept: a strained monolayer WSe2 channel under h-BN, a floating metal gate, a 30 nm CuInP2S6 ferroelectric and a top gate, with a legend of the layers; the light K and heavy Gamma valence-band valleys, pushed apart by compression; and the simulation chain from strained transport to nonvolatile logic." width="1600" height="696" loading="lazy">
@@ -182,7 +182,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
   <p>The channel still matters, but only in limited ways. It acts through the polarization left behind after programming. The window stays independent of the channel only when two things hold. The channel must take on charge about ten times more easily than the h-BN layer at full programming. And the read current must stay below the point where switching starts. On the channel side, trapped interface charge is the main limit: the window loses less than 6% up to about 10<sup>12</sup> traps per cm<sup>2</sup> per eV, a level that h-BN interfaces meet but CVD-grown channels do not.</p>
 
-  <p>In the model, strain therefore becomes a pure transport knob. At 1% compression, the hole mobility rises 2.38 times and the stored read current <strong>1.90 times, while the 1.434 V window moves by only 0.22%</strong>. Projected circuits, with an assumed n-type partner transistor, keep their state through power loss, with a static noise margin of 642 mV. Their worst-case static power is 5.0 fW, against 1.8 µW if the same stage used the 5 MΩ load resistor of an earlier CIPS inverter. The work is theoretical: no device was made. It proposes a single fabrication run that could prove these predictions wrong.</p>
+  <p>In the model, strain therefore becomes a pure transport knob. At 1% compression, the hole mobility rises 2.38 times and the stored read current <strong>1.90 times, while the window barely moves: 1.4342 V without strain and 1.4349 V at 1% compression</strong>. Projected circuits, with an assumed n-type partner transistor, keep their state through power loss, with a static noise margin of 642 mV. Their worst-case static power is 5.0 fW, against 1.8 µW if the same stage used the 5 MΩ load resistor of an earlier CIPS inverter. The work is theoretical: no device was made. It proposes a single fabrication run that could prove these predictions wrong.</p>
 
   <ul class="pub-actions">
     <li><a class="chip chip-paper" href="https://doi.org/10.1016/j.mtcomm.2026.116333" rel="noopener">Paper · Materials Today Communications</a></li>
