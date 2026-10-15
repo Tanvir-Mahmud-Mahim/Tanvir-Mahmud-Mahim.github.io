@@ -55,7 +55,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <section class="project">
   <h3>SPARQ: autonomous triage of solid-state single-photon emitters</h3>
-  <p class="project-meta">With the University of Memphis, USA · spiking networks · adaptive photon-correlation measurement<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
+  <p class="project-meta">With the University of Memphis, USA · spiking networks · adaptive photon-correlation measurement<span class="sep">|</span><span class="tag tag-published">Published · ACS Photonics 2026</span></p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/sparq-hbt-triage-pipeline.png' | relative_url }}" alt="Measurement pipeline: a laser excites one candidate site, the light is split onto two single-photon detectors and a time tagger builds the photon-pair histogram; an early-decision estimator and an exposure controller decide to keep measuring, certify or reject. Below: the spiking network's running estimate for a single emitter and for three emitters; the simulator that makes the training data; and the level-structure graphs that tell the estimator the emitter type." width="1600" height="1042" loading="lazy">
@@ -71,6 +71,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <p>The paper also reports what did not help. A simple rule that stops once the estimate is confident was faster still: 3.8 times faster than the fixed scan, against 1.7 times for the learned controller. The spiking network showed no energy advantage. The closed-loop results are in simulation only.</p>
 
   <ul class="pub-actions">
+    <li><a class="chip chip-paper" href="https://doi.org/10.1021/acsphotonics.6c01984" rel="noopener">Paper · ACS Photonics</a></li>
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/a-spiking-RL-triage-of-solid-state-single-photon-emitters" rel="noopener">Code · GitHub</a></li>
     <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.21352758" rel="noopener">Data · Zenodo</a></li>
   </ul>
