@@ -54,6 +54,27 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 </section>
 
 <section class="project">
+  <h3>Fast single-shot readout of tin-vacancy spins on thin-film lithium niobate</h3>
+  <p class="project-meta">Diamond nanocavity · thin-film lithium niobate · spin-photon interface<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
+
+  <figure class="project-figure">
+    <img src="{{ '/assets/images/research/snv-tfln-fast-readout.png' | relative_url }}" alt="Top and side views of a diamond nanobeam cavity holding one tin-vacancy spin, tapered onto a 600 nm thin-film lithium niobate waveguide that leads to a detector; the spin's energy levels and optical lines; and a plot of how strongly each line is excited versus laser detuning, with the dark-state leak marked." width="1600" height="776" loading="lazy">
+    <figcaption><b>(a)</b> The device, not to scale. A diamond nanobeam cavity holds one tin-vacancy (SnV<sup>−</sup>) spin. Ten mirror periods close one side. The other side is left open (loaded <em>Q</em> ≈ 870). A taper hands the light to a 600 nm lithium niobate waveguide, which carries it to the detector. <b>(b)</b> The energy levels used by the readout model. The laser and the cavity are tuned to the A1 line of the bright spin state. B2 is the matching line of the dark spin state. <b>(c)</b> How strongly each line is excited, versus detuning from A1. The dot marks the unwanted excitation of the dark spin at the laser frequency.</figcaption>
+  </figure>
+
+  <p>A tin-vacancy center is a defect in diamond that stores a quantum bit in its spin and talks to light. That makes it a candidate node for quantum networks. But it has a built-in conflict. Strain in the crystal makes microwave control of the spin fast. The same strain makes the spin flip more often while it is being read. Single-shot readout needs many detected photons before such a flip, and a microscope detects only 0.1 to 0.4% of them. So readout has limited both the strain and the direction of the magnetic field.</p>
+
+  <p>This work shows by simulation that collecting the light efficiently removes the conflict. A diamond nanobeam cavity with an intrinsic quality factor of 1.4 × 10<sup>6</sup> is deliberately spoiled. It is opened on one side to a loaded quality factor of 870 (Purcell factor 28), and 92% of the light it releases enters the output waveguide. A short taper then passes 99.7% of that light to a lithium niobate waveguide on the same chip. With measured fiber-coupling and detector efficiencies, <strong>32% of the emitted photons are detected</strong>, about a hundred times more than with a microscope. A four-level model, built from the strained spin's own energy levels, predicts <strong>98.8% single-shot fidelity in 0.1 µs</strong>, against a measured 87.4% in 50 µs with a microscope. The fidelity stays above 98.1% for every strain studied, so strain can be chosen for fast control. It stays above 90% for magnetic fields up to 40° away from the spin axis.</p>
+
+  <p>Why spoil a good cavity? Once its Purcell factor passes about ten, a stronger cavity collects only a little more light. But it also broadens the optical line, and the broader line starts to excite the dark spin through its own transition, only 0.73 GHz away. Those stray photons blur the difference between the two spin states. So the fidelity is best for a moderate, strongly overcoupled cavity. The design also gives a practical rule for the taper. A 600 nm lithium niobate waveguide merges the diamond and lithium niobate modes smoothly, while a 400 nm one passes almost no light. The spin model reproduces published measurements of the same emitter with no adjusted parameters. The taper, the cavity loading and the readout are checked against errors in placement, etching, linewidth and background light. All results are simulated. The largest risk not modeled is that the center's charge state becomes unstable under the readout laser. The general-purpose tool vacspin, on the <a href="{{ '/software/' | relative_url }}">Software</a> page, grew out of this study.</p>
+
+  <ul class="pub-actions">
+    <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/snv-tfln-cavity-interface" rel="noopener">Code · GitHub</a></li>
+    <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.23507013" rel="noopener">Data · Zenodo</a></li>
+  </ul>
+</section>
+
+<section class="project">
   <h3>SPARQ: autonomous triage of solid-state single-photon emitters</h3>
   <p class="project-meta">With the University of Memphis, USA · spiking networks · adaptive photon-correlation measurement<span class="sep">|</span><span class="tag tag-published">Published · ACS Photonics 2026</span></p>
 
