@@ -33,27 +33,6 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 </section>
 
 <section class="project">
-  <h3>Listening to vortex noise: which trapped vortices cause loss in tantalum qubits</h3>
-  <p class="project-meta">Diamond NV spin sensors · vortex noise · superconducting-qubit loss<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
-
-  <figure class="project-figure">
-    <img src="{{ '/assets/images/research/nv-vortex-noise-loss.png' | relative_url }}" alt="Three parts: a tantalum film with holes under a diamond membrane, holding flux in a hole (no core, silent) and a vortex between holes (moving core, noisy); simulated static field and spin relaxation maps of a 2 by 2 micrometre film, where all trapped flux is bright in the field map but only the vortices between holes are bright in the noise map; and the link from NV noise to microwave loss per vortex." width="1600" height="598" loading="lazy">
-    <figcaption><b>Left:</b> after cooling in a small magnetic field, a tantalum film holds two kinds of trapped flux. Flux held in a hole has no core and stays silent. A vortex between holes has a core that moves, so it makes noise. A diamond membrane with NV spin sensors sits on top. <b>Middle:</b> a simulated 2 × 2 µm film. In the static field map every trapped flux quantum is bright. In the noise map (spin relaxation, 1/<em>T</em>₁) only the vortices between holes light up. <b>Right:</b> the fluctuation–dissipation theorem turns the measured noise into the microwave loss that each vortex adds.</figcaption>
-  </figure>
-
-  <p>Vortices are tiny whirlpools of magnetic flux. They get trapped when a superconducting film is cooled in a stray magnetic field. When a microwave current pushes a vortex, its core moves and wastes energy. This loss has been seen in tantalum, the film used in record-coherence qubits, and patterned holes reduce it. But a resonator measurement gives only the total loss. It cannot say which trapped flux is lossy. A static magnetic image cannot say either: flux held in a hole and a vortex between holes look alike from above.</p>
-
-  <p>This work shows that the noise of a vortex answers the question, and also measures its loss. A basic law of physics, the fluctuation–dissipation theorem, says that anything that absorbs energy when driven must also jitter on its own. So a lossy vortex is noisy, and flux held in a hole is silent. A diamond spin sensor (a nitrogen-vacancy, or NV, centre) can hear this noise. The calculation uses measured tantalum values, plus an assumed film thickness and penetration depth, which are scanned. It finds that one moving vortex makes an NV spin 50 nm away relax at <strong>1.4 × 10<sup>5</sup> per second at 2 K, about 6,000 times the rate caused by the superconducting film's own noise</strong>. Simulations of cooled films confirm the picture. Flux held in holes is as bright as a vortex in a static image, but adds no noise. Under a 5 GHz drive, each vortex between holes wastes energy within 6% of the textbook value for a freely moving vortex, while flux held in a hole wastes at most 9% as much.</p>
-
-  <p>For vortices held only weakly in place, the noise therefore works as a calibrated loss meter, with no free parameter. In a test on noisy simulated data, it recovered the loss of each vortex within 1.5% whenever the vortex's pinning frequency was below about 2 GHz. It also gives a design rule. Stronger pinning lowers the loss only if it pushes the pinning frequency above the qubit frequency. For a 5 GHz qubit on tantalum, that needs a pinning stiffness above 2.3 × 10<sup>−4</sup> N/m. Holes work differently, because they hold flux without a core. In simulated 2 × 2 µm films at one cooling field, holes cut the number of lossy vortices from 19 to 2 or 3, although the count also depends on how the film is cooled. The proposed experiment needs only parts that already exist. It would count the lossy vortices at 2 K and predict their loss before the qubit is cooled to millikelvin temperatures, assuming the vortex drag does not change with temperature.</p>
-
-  <ul class="pub-actions">
-    <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/nv-membrane-vortex-sensing" rel="noopener">Code · GitHub</a></li>
-    <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.23022201" rel="noopener">Data · Zenodo</a></li>
-  </ul>
-</section>
-
-<section class="project">
   <h3>Fast single-shot readout of tin-vacancy spins on thin-film lithium niobate</h3>
   <p class="project-meta">Diamond nanocavity · thin-film lithium niobate · spin-photon interface<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
@@ -71,6 +50,27 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <ul class="pub-actions">
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/snv-tfln-cavity-interface" rel="noopener">Code · GitHub</a></li>
     <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.23507013" rel="noopener">Data · Zenodo</a></li>
+  </ul>
+</section>
+
+<section class="project">
+  <h3>Listening to vortex noise: which trapped vortices cause loss in tantalum qubits</h3>
+  <p class="project-meta">Diamond NV spin sensors · vortex noise · superconducting-qubit loss<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
+
+  <figure class="project-figure">
+    <img src="{{ '/assets/images/research/nv-vortex-noise-loss.png' | relative_url }}" alt="Three parts: a tantalum film with holes under a diamond membrane, holding flux in a hole (no core, silent) and a vortex between holes (moving core, noisy); simulated static field and spin relaxation maps of a 2 by 2 micrometre film, where all trapped flux is bright in the field map but only the vortices between holes are bright in the noise map; and the link from NV noise to microwave loss per vortex." width="1600" height="598" loading="lazy">
+    <figcaption><b>Left:</b> after cooling in a small magnetic field, a tantalum film holds two kinds of trapped flux. Flux held in a hole has no core and stays silent. A vortex between holes has a core that moves, so it makes noise. A diamond membrane with NV spin sensors sits on top. <b>Middle:</b> a simulated 2 × 2 µm film. In the static field map every trapped flux quantum is bright. In the noise map (spin relaxation, 1/<em>T</em>₁) only the vortices between holes light up. <b>Right:</b> the fluctuation–dissipation theorem turns the measured noise into the microwave loss that each vortex adds.</figcaption>
+  </figure>
+
+  <p>Vortices are tiny whirlpools of magnetic flux. They get trapped when a superconducting film is cooled in a stray magnetic field. When a microwave current pushes a vortex, its core moves and wastes energy. This loss has been seen in tantalum, the film used in record-coherence qubits, and patterned holes reduce it. But a resonator measurement gives only the total loss. It cannot say which trapped flux is lossy. A static magnetic image cannot say either: flux held in a hole and a vortex between holes look alike from above.</p>
+
+  <p>This work shows that the noise of a vortex answers the question, and also measures its loss. A basic law of physics, the fluctuation–dissipation theorem, says that anything that absorbs energy when driven must also jitter on its own. So a lossy vortex is noisy, and flux held in a hole is silent. A diamond spin sensor (a nitrogen-vacancy, or NV, centre) can hear this noise. The calculation uses measured tantalum values, plus an assumed film thickness and penetration depth, which are scanned. It finds that one moving vortex makes an NV spin 50 nm away relax at <strong>1.4 × 10<sup>5</sup> per second at 2 K, about 6,000 times the rate caused by the superconducting film's own noise</strong>. Simulations of cooled films confirm the picture. Flux held in holes is as bright as a vortex in a static image, but adds no noise. Under a 5 GHz drive, each vortex between holes wastes energy within 6% of the textbook value for a freely moving vortex, while flux held in a hole wastes at most 9% as much.</p>
+
+  <p>For vortices held only weakly in place, the noise therefore works as a calibrated loss meter, with no free parameter. In a test on noisy simulated data, it recovered the loss of each vortex within 1.5% whenever the vortex's pinning frequency was below about 2 GHz. It also gives a design rule. Stronger pinning lowers the loss only if it pushes the pinning frequency above the qubit frequency. For a 5 GHz qubit on tantalum, that needs a pinning stiffness above 2.3 × 10<sup>−4</sup> N/m. Holes work differently, because they hold flux without a core. In simulated 2 × 2 µm films at one cooling field, holes cut the number of lossy vortices from 19 to 2 or 3, although the count also depends on how the film is cooled. The proposed experiment needs only parts that already exist. It would count the lossy vortices at 2 K and predict their loss before the qubit is cooled to millikelvin temperatures, assuming the vortex drag does not change with temperature.</p>
+
+  <ul class="pub-actions">
+    <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/nv-membrane-vortex-sensing" rel="noopener">Code · GitHub</a></li>
+    <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.23022201" rel="noopener">Data · Zenodo</a></li>
   </ul>
 </section>
 
