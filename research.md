@@ -147,7 +147,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <section class="project">
   <h3>Origin of the conflicting hole masses in the GaN/AlN two-dimensional hole gas</h3>
-  <p class="project-meta">Six-band band structure · self-consistent electrostatics · Landau levels · two-subband transport<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
+  <p class="project-meta">Six-band band structure · self-consistent electrostatics · Landau levels · two-subband transport<span class="sep">|</span><span class="tag tag-published">Accepted · Physical Review B 2026</span></p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/gan-2dhg-conflicting-masses.png' | relative_url }}" alt="Two panels: the GaN on AlN layer stack carrying the two-dimensional hole gas, with the computed hole distribution inset; and a chart of what quantum oscillations, cyclotron resonance and two-carrier Hall measurements each report, the four places their results disagree, and how this work accounts for each." width="1600" height="864" loading="lazy">
@@ -163,6 +163,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <p>For scattering, no single mechanism explains both subbands at once. The heavy-hole quantum mobility had been estimated from the field where its oscillations first appear. That overestimates it, because the heavy holes carry most of the current. A fit of the published oscillations gives <strong>95 cm<sup>2</sup> V<sup>−1</sup> s<sup>−1</sup> instead of 167 to 200</strong>. With this value, the four measured mobilities fix the kind of disorder. On top of interface roughness, there is smooth, long-range disorder that needs charged line defects threading the hole gas, together with a flatter component. The two-carrier Hall analysis is not the cause of the disagreement.</p>
 
   <ul class="pub-actions">
+    <li><a class="chip chip-paper" href="https://doi.org/10.1103/zn44-nmx8" rel="noopener">Paper · Physical Review B (accepted)</a></li>
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/gan-2dhg-masses-lifetimes" rel="noopener">Code · GitHub</a></li>
     <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.21791358" rel="noopener">Data · Zenodo</a></li>
   </ul>
