@@ -18,7 +18,7 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Rese
   <div class="entry-what">
     <h3>B.Sc. in Electrical and Electronic Engineering</h3>
     <p class="entry-where">BRAC University, Dhaka, Bangladesh</p>
-    <p>CGPA 3.77 / 4.00 · average marks 86.20% · academic honors: <strong>High Distinction</strong>. Certified by World Education Services as <a href="https://www.credly.com/badges/f8ed9ef3-e9d6-4a4f-8dab-9d6756c2fff4/public_url" rel="noopener">equivalent to a US bachelor's degree</a>. Undergraduate thesis, <a href="http://hdl.handle.net/10361/22445" rel="noopener"><em>Design and Implementation of an Optimized Solar Home System for Urban Areas Using Bifacial Photovoltaic Panel</em></a>, supervised by Dr. A. H. M. A. Rahim and archived in the BRAC University institutional repository.</p>
+    <p>CGPA 3.77 / 4.00 · average marks 86.20% · academic honors: <strong>High Distinction</strong>. Certified by World Education Services as <a href="https://www.credly.com/badges/f8ed9ef3-e9d6-4a4f-8dab-9d6756c2fff4/public_url" rel="noopener">equivalent to a US bachelor's degree</a>. Undergraduate thesis, <a href="http://hdl.handle.net/10361/22445" rel="noopener"><em>Design and Implementation of an Optimized Solar Home System for Urban Areas Using Bifacial Photovoltaic Panel</em></a>, supervised by Dr. A. H. M. A. Rahim and co-supervised by Tasfin Mahmud. It was the EEE400 final-year design project, and it is archived in the BRAC University institutional repository.</p>
   </div>
 </section>
 
@@ -67,7 +67,7 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Rese
   <div class="entry-what">
     <h3>Adjunct Lecturer</h3>
     <p class="entry-where">Department of EEE, BRAC University</p>
-    <p>Courses taught: Solid-State Devices, Numerical Methods, and Microprocessor &amp; Embedded Systems.</p>
+    <p>Courses taught: Semiconductor Device Physics, Electrical Circuits II (Analog Design), Numerical Techniques, and Computer Programming in C.</p>
   </div>
 </section>
 
@@ -85,7 +85,7 @@ description: "Curriculum vitae of Tanvir Mahmud Mahim, Adjunct Lecturer and Rese
   <div class="entry-what">
     <h3>Teaching Assistant</h3>
     <p class="entry-where">Department of EEE, BRAC University</p>
-    <p>Courses supported: DC &amp; Magnetic Circuits, Energy Conversion, Signals &amp; Systems, and Control Systems.</p>
+    <p>Courses supported: DC &amp; Magnetic Circuits, Energy Conversion I, and Signals &amp; Systems.</p>
   </div>
 </section>
 

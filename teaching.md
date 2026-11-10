@@ -15,11 +15,12 @@ I have taught in the Department of Electrical and Electronic Engineering at BRAC
   <div class="entry-what">
     <h3>Adjunct Lecturer</h3>
     <p class="entry-where">Department of EEE, BRAC University</p>
-    <p>Lecture courses covering device physics, computational methods and embedded systems.</p>
+    <p>Lecture courses on semiconductor devices, analog circuits, numerical methods and programming in C.</p>
     <ul class="course-list">
-      <li><span>Solid-State Devices</span></li>
-      <li><span>Numerical Methods</span></li>
-      <li><span>Microprocessor &amp; Embedded Systems</span></li>
+      <li><span>Semiconductor Device Physics</span></li>
+      <li><span>Electrical Circuits II (Analog Design)</span></li>
+      <li><span>Numerical Techniques</span></li>
+      <li><span>Computer Programming in C</span></li>
     </ul>
   </div>
 </section>
@@ -41,9 +42,8 @@ I have taught in the Department of Electrical and Electronic Engineering at BRAC
     <p>Tutorials, laboratory sessions and grading support across the core courses on circuits, machines and systems.</p>
     <ul class="course-list">
       <li><span>DC &amp; Magnetic Circuits</span></li>
-      <li><span>Energy Conversion</span></li>
+      <li><span>Energy Conversion I</span></li>
       <li><span>Signals &amp; Systems</span></li>
-      <li><span>Control Systems</span></li>
     </ul>
   </div>
 </section>

@@ -121,7 +121,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <section class="project">
   <h3>FabGAN-ID: learned fabrication twins for yield-aware photonic design</h3>
-  <p class="project-meta">Generative process models · differentiable CVaR optimization · multilayer photonic sensor filters<span class="sep">|</span><span class="tag tag-published">Published · IEEE Sensors Journal 2026</span></p>
+  <p class="project-meta">With the University of Memphis, USA · generative process models · differentiable CVaR optimization · multilayer photonic sensor filters<span class="sep">|</span><span class="tag tag-published">Published · IEEE Sensors Journal 2026</span></p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/fabgan-id-yield-aware.jpg' | relative_url }}" alt="FabGAN-ID pipeline from process traces through a GAN fabrication twin and a differentiable CVaR loop to a yield-qualified sensor, with plots showing the learned twin reproducing heavy error tails and the yield tail lifted by 7.2 percent." width="925" height="706" loading="lazy">
@@ -143,11 +143,11 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="quantum-materials-mems">GaN and 2D semiconductor devices and physics-guided design</h2>
 
-<p class="section-lead">Conducted with Prof. Md. Mosaddequr Rahman, Department of EEE, BRAC University, from July 2024 to July 2026. This work follows charge carriers and lattice vibrations (phonons) through nitride and single-layer semiconductor channels, from the underlying quantum states up to the masses, lifetimes and circuit-level numbers experiments report, and applies physics-in-the-loop inverse design to micromachined transducers. A collaboration with Dr. Nadim Chowdhury at BUET carries the same physics-guided approach into circuit design, described at the end of this section.</p>
+<p class="section-lead">Conducted with Prof. Md. Mosaddequr Rahman, Department of EEE, BRAC University, since July 2024. This work follows charge carriers and lattice vibrations (phonons) through nitride and single-layer semiconductor channels, from the underlying quantum states up to the masses, lifetimes and circuit-level numbers experiments report, and applies physics-in-the-loop inverse design to micromachined transducers. A collaboration with Dr. Nadim Chowdhury at BUET carries the same physics-guided approach into circuit design, described at the end of this section.</p>
 
 <section class="project">
   <h3>Origin of the conflicting hole masses in the GaN/AlN two-dimensional hole gas</h3>
-  <p class="project-meta">Six-band band structure · self-consistent electrostatics · Landau levels · two-subband transport<span class="sep">|</span><span class="tag tag-published">Accepted · Physical Review B 2026</span></p>
+  <p class="project-meta">Six-band band structure · self-consistent electrostatics · Landau levels · two-subband transport<span class="sep">|</span><span class="tag tag-published">Published · Physical Review B 2026</span></p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/gan-2dhg-conflicting-masses.png' | relative_url }}" alt="Two panels: the GaN on AlN layer stack carrying the two-dimensional hole gas, with the computed hole distribution inset; and a chart of what quantum oscillations, cyclotron resonance and two-carrier Hall measurements each report, the four places their results disagree, and how this work accounts for each." width="1600" height="864" loading="lazy">
@@ -163,7 +163,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <p>For scattering, no single mechanism explains both subbands at once. The heavy-hole quantum mobility had been estimated from the field where its oscillations first appear. That overestimates it, because the heavy holes carry most of the current. A fit of the published oscillations gives <strong>95 cm<sup>2</sup> V<sup>−1</sup> s<sup>−1</sup> instead of 167 to 200</strong>. With this value, the four measured mobilities fix the kind of disorder. On top of interface roughness, there is smooth, long-range disorder that needs charged line defects threading the hole gas, together with a flatter component. The two-carrier Hall analysis is not the cause of the disagreement.</p>
 
   <ul class="pub-actions">
-    <li><a class="chip chip-paper" href="https://doi.org/10.1103/zn44-nmx8" rel="noopener">Paper · Physical Review B (accepted)</a></li>
+    <li><a class="chip chip-paper" href="https://doi.org/10.1103/zn44-nmx8" rel="noopener">Paper · Physical Review B (Letter)</a></li>
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/gan-2dhg-masses-lifetimes" rel="noopener">Code · GitHub</a></li>
     <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.21791358" rel="noopener">Data · Zenodo</a></li>
   </ul>
@@ -291,7 +291,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <section class="project">
   <h3>Fuzzy inference with reinforcement learning for DFIG low-voltage ride-through</h3>
-  <p class="project-meta">Takagi–Sugeno–Kang inference · doubly-fed induction generators · extreme grid sags<span class="sep">|</span><span class="tag tag-published">Published · JESTECH 2026</span></p>
+  <p class="project-meta">With Dr. A. S. Nazmul Huda · Takagi–Sugeno–Kang inference · doubly-fed induction generators · extreme grid sags<span class="sep">|</span><span class="tag tag-published">Published · JESTECH 2026</span></p>
   <p>How much wind generation a grid can accept is limited by what happens during faults. This work couples a Takagi–Sugeno–Kang fuzzy inference engine (control rules expressed in graded, human-readable form) to reinforcement learning, so that the controller adapts its own rules rather than relying on a fixed rule base. It sustains a doubly-fed induction generator, the standard wind-turbine generator, through voltage sags severe enough to defeat conventional ride-through schemes.</p>
   <ul class="pub-actions">
     <li><a class="chip chip-paper" href="https://doi.org/10.1016/j.jestch.2026.102435" rel="noopener">Paper · Elsevier JESTECH</a></li>
