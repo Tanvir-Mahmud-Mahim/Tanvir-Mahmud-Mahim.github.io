@@ -40,6 +40,10 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
 <ul class="news">
   <li>
     <span class="news-date">Nov 2026</span>
+    <span class="news-body">All twelve open-source tools have new releases. Each adds new features, checked against independent results such as closed forms, exact solutions or other published software. Each also fixes results that could be wrong without a warning, with a test that fails on the old version. The releases are on PyPI and archived on Zenodo. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+  </li>
+  <li>
+    <span class="news-date">Nov 2026</span>
     <span class="news-body">Our paper <strong>"Origin of the conflicting hole masses in the GaN/AlN two-dimensional hole gas"</strong> is published as a Letter in <em>Physical Review B</em> (volume 114, L291304). Three kinds of measurement give different masses for the holes trapped at a GaN/AlN interface. Our calculation gives a heavy-hole mass of 1.92 to 1.99 <em>m</em><sub>0</sub>. That matches the measured 1.92 ± 0.16 <em>m</em><sub>0</sub>, with nothing adjusted. The cyclotron-resonance value comes out higher for a simple reason: the holes scatter before they can finish an orbit. <a href="https://doi.org/10.1103/zn44-nmx8" rel="noopener">Paper</a> · <a href="{{ '/research/#quantum-materials-mems' | relative_url }}">Details</a></span>
   </li>
   <li>
