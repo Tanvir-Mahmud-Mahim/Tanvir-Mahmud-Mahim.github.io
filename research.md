@@ -34,7 +34,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <section class="project">
   <h3>Fast single-shot readout of tin-vacancy spins on thin-film lithium niobate</h3>
-  <p class="project-meta">Diamond nanocavity · thin-film lithium niobate · spin-photon interface<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
+  <p class="project-meta">Diamond nanocavity · thin-film lithium niobate · spin-photon interface<span class="sep">|</span><span class="tag tag-published">Accepted · Optics Express 2026</span></p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/snv-tfln-fast-readout.png' | relative_url }}" alt="Top and side views of a diamond nanobeam cavity holding one tin-vacancy spin, tapered onto a 600 nm thin-film lithium niobate waveguide that leads to a detector; the spin's energy levels and optical lines; and a plot of how strongly each line is excited versus laser detuning, with the dark-state leak marked." width="1600" height="776" loading="lazy">
@@ -48,6 +48,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <p>Why spoil a good cavity? Once its Purcell factor passes about ten, a stronger cavity collects only a little more light. But it also broadens the optical line, and the broader line starts to excite the dark spin through its own transition, only 0.73 GHz away. Those stray photons blur the difference between the two spin states. So the fidelity is best for a moderate, strongly overcoupled cavity. The design also gives a practical rule for the taper. A 600 nm lithium niobate waveguide merges the diamond and lithium niobate modes smoothly, while a 400 nm one passes almost no light. The spin model reproduces published measurements of the same emitter with no adjusted parameters. The taper, the cavity loading and the readout are checked against errors in placement, etching, linewidth and background light. All results are simulated. The largest risk not modeled is that the center's charge state becomes unstable under the readout laser. The general-purpose tool vacspin, on the <a href="{{ '/software/' | relative_url }}">Software</a> page, grew out of this study.</p>
 
   <ul class="pub-actions">
+    <li><a class="chip chip-paper" href="https://doi.org/10.1364/OE.618386" rel="noopener">Paper · Optics Express (accepted)</a></li>
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/snv-tfln-cavity-interface" rel="noopener">Code · GitHub</a></li>
     <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.23507013" rel="noopener">Data · Zenodo</a></li>
   </ul>
