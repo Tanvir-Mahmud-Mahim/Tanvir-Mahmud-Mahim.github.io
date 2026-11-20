@@ -272,7 +272,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <section class="project">
   <h3>Transferable analog transistor sizing with graph reinforcement learning</h3>
-  <p class="project-meta">With GlobalFoundries, Inc., USA · interval type-2 fuzzy rewards · 180/130/65/45 nm<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
+  <p class="project-meta">With GlobalFoundries, Inc., USA · interval type-2 fuzzy rewards · 180/130/65/45 nm<span class="sep">|</span><span class="tag tag-published">Published · IEEE TCAD 2026</span></p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/graph-rl-transistor-sizing.jpg' | relative_url }}" alt="Transistor sizing loop: a circuit graph encoded by a graph convolutional network feeds a soft actor-critic agent driving ngspice across open PDKs, with an interval type-2 fuzzy reward and a physics-in-the-loop adjoint supplying exact gradients to the actor." width="1131" height="522" loading="lazy">
@@ -282,6 +282,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <p>Developed with GlobalFoundries, Inc., this framework sizes analog transistors automatically. A graph network reads the circuit (devices as nodes, wires as edges), a reinforcement-learning agent proposes sizes, a fuzzy reward model carries the uncertainty in what "good" means, and physics-supplied gradients guide the search directly. Whereas conventional approaches rely on black-box circuit simulation and fixed weighted objectives, this combination improves both the quality of the result and the number of simulations needed to reach it. Validated across multiple technology nodes and amplifier benchmarks, it consistently outperforms existing Bayesian-optimization and reinforcement-learning methods while transferring across circuit topologies.</p>
 
   <ul class="pub-actions">
+    <li><a class="chip chip-paper" href="https://doi.org/10.1109/TCAD.2026.3755653" rel="noopener">Paper · IEEE TCAD (Early Access)</a></li>
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/Physics-Guided-Graph-RL-with-an-Adaptive-Fuzzy-Reward-for-Transferable-Analog-Transistor-Sizing" rel="noopener">Code · GitHub</a></li>
   </ul>
 </section>
