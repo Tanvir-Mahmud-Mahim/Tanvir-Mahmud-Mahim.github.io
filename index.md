@@ -26,7 +26,7 @@ This approach has carried my work from 2D and GaN electronics to quantum photoni
       <li>Trapped vortices waste energy in the tantalum films of the best superconducting qubits. A diamond spin sensor 50 nm above the film would hear one moving vortex about 6,000 times above the film's own noise, so the lossy vortices could be counted before a qubit is cooled. Under review.</li>
       <li>Two machine-learning projects with the University of Memphis are published. SPARQ (<em>ACS Photonics</em>, 2026) screens candidate single-photon sources, reaching 90% accuracy in simulation with six times less measuring time than a standard fit. FabGAN-ID (<em>IEEE Sensors Journal</em>, 2026) learns how a deposition process really errs and designs optical filters that survive those errors.</li>
     </ul>
-    <p class="area-more"><a href="{{ '/research/#quantum-optics' | relative_url }}">All six projects in this area</a></p>
+    <p class="area-more"><a href="{{ '/research/#quantum-optics' | relative_url }}">All five projects in this area</a></p>
   </li>
   <li class="area-card">
     <h3><a href="{{ '/research/#quantum-materials-mems' | relative_url }}">GaN and 2D semiconductor devices and physics-guided design</a></h3>
@@ -50,7 +50,7 @@ This approach has carried my work from 2D and GaN electronics to quantum photoni
   </li>
 </ul>
 
-The <a href="{{ '/research/' | relative_url }}">Research</a> page describes all eighteen projects with figures, code and data, and the <a href="{{ '/software/' | relative_url }}">Software</a> page lists the twelve open-source tools that grew out of them.
+The <a href="{{ '/research/' | relative_url }}">Research</a> page describes all seventeen projects with figures, code and data, and the <a href="{{ '/software/' | relative_url }}">Software</a> page lists the twelve open-source tools that grew out of them.
 
 ## About me
 

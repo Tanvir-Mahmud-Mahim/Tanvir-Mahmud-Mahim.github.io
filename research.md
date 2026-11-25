@@ -19,7 +19,6 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
         <li><a href="#snv-readout">Fast readout of a diamond quantum memory</a> <span class="toc-status">(published)</span></li>
         <li><a href="#vortex-noise">Which trapped vortices cause loss in qubits</a> <span class="toc-status">(under review)</span></li>
         <li><a href="#sparq">SPARQ: faster screening of single-photon sources</a> <span class="toc-status">(published)</span></li>
-        <li><a href="#pilot-q">PILOT-Q: neural networks that run on very few photons</a> <span class="toc-status">(under review)</span></li>
         <li><a href="#fabgan-id">FabGAN-ID: optical filters designed for a factory's real errors</a> <span class="toc-status">(published)</span></li>
       </ol>
     </li>
@@ -145,29 +144,6 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
     <li><a class="chip chip-paper" href="https://doi.org/10.1021/acsphotonics.6c01984" rel="noopener">Paper · ACS Photonics</a></li>
     <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/a-spiking-RL-triage-of-solid-state-single-photon-emitters" rel="noopener">Code · GitHub</a></li>
     <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.21352758" rel="noopener">Data · Zenodo</a></li>
-  </ul>
-</section>
-
-<section class="project" id="pilot-q">
-  <h3>PILOT-Q: photon-efficient neural inference at the standard quantum limit</h3>
-  <p class="project-meta">With the University of Memphis, USA · photonic computing · shot-noise-limited operation<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
-
-  <p class="in-short">Training a network through a model of photon-counting noise cuts the photons it needs for the same accuracy by 1.4 to 3.1 times in simulation.</p>
-
-  <figure class="project-figure">
-    <img src="{{ '/assets/images/research/pilotq-thin-client-receiver.png' | relative_url }}" alt="Device-level drawing of the edge device's receiver: weight-encoded light from a fiber passes a silicon Mach-Zehnder modulator with a thermo-optic heater, then a splitter feeds a balanced pair of germanium photodiodes whose difference charge is digitized; red labels mark trim error, shot noise and dark current, and quantization." width="1600" height="1078" loading="lazy">
-    <figcaption>The edge device's receiver, drawn from standard silicon-photonic parts. <b>(a)</b> Weight-encoded light arrives by fiber and passes a Mach–Zehnder modulator, which is driven by the input. Drift of the heater that sets its operating point causes the weight (trim) error. <b>(b)</b> A splitter sends the light to a balanced pair of germanium photodiodes. The difference of their charge is digitized by a <em>b</em>-bit converter. Red labels mark where each impairment enters: trim error, shot noise and dark current, and quantization.</figcaption>
-  </figure>
-
-  <p>In delocalized photonic inference, a central server sends a neural network's weights as light to small edge devices, which do the multiplications optically. These links work at about one photon per multiplication. There, shot noise, the unavoidable randomness of counting photons, controls the result. Yet such links run models trained with clean digital arithmetic. They also give every input the same photon budget, sized for the hardest one.</p>
-
-  <p>PILOT-Q builds a noise model of the receiver that a network can be trained through. It covers shot noise at the quantum limit, dark counts, weight errors and digitizing. It matches the textbook shot-noise law within 9% over more than two orders of magnitude in photon budget. In simulation, training through it <strong>cuts the photons needed for the same accuracy by 1.4 to 3.1 times</strong> on three open benchmarks. With all impairments on, at one photon per multiplication, accuracy on spoken digits rises <strong>from 51.6% to 78.6%</strong>. Clean accuracy drops by at most 1.7 points.</p>
-
-  <p>Two results are negative, and useful. Adding the other hardware faults during training made results worse: shot noise alone gives the robustness. And a controller that re-measures only uncertain inputs adds little. On handwritten digits (MNIST), even a perfect controller that re-measures once, and knows which inputs will be wrong, could save only about 2 times. At the quantum limit, training matters more than run-time tricks. The photon savings lower the server's laser power and the measuring time; the edge device's own energy is set by its electronics.</p>
-
-  <ul class="pub-actions">
-    <li><a class="chip chip-code" href="https://github.com/Tanvir-Mahmud-Mahim/photon-budget-aware-closed-loop-operation-of-delocalized-photonic-neural-inference-at-the-SQL" rel="noopener">Code · GitHub</a></li>
-    <li><a class="chip chip-data" href="https://doi.org/10.5281/zenodo.21326386" rel="noopener">Data · Zenodo</a></li>
   </ul>
 </section>
 
