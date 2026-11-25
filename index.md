@@ -8,21 +8,58 @@ description: "Tanvir Mahmud Mahim, Adjunct Lecturer and Research Assistant, Depa
 
 <h1 class="intro-name">Tanvir Mahmud Mahim</h1>
 
-<p class="intro-tagline">Adjunct Lecturer and Research Assistant, <strong>Department of Electrical and Electronic Engineering, BRAC University</strong>. I build physics-based computer models of quantum and semiconductor devices that do not stop at the device: they follow the signal through the instrument, all the way to the number a measurement actually returns.</p>
+<p class="intro-tagline">Adjunct Lecturer and Research Assistant, <strong>Department of Electrical and Electronic Engineering, BRAC University</strong>. I build computer models of quantum and semiconductor devices that follow the signal all the way to the number a measurement returns.</p>
 
-Each device I study is described once, from the material it is made of to the signal its measurement produces. A model built this way works in both directions. Run forward, it acts as a referee: when two experiments on the same sample disagree, it can tell how much of the difference comes from the material and how much from the measurement itself. Run backward, it designs: the model can report how its output responds to every input, so an optimizer can turn a target specification directly into a device, and can tune the measurement setup too, not just the device. This approach has carried my work from 2D and GaN electronics to quantum photonics. It is now aimed at the step that limits quantum hardware most: the measurement itself.
+Each device I study is described once, from the material it is made of to the signal its measurement produces. A model built this way works in two directions:
 
-<a href="{{ '/research/#quantum-optics' | relative_url }}"><strong>Squeezed-light microcombs, diamond quantum sensing and photonic machine learning</strong></a>, conducted with Dr. A. S. M. Mohsin. Squeezed light is laser light whose noise has been pushed below the usual quantum limit; it is a raw material for precision measurement. A single micro-ring on a silicon-carbide chip can make such light, but building the light up inside the ring and letting it out work against each other, so one ring can never deliver more than 3 dB. Adding a second ring, whose only job is extraction, releases 7.9 dB. That result is published in <em>Optics Express</em> (2026). Another project listens to magnetic noise with a diamond sensor. Vortices, tiny whirlpools of magnetic flux, waste energy in the tantalum films used in the best superconducting qubits. But not all trapped flux is lossy. A basic law of physics says that a vortex that wastes energy must also jitter, while flux held in a patterned hole stays silent. Our calculations show that a diamond spin sensor 50 nm above the film would hear one moving vortex clearly, about 6,000 times above the film's own noise. The noise then gives the loss of each vortex, so the lossy ones could be counted before a qubit is cooled. A third project designs a fast readout for a tin-vacancy spin in diamond, a quantum memory that talks to light. In simulation, a deliberately spoiled nanocavity on a lithium niobate chip reads the spin in 0.1 µs with 98.8% fidelity, against a measured 87.4% in 50 µs with a microscope. That paper is now published in <em>Optics Express</em> too. Two machine-learning projects with the University of Memphis are now published. SPARQ, in <em>ACS Photonics</em> (2026), speeds up the search for single-photon light sources. In simulation, a learning method that reads the data as they arrive reaches 90% accuracy with six times less measuring time than a standard fit. It can often decide a third of a second into a one-second measurement, at 86% accuracy. FabGAN-ID, in the <em>IEEE Sensors Journal</em> (2026), learns how a deposition process really errs, from its own records, and designs optical filters that survive those errors.
+- **Forward, as a referee.** When two experiments on the same sample disagree, it can tell how much of the difference comes from the material and how much from the measurement.
+- **Backward, as a designer.** It reports how its output responds to every input, so an optimizer can turn a target specification straight into a device, and tune the measurement setup too.
 
-<a href="{{ '/research/#quantum-materials-mems' | relative_url }}"><strong>GaN and 2D semiconductor devices and physics-guided design</strong></a>, conducted with Prof. Md. Mosaddequr Rahman. Electric charge and heat-carrying vibrations are followed through nitride and single-atom-thick channels, starting from the underlying quantum states rather than from shortcuts. Three findings stand out. In the GaN/AlN system, published measurements disagree on how heavy the holes are. Our Letter in <em>Physical Review B</em>, published in November 2026, explains where the disagreement comes from. The calculation matches the heavy-hole mass with nothing adjusted. It also shows why one experiment reads it higher: there the holes scatter before they can finish an orbit. Only one band parameter, it turns out, can explain the light-hole puzzle. The paper also identifies the kind of disorder the holes scatter from. In patterned single layers, two Raman peaks show that a cut MoS<sub>2</sub> edge holds extra electrons but no measurable strain. Published transistor thresholds then show that the fixed charge there is negative and reaches about 12 nm into the ribbon. In a model of a thin-gate transistor, using this charge instead of the Raman value raises the predicted width at which the current per width halves from 17 to 96 nm, mostly through a threshold shift that gate design can offset. And for a WSe<sub>2</sub> ferroelectric memory transistor, in a paper now published in <em>Materials Today Communications</em>, we show when the channel's own properties drop out of its memory window. In the model, one percent of compression then more than doubles how easily charge moves, while the 1.43 V memory window moves by less than 0.1 percent. Strain and memory can therefore be tuned separately; on the channel side, charge trapped at the surface is what limits the memory.
+This approach has carried my work from 2D and GaN electronics to quantum photonics. It is now aimed at the step that limits quantum hardware most: the measurement itself.
 
-Within this area, a collaboration with Dr. Nadim Chowdhury at BUET carries the approach into <a href="{{ '/research/#wbg-devices' | relative_url }}"><strong>physics-guided circuit design</strong></a>. Here the design software computes how every circuit output responds to every design choice, so an optimizer can adjust a whole circuit automatically. Two examples. A single-chip GaN frequency synthesizer (the circuit that generates a radio's precise clock signal) stays locked from −55 to 150 °C in transistor-level simulation, and designing it revealed three device rules that set the temperature limits of such chips. That study is now published in <em>Materials Today Communications</em> (2026). And a machine-learning framework built with GlobalFoundries, Inc. sizes the transistors of analog circuits, and carries what it has learned across four different manufacturing technologies. That paper is now published in <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em> (2026). Alongside this I worked as a consultant to GIXSystems.ai on a 100 V GaN power transistor, fabricated with X-FAB in Erfurt.
+## Research at a glance
 
-<a href="{{ '/research/#control-energy' | relative_url }}"><strong>Learning-based grid control and bifacial photovoltaics</strong></a>, conducted with Dr. A. H. M. A. Rahim, who retired in December 2024. Power-grid controllers that revise their own decision rules as they learn hold a small local grid and a wind turbine steady through faults severe enough to defeat conventional fixed-setting controllers. The wind-turbine study was published in 2026, written with Prof. Md. Mosaddequr Rahman and Dr. A. S. Nazmul Huda. The same collaboration produced a custom-built two-sided solar module and the <a href="{{ '/research/#photovoltaics' | relative_url }}">efficiency model</a> that describes it. This is the earliest of the three research areas, and the one with the longest published record.
+<ul class="area-list">
+  <li class="area-card">
+    <h3><a href="{{ '/research/#quantum-optics' | relative_url }}">Squeezed-light microcombs, diamond quantum sensing and photonic machine learning</a></h3>
+    <p class="area-who">With Dr. A. S. M. Mohsin, BRAC University, since January 2025</p>
+    <ul>
+      <li><strong>Quieter light from a chip.</strong> Squeezed light is laser light whose noise is pushed below the usual quantum limit. One micro-ring on a silicon-carbide chip can never deliver more than 3 dB of it; adding a second ring, whose only job is to let the light out, releases 7.9 dB. <em>Optics Express</em> (2026).</li>
+      <li><strong>Reading a diamond quantum memory fast.</strong> A tin-vacancy spin in diamond is a quantum memory that talks to light. In simulation, a deliberately leaky nanocavity on a lithium niobate chip reads it in 0.1 µs with 98.8% fidelity, against a measured 87.4% in 50 µs with a microscope. <em>Optics Express</em> (2026).</li>
+      <li><strong>Finding the vortices that waste energy in qubits.</strong> A diamond spin sensor 50 nm above a tantalum film would hear one moving vortex about 6,000 times above the film's own noise, so the lossy vortices could be counted before a qubit is cooled. Under review.</li>
+      <li><strong>Machine learning for quantum and optical hardware</strong>, with the University of Memphis. SPARQ (<em>ACS Photonics</em>, 2026) screens candidate single-photon sources, reaching 90% accuracy in simulation with six times less measuring time than a standard fit. FabGAN-ID (<em>IEEE Sensors Journal</em>, 2026) learns how a deposition process really errs and designs optical filters that survive those errors.</li>
+    </ul>
+    <p class="area-more"><a href="{{ '/research/#quantum-optics' | relative_url }}">All six projects in this area</a></p>
+  </li>
+  <li class="area-card">
+    <h3><a href="{{ '/research/#quantum-materials-mems' | relative_url }}">GaN and 2D semiconductor devices and physics-guided design</a></h3>
+    <p class="area-who">With Prof. Md. Mosaddequr Rahman, BRAC University, since July 2024</p>
+    <ul>
+      <li><strong>How heavy are the holes in GaN/AlN?</strong> Published measurements disagree. Our calculation matches the measured heavy-hole mass with nothing adjusted, and shows why one experiment reads it higher: the holes scatter before they can finish an orbit. <em>Physical Review B</em> Letter (2026).</li>
+      <li><strong>Charge at the cut edge of MoS<sub>2</sub>.</strong> Two Raman peaks show that a cut edge holds extra electrons but no measurable strain, and published transistor thresholds show that this fixed charge is negative and reaches about 12 nm into the ribbon. Under review.</li>
+      <li><strong>Strain and memory, tuned separately.</strong> In a WSe<sub>2</sub> ferroelectric memory transistor, one percent of compression more than doubles how easily charge moves, while the 1.43 V memory window moves by less than 0.1 percent. <em>Materials Today Communications</em> (2026).</li>
+      <li><strong>Circuits designed by the physics</strong>, with Dr. Nadim Chowdhury at BUET. A single-chip GaN frequency synthesizer stays locked from −55 to 150 °C in transistor-level simulation, and designing it revealed three rules that set the temperature limits of such chips (<em>Materials Today Communications</em>, 2026). A machine-learning method built with GlobalFoundries, Inc. sizes the transistors of analog circuits and carries what it has learned across four manufacturing technologies (<em>IEEE Transactions on Computer-Aided Design</em>, 2026).</li>
+    </ul>
+    <p class="area-more"><a href="{{ '/research/#quantum-materials-mems' | relative_url }}">All seven projects in this area</a></p>
+  </li>
+  <li class="area-card">
+    <h3><a href="{{ '/research/#control-energy' | relative_url }}">Learning-based grid control and bifacial photovoltaics</a></h3>
+    <p class="area-who">With Dr. A. H. M. A. Rahim, BRAC University, May 2023 to June 2024</p>
+    <ul>
+      <li><strong>Controllers that learn their own rules.</strong> They hold a small local grid (<em>IEEE Transactions on Fuzzy Systems</em>, 2025) and a wind turbine (2026, with Prof. Md. Mosaddequr Rahman and Dr. A. S. Nazmul Huda) steady through faults severe enough to defeat fixed-setting controllers.</li>
+      <li><strong>Solar panels that collect light on both faces.</strong> A custom-built two-sided module, and an efficiency model that adds air pressure and humidity to the usual sunlight and temperature (<em>IEEE Journal of Photovoltaics</em>, 2024), plus two reviews.</li>
+    </ul>
+    <p class="area-more"><a href="{{ '/research/#control-energy' | relative_url }}">All five projects in this area</a></p>
+  </li>
+</ul>
 
-I completed the B.Sc. in Electrical and Electronic Engineering at BRAC University in December 2022 with High Distinction, and joined the department as a Teaching Assistant, then as a Research Assistant, and since June 2025 as an Adjunct Lecturer. The <a href="{{ '/research/' | relative_url }}">Research</a> page presents all eighteen projects in full, with figures, code and data.
+The <a href="{{ '/research/' | relative_url }}">Research</a> page describes all eighteen projects with figures, code and data, and the <a href="{{ '/software/' | relative_url }}">Software</a> page lists the twelve open-source tools that grew out of them.
 
-I welcome correspondence on any of these topics, as well as inquiries regarding collaboration, at [tanvir.mahim@bracu.ac.bd](mailto:tanvir.mahim@bracu.ac.bd).
+## About me
+
+I completed the B.Sc. in Electrical and Electronic Engineering at BRAC University in December 2022 with High Distinction. I have worked in the same department since January 2022: first as a Teaching Assistant, then from June 2023 as a Research Assistant, and since June 2025 also as an Adjunct Lecturer. I also worked as a consultant to GIXSystems.ai on a 100 V GaN power transistor, fabricated with X-FAB in Erfurt, Germany.
+
+I welcome questions on any of these topics, and offers of collaboration, at [tanvir.mahim@bracu.ac.bd](mailto:tanvir.mahim@bracu.ac.bd).
 
 ## Research interests
 
@@ -40,91 +77,96 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
 <ul class="news">
   <li>
     <span class="news-date">Nov 2026</span>
-    <span class="news-body">Our paper <strong>"Device-physics design rules for wide-temperature enhancement-mode gallium nitride integrated circuits, revealed by transistor-anchored machine learning"</strong>, with Prof. Md. Mosaddequr Rahman (BRAC University) and Dr. Nadim Chowdhury (BUET), is published in <em>Materials Today Communications</em> (article 116682, in press; DOI: <a href="https://doi.org/10.1016/j.mtcomm.2026.116682" rel="noopener">10.1016/j.mtcomm.2026.116682</a>). It is open access. GaN chips offer only one kind of transistor, and its behavior changes with temperature. While designing a GaN-on-SOI frequency synthesizer for 218 to 423 K (−55 to 150 °C) with machine-learned models checked by transistor-level simulation, we found three rules that set the limits of such chips. Bootstrapped logic loses its drive when hot, and a precharge 0.25 V above the supply restores it. A varactor alone cannot follow the oscillator's four- to five-fold change with temperature, so capacitance must be switched. And two kinds of on-chip resistor give a temperature sensor without p-type or bipolar devices. The loop locks at 50 and 52 MHz at all ten simulated temperatures; no chip was fabricated. <a href="https://doi.org/10.1016/j.mtcomm.2026.116682" rel="noopener">Paper</a> · <a href="{{ '/research/#wbg-devices' | relative_url }}">Details</a></span>
+    <span class="news-body">All twelve open-source tools have another new release. This round works through the limits each tool's own documentation listed. A limit was closed only where the new result could be checked against an exact answer or an independent calculation; the others are still listed, with the reason. Each release also fixes problems found in a fresh check of the code, with a test for each fix. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Nov 2026</span>
-    <span class="news-body">Our paper <strong>"Physics-Guided Graph Reinforcement Learning with an Adaptive Fuzzy Reward for Transferable Analog Transistor Sizing"</strong>, with Dr. Nadim Chowdhury at BUET and GlobalFoundries, Inc., is published in <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em> as an Early Access article (DOI: <a href="https://doi.org/10.1109/TCAD.2026.3755653" rel="noopener">10.1109/TCAD.2026.3755653</a>). An analog circuit only works well when every transistor has the right size, and designers usually find the sizes by trial and error with a circuit simulator. In our method, a graph network reads the circuit, a learning agent proposes the sizes, a fuzzy reward carries the uncertainty in what "good" means, and a simple transistor model points the search in the right direction. An agent trained on a 180 nm process is reused at 130, 65 and 45 nm. Everything runs on open tools: the ngspice simulator, two open process design kits and open predictive transistor models. <a href="https://doi.org/10.1109/TCAD.2026.3755653" rel="noopener">Paper</a> · <a href="{{ '/research/#wbg-devices' | relative_url }}">Details</a></span>
+    <span class="news-body">Published in <em>Materials Today Communications</em> (open access): <strong>"Device-physics design rules for wide-temperature enhancement-mode gallium nitride integrated circuits, revealed by transistor-anchored machine learning"</strong>, with Prof. Md. Mosaddequr Rahman and Dr. Nadim Chowdhury (BUET). While designing a GaN frequency synthesizer for −55 to 150 °C, we found three rules that set the temperature limits of such chips. <a href="https://doi.org/10.1016/j.mtcomm.2026.116682" rel="noopener">Paper</a> · <a href="{{ '/research/#wbg-devices' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Nov 2026</span>
-    <span class="news-body">Our paper <strong>"Fast single-shot readout of tin-vacancy spins with an overcoupled diamond nanocavity on thin-film lithium niobate"</strong> is published in <em>Optics Express</em> (volume 34, issue 23, pages 45209–45223; DOI: <a href="https://doi.org/10.1364/OE.618386" rel="noopener">10.1364/OE.618386</a>). It is open access. A tin-vacancy spin in diamond is a quantum memory that talks to light. But a microscope catches very little of that light, so reading the spin is slow. In our simulated design, a diamond nanocavity is deliberately left leaky on one side and hands its light to a lithium niobate waveguide on the same chip. 32% of the emitted photons are detected, about a hundred times more than with a microscope. The spin is then read in 0.1 µs with 98.8% fidelity. <a href="https://doi.org/10.1364/OE.618386" rel="noopener">Paper</a> · <a href="{{ '/research/#quantum-optics' | relative_url }}">Details</a></span>
+    <span class="news-body">Published in <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em> (Early Access): <strong>"Physics-Guided Graph Reinforcement Learning with an Adaptive Fuzzy Reward for Transferable Analog Transistor Sizing"</strong>, with Dr. Nadim Chowdhury (BUET) and GlobalFoundries, Inc. A learning agent trained on a 180 nm process sizes analog circuits at 130, 65 and 45 nm too, using only open tools. <a href="https://doi.org/10.1109/TCAD.2026.3755653" rel="noopener">Paper</a> · <a href="{{ '/research/#wbg-devices' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Nov 2026</span>
-    <span class="news-body">All twelve open-source tools have new releases. Each adds new features, checked against independent results such as closed forms, exact solutions or other published software. Each also fixes results that could be wrong without a warning, with a test that fails on the old version. The releases are on PyPI and archived on Zenodo. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+    <span class="news-body">Published in <em>Optics Express</em> (open access): <strong>"Fast single-shot readout of tin-vacancy spins with an overcoupled diamond nanocavity on thin-film lithium niobate"</strong>. In our simulated design, 32% of the emitted photons are detected, about a hundred times more than with a microscope, and the spin is read in 0.1 µs with 98.8% fidelity. <a href="https://doi.org/10.1364/OE.618386" rel="noopener">Paper</a> · <a href="{{ '/research/#quantum-optics' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Nov 2026</span>
-    <span class="news-body">Our paper <strong>"Origin of the conflicting hole masses in the GaN/AlN two-dimensional hole gas"</strong> is published as a Letter in <em>Physical Review B</em> (volume 114, L291304). Three kinds of measurement give different masses for the holes trapped at a GaN/AlN interface. Our calculation gives a heavy-hole mass of 1.92 to 1.99 <em>m</em><sub>0</sub>. That matches the measured 1.92 ± 0.16 <em>m</em><sub>0</sub>, with nothing adjusted. The cyclotron-resonance value comes out higher for a simple reason: the holes scatter before they can finish an orbit. <a href="https://doi.org/10.1103/zn44-nmx8" rel="noopener">Paper</a> · <a href="{{ '/research/#quantum-materials-mems' | relative_url }}">Details</a></span>
+    <span class="news-body">Published as a Letter in <em>Physical Review B</em>: <strong>"Origin of the conflicting hole masses in the GaN/AlN two-dimensional hole gas"</strong>. Our calculation gives a heavy-hole mass of 1.92 to 1.99 <em>m</em><sub>0</sub>, matching the measured 1.92 ± 0.16 <em>m</em><sub>0</sub> with nothing adjusted. <a href="https://doi.org/10.1103/zn44-nmx8" rel="noopener">Paper</a> · <a href="{{ '/research/#quantum-materials-mems' | relative_url }}">Details</a></span>
+  </li>
+  <li>
+    <span class="news-date">Oct 2026</span>
+    <span class="news-body">Published online in <em>ACS Photonics</em>, with the University of Memphis: <strong>"Closed-Loop, Event-Driven Machine Learning for Autonomous Triage of Single-Photon Emitters"</strong>. In simulation, a network that reads the data as they arrive reaches 90% accuracy with 6 times less measuring time than a standard fit. <a href="https://doi.org/10.1021/acsphotonics.6c01984" rel="noopener">Paper</a> · <a href="{{ '/research/#quantum-optics' | relative_url }}">Details</a></span>
+  </li>
+  <li>
+    <span class="news-date">Oct 2026</span>
+    <span class="news-body">Published in <em>Materials Today Communications</em> (open access): <strong>"Channel decoupling of the memory window in CuInP<sub>2</sub>S<sub>6</sub>-gated two-dimensional ferroelectric transistors: conditions, limits, and implications for interface processing"</strong>. It shows when the memory window of a ferroelectric transistor does not depend on its channel. <a href="https://doi.org/10.1016/j.mtcomm.2026.116333" rel="noopener">Paper</a> · <a href="{{ '/research/#quantum-materials-mems' | relative_url }}">Details</a></span>
+  </li>
+  <li>
+    <span class="news-date">Oct 2026</span>
+    <span class="news-body">Published online in the <em>IEEE Sensors Journal</em>, with the University of Memphis: <strong>"FabGAN-ID: Learning the Fabrication Process for Yield-Aware Inverse Design of Multilayer Photonic Sensor Filters"</strong>. In this fully simulated study, the share of 532 nm notch filters that pass rises from 0.16% to 63.7%. <a href="https://doi.org/10.1109/JSEN.2026.3732239" rel="noopener">Paper</a> · <a href="{{ '/research/#quantum-optics' | relative_url }}">Details</a></span>
+  </li>
+  <li>
+    <span class="news-date">Sep 2026</span>
+    <span class="news-body">Published in <em>Optics Express</em> (open access): <strong>"Overcoming the 3 dB squeezing extraction limit in silicon carbide microcombs with a photonic molecule"</strong>. A second ring lets a microcomb release 7.9 dB of squeezed light, where a single ring can never exceed 3 dB. <a href="https://doi.org/10.1364/OE.612248" rel="noopener">Paper</a> · <a href="{{ '/research/#quantum-optics' | relative_url }}">Details</a></span>
+  </li>
+  <li>
+    <span class="news-date">Aug 2026</span>
+    <span class="news-body">Received the <strong>Quality Journal Publication Award</strong> from the <a href="https://www.bracu.ac.bd/research/rmc" rel="noopener">Research Metrics Committee</a> of BRAC University for a second successive cycle. The award recognizes research published in Q1 journals, those ranked in the top quartile of their field.</span>
+  </li>
+</ul>
+
+<details class="more-news">
+<summary>Earlier news</summary>
+<ul class="news">
+  <li>
+    <span class="news-date">Nov 2026</span>
+    <span class="news-body">All twelve open-source tools have new releases, each adding features checked against independent results and fixing results that could be wrong without a warning. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Oct 2026</span>
     <span class="news-body">Our paper on the conflicting hole masses in the GaN/AlN two-dimensional hole gas is accepted in <em>Physical Review B</em>.</span>
   </li>
   <li>
-    <span class="news-date">Oct 2026</span>
-    <span class="news-body">Our paper <strong>"Closed-Loop, Event-Driven Machine Learning for Autonomous Triage of Single-Photon Emitters"</strong>, with the University of Memphis, is published online in <em>ACS Photonics</em>. It asks how much measuring time can be saved when screening candidate single-photon emitters. In simulation, a network that reads the data as they arrive reaches 90% accuracy with 6 times less measuring time than a standard fit, and on published quantum-dot data a network trained only on simulated data halves the error of the usual analysis. <a href="https://doi.org/10.1021/acsphotonics.6c01984" rel="noopener">Paper</a> · <a href="{{ '/research/#quantum-optics' | relative_url }}">Details</a></span>
-  </li>
-  <li>
-    <span class="news-date">Oct 2026</span>
-    <span class="news-body">Our paper <strong>"Channel decoupling of the memory window in CuInP<sub>2</sub>S<sub>6</sub>-gated two-dimensional ferroelectric transistors: conditions, limits, and implications for interface processing"</strong> is now published in <em>Materials Today Communications</em> (volume 57, article 116333) and is open access. It shows when the memory window of a ferroelectric transistor does not depend on its channel, and how strain and interface traps act. <a href="https://doi.org/10.1016/j.mtcomm.2026.116333" rel="noopener">Paper</a> · <a href="{{ '/research/#quantum-materials-mems' | relative_url }}">Details</a></span>
-  </li>
-  <li>
-    <span class="news-date">Oct 2026</span>
-    <span class="news-body">Our paper <strong>"FabGAN-ID: Learning the Fabrication Process for Yield-Aware Inverse Design of Multilayer Photonic Sensor Filters"</strong> is published online (early access) in the <em>IEEE Sensors Journal</em>. A generative model learns how a deposition process errs from 400 process traces, and the filter is then designed against it. In this fully simulated study, the pass/fail yield of a 532 nm notch filter rises from 0.16% to 63.7%. <a href="https://doi.org/10.1109/JSEN.2026.3732239" rel="noopener">Paper</a> · <a href="{{ '/publications/' | relative_url }}">Details</a></span>
+    <span class="news-date">Sep 2026</span>
+    <span class="news-body">All twelve open-source tools have new releases. Most fix results that could be wrong without a warning, and several add tools for working with measured lab data. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Sep 2026</span>
-    <span class="news-body">All twelve open-source tools have new releases. Most fix results that could be wrong without a warning, and several add tools for working with measured lab data; each release lists its changes with before-and-after numbers, and every new result is checked by public tests. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+    <span class="news-body">The documentation of all twelve open-source tools is rewritten in plain language, with worked examples whose printed output is checked by running them. The line-by-line check also found real bugs, each fixed with a new test. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Sep 2026</span>
-    <span class="news-body">The documentation of all twelve open-source tools has been rewritten in plain language, with worked examples whose printed output is checked by running them. Checking every document line by line against its code also found real bugs; each is fixed, with a new test, in a patch release of every tool, and the release notes list them. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+    <span class="news-body">Two new tools bring the open-source family to twelve: <strong>fracpll</strong>, for designing frequency synthesizers from your own measured parts, and <strong>lockkernel</strong>, for the onset of synchronization in crowds of oscillators. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Sep 2026</span>
-    <span class="news-body">Two new tools join the open-source family, now twelve: <strong>fracpll</strong> (design a fractional-N frequency synthesizer from your own measured tuning curves and noise numbers, with the loop model refusing outside its own validity) and <strong>lockkernel</strong> (exact thresholds and exponents of synchronization transitions, plus fits of measured synchronization curves with honest error bars). fracpll grows out of the GaN-on-SOI PLL co-design study on the Research page, and lockkernel is the maintained release of the reference code behind the locking-kernel universality study; both follow the same rule as the rest: their main results are checked by public tests against closed forms or exact simulations. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+    <span class="news-body"><strong>vacspin</strong> (spin-light interfaces of diamond color centers) and <strong>labplan</strong> (plan, fit and document a calibration of any model) bring the open-source family to ten tools. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Sep 2026</span>
-    <span class="news-body">The open-source family is now ten tools: <strong>vacspin</strong> (diamond colour-centre spin-photon interfaces, with cited parameters for the silicon-, germanium- and tin-vacancy centres) and <strong>labplan</strong> (plan, fit and certify a calibration of any user-supplied model) join the eight released earlier. Every package now carries a laboratory layer that plans measurements before they are taken and calibrates from the lab's own data with honest uncertainties. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+    <span class="news-body">A written course now covers the first eight open-source tools: <strong>Research-Grade Computational Physics in Python</strong>, a 66-page book with 25 runnable code lessons. Available in the <a href="https://www.patreon.com/u40002728" rel="noopener">Patreon shop</a>.</span>
   </li>
   <li>
     <span class="news-date">Sep 2026</span>
-    <span class="news-body">A complete written course now covers all eight open-source tools: <strong>Research-Grade Computational Physics in Python</strong>, a 66-page book with 25 runnable code lessons, one module per tool. Every number printed in the book was produced by running the included scripts against the released packages, and each script checks its own textbook results. Available in the <a href="https://www.patreon.com/u40002728" rel="noopener">Patreon shop</a>.</span>
+    <span class="news-body"><strong>hamop</strong> (one material model, every property) and <strong>fabtwin</strong> (designing optical coatings for a machine's real errors) bring the open-source family to eight tools. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Sep 2026</span>
-    <span class="news-body">The open-source family is now eight tools: <strong>hamop</strong> (one material model, every property) and <strong>fabtwin</strong> (learning a fabrication line's real errors to design for manufacturing yield) join the six released earlier, and all eight shipped major feature releases this month. <a href="{{ '/software/' | relative_url }}">Details</a></span>
-  </li>
-  <li>
-    <span class="news-date">Sep 2026</span>
-    <span class="news-body">Our paper <strong>"Overcoming the 3 dB squeezing extraction limit in silicon carbide microcombs with a photonic molecule"</strong> is published in <em>Optics Express</em> (open access). A second ring lets a microcomb release 7.9 dB of squeezed light, where a single ring can never exceed 3 dB. <a href="https://doi.org/10.1364/OE.612248" rel="noopener">Paper</a> · <a href="{{ '/publications/' | relative_url }}">Details</a></span>
-  </li>
-  <li>
-    <span class="news-date">Sep 2026</span>
-    <span class="news-body">The open-source family grows to six tools: <strong>cavsqueeze</strong> (spin squeezing of large ensembles in resonators) and <strong>SPARQ</strong> (automated screening of single-photon emitters) join ramansep, kpenvelope, sqzcomb and absnoise on PyPI, each tested in public and archived with a DOI. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+    <span class="news-body"><strong>cavsqueeze</strong> (spin squeezing of large ensembles in resonators) and <strong>SPARQ</strong> (automated screening of single-photon emitters) bring the open-source family to six tools. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Aug 2026</span>
-    <span class="news-body">Received the <strong>Quality Journal Publication Award</strong> from the <a href="https://www.bracu.ac.bd/research/rmc" rel="noopener">Research Metrics Committee</a> of BRAC University for a second successive cycle. The award recognizes research published in Q1 journals, those ranked in the top quartile of their field.</span>
+    <span class="news-body">Released <strong>absnoise</strong>, a fourth open-source tool, for the built-in noise of superconducting junctions and the limits it sets on thermal detectors. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Aug 2026</span>
-    <span class="news-body">Released <strong>absnoise</strong>, a fourth open-source tool, covering the occupation noise of Andreev bound states and the sensitivity limits of the proximity Josephson thermal detectors built on them. All four tools are installable from PyPI and archived on Zenodo under versioned DOIs. <a href="{{ '/software/' | relative_url }}">Details</a></span>
-  </li>
-  <li>
-    <span class="news-date">Aug 2026</span>
-    <span class="news-body">All three research tools are now installable directly from PyPI (<code>pip install ramansep</code>, <code>kpenvelope</code>, <code>sqzcomb</code>) through automated, tested release pipelines. sqzcomb v0.2 adds the photonic molecule, with its test suite driving a coupled two-ring design past the single-ring 3 dB detected-squeezing limit. <a href="{{ '/software/' | relative_url }}">Details</a></span>
-  </li>
-  <li>
-    <span class="news-date">Aug 2026</span>
-    <span class="news-body">Released three open-source research tools under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization: <strong>ramansep</strong>, <strong>kpenvelope</strong> and <strong>sqzcomb</strong>, each with a tested core and continuous integration. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+    <span class="news-body">The first three research tools, <strong>ramansep</strong>, <strong>kpenvelope</strong> and <strong>sqzcomb</strong>, are released under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization and can be installed from PyPI. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Jun 2026</span>
-    <span class="news-body">Our paper on adaptive Takagi–Sugeno–Kang fuzzy inference with reinforcement learning for low-voltage ride-through of DFIG wind turbines is published in <em>Engineering Science and Technology, an International Journal</em>. <a href="{{ '/publications/' | relative_url }}">Details</a></span>
+    <span class="news-body">Our paper on adaptive Takagi–Sugeno–Kang fuzzy inference with reinforcement learning for low-voltage ride-through of DFIG wind turbines is published in <em>Engineering Science and Technology, an International Journal</em>. <a href="{{ '/research/#control-energy' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Dec 2025</span>
@@ -160,11 +202,11 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
   </li>
   <li>
     <span class="news-date">Jan 2025</span>
-    <span class="news-body">Began research on squeezed-light microcombs, diamond quantum sensing and photonic machine learning with Dr. A. S. M. Mohsin, covering soliton-crystal microcombs, NV micromembrane vortex sensing, and closed-loop machine learning for quantum photonic instrumentation. <a href="{{ '/research/' | relative_url }}">Read more</a></span>
+    <span class="news-body">Began research on squeezed-light microcombs, diamond quantum sensing and photonic machine learning with Dr. A. S. M. Mohsin. <a href="{{ '/research/#quantum-optics' | relative_url }}">Read more</a></span>
   </li>
   <li>
     <span class="news-date">Jul 2024</span>
-    <span class="news-body">Began research on GaN and 2D semiconductor devices and physics-guided design with Prof. Md. Mosaddequr Rahman, spanning the GaN/AlN two-dimensional hole gas, nanoribbon transistors, ferroelectric WSe<sub>2</sub> logic, and fabrication-aware inverse design.</span>
+    <span class="news-body">Began research on GaN and 2D semiconductor devices and physics-guided design with Prof. Md. Mosaddequr Rahman. <a href="{{ '/research/#quantum-materials-mems' | relative_url }}">Read more</a></span>
   </li>
   <li>
     <span class="news-date">Jul 2024</span>
@@ -183,3 +225,4 @@ I welcome correspondence on any of these topics, as well as inquiries regarding 
     <span class="news-body">Completed the B.Sc. in Electrical and Electronic Engineering at BRAC University with High Distinction.</span>
   </li>
 </ul>
+</details>

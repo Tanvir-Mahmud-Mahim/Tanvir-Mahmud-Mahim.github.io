@@ -3,10 +3,10 @@ layout: page
 title: "Support"
 subtitle: "Independent research software, kept open by the people who use it."
 permalink: /support/
-description: "Support the open-source research software of Tanvir Mahmud Mahim: ramansep, kpenvelope, sqzcomb, absnoise, cavsqueeze, sparq-triage, hamop and fabtwin. Donate via Patreon, buy a course or guide, cite the tools, or partner institutionally."
+description: "Support the twelve open-source research tools of Tanvir Mahmud Mahim. Donate via Patreon, buy a course or guide, cite the tools, or partner institutionally."
 ---
 
-The eight tools on the <a href="{{ '/software/' | relative_url }}">Software</a> page (<strong>ramansep</strong>, <strong>kpenvelope</strong>, <strong>sqzcomb</strong>, <strong>absnoise</strong>, <strong>cavsqueeze</strong>, <strong>SPARQ</strong>, <strong>hamop</strong> and <strong>fabtwin</strong>) are developed at the Department of Electrical and Electronic Engineering, BRAC University, and released openly under the Apache-2.0 license: every physics claim backed by a public test, every release archived under a DOI, every constant cited to its source. Support of any kind keeps that standard funded.
+The twelve tools on the <a href="{{ '/software/' | relative_url }}">Software</a> page are developed at the Department of Electrical and Electronic Engineering, BRAC University, and released openly under the Apache-2.0 license. Every physics claim is backed by a public test, every release is archived with a DOI, and every constant is cited to its source. Support of any kind keeps that standard funded.
 
 <div class="support-card">
   <div class="support-card-body">

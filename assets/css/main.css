@@ -1049,3 +1049,95 @@ a.btn-support:hover {
   color: var(--muted);
   max-width: 44rem;
 }
+
+/* --------------------------------------------------------------------------
+   Reading aids (Nov 2026): research areas at a glance on the home page, a
+   contents box at the top of long pages, a one-line summary at the top of
+   each project, folded older news, and the software overview table.
+   -------------------------------------------------------------------------- */
+.area-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0 1.6rem;
+  display: grid;
+  gap: 1rem;
+  max-width: none;
+}
+.area-card {
+  margin: 0;
+  padding: 1.15rem 1.35rem .9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-raised);
+  box-shadow: var(--shadow);
+}
+.area-card h3 { margin: 0 0 .25rem; font-size: var(--step-1); line-height: 1.35; }
+.area-card h3 a { color: var(--text-strong); }
+.area-card h3 a:hover { color: var(--accent); }
+.area-card .area-who { margin: 0 0 .75rem; font-size: .88rem; color: var(--muted); }
+.area-card ul { margin: 0 0 .7rem; padding-left: 1.1rem; max-width: none; }
+.area-card li { margin-bottom: .55rem; line-height: 1.55; }
+.area-card .area-more { margin: 0; font-size: .9rem; font-weight: 600; }
+.area-card .area-more a::after { content: " \2192"; }
+
+.toc {
+  margin: 0 0 2.2rem;
+  padding: 1rem 1.3rem .8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-subtle);
+  max-width: none;
+}
+.toc-title {
+  margin: 0 0 .55rem;
+  font-family: var(--font-sans);
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.toc > ol { margin: 0; padding-left: 1.2rem; max-width: none; }
+.toc > ol > li { margin-bottom: .55rem; font-weight: 600; }
+.toc ol ol { margin: .3rem 0 .2rem; padding-left: 1.1rem; list-style: disc; font-weight: 400; font-size: .93rem; }
+.toc ol ol li { margin-bottom: .2rem; }
+.toc .toc-status { color: var(--faint); font-size: .85em; }
+
+.in-short {
+  margin: 0 0 1.15rem;
+  padding: .65rem .95rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--accent-soft);
+  max-width: var(--measure);
+}
+.in-short > strong:first-child { color: var(--accent); }
+
+details.more-news { margin: .4rem 0 0; }
+details.more-news > summary {
+  cursor: pointer;
+  margin: 0 0 .9rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+details.more-news > summary:hover { color: var(--accent-hover); }
+
+.table-scroll { overflow-x: auto; margin: 1rem 0 2.2rem; max-width: none; }
+.tool-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.tool-table th, .tool-table td {
+  padding: .55rem .65rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.tool-table th {
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.tool-table td:first-child { white-space: nowrap; font-weight: 600; }
+.tool-table td.ver { white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--muted); }
+.project .release-note { font-size: .95rem; }
+.project .release-note > strong:first-child { color: var(--text-strong); }
