@@ -8,26 +8,23 @@ description: "Tanvir Mahmud Mahim, Adjunct Lecturer and Research Assistant, Depa
 
 <h1 class="intro-name">Tanvir Mahmud Mahim</h1>
 
-<p class="intro-tagline">Adjunct Lecturer and Research Assistant, <strong>Department of Electrical and Electronic Engineering, BRAC University</strong>. I build computer models of quantum and semiconductor devices that follow the signal all the way to the number a measurement returns.</p>
+<p class="intro-tagline">Adjunct Lecturer and Research Assistant, <strong>Department of Electrical and Electronic Engineering, BRAC University</strong>. I build computer models of quantum and semiconductor devices that follow the signal through the instrument to the number a measurement returns.</p>
 
-Each device I study is described once, from the material it is made of to the signal its measurement produces. A model built this way works in two directions:
-
-- **Forward, as a referee.** When two experiments on the same sample disagree, it can tell how much of the difference comes from the material and how much from the measurement.
-- **Backward, as a designer.** It reports how its output responds to every input, so an optimizer can turn a target specification straight into a device, and tune the measurement setup too.
+I describe each device once, from the material it is made of to the signal its measurement produces. A model built this way works in two directions. Run forward, it is a referee: when two experiments on the same sample disagree, it can tell how much of the difference comes from the material and how much from the measurement. Run backward, it is a designer: because it knows how its output responds to every input, an optimizer can turn a target specification into a device, and tune the measurement setup as well.
 
 This approach has carried my work from 2D and GaN electronics to quantum photonics. It is now aimed at the step that limits quantum hardware most: the measurement itself.
 
-## Research at a glance
+## Research
 
 <ul class="area-list">
   <li class="area-card">
     <h3><a href="{{ '/research/#quantum-optics' | relative_url }}">Squeezed-light microcombs, diamond quantum sensing and photonic machine learning</a></h3>
     <p class="area-who">With Dr. A. S. M. Mohsin, BRAC University, since January 2025</p>
     <ul>
-      <li><strong>Quieter light from a chip.</strong> Squeezed light is laser light whose noise is pushed below the usual quantum limit. One micro-ring on a silicon-carbide chip can never deliver more than 3 dB of it; adding a second ring, whose only job is to let the light out, releases 7.9 dB. <em>Optics Express</em> (2026).</li>
-      <li><strong>Reading a diamond quantum memory fast.</strong> A tin-vacancy spin in diamond is a quantum memory that talks to light. In simulation, a deliberately leaky nanocavity on a lithium niobate chip reads it in 0.1 µs with 98.8% fidelity, against a measured 87.4% in 50 µs with a microscope. <em>Optics Express</em> (2026).</li>
-      <li><strong>Finding the vortices that waste energy in qubits.</strong> A diamond spin sensor 50 nm above a tantalum film would hear one moving vortex about 6,000 times above the film's own noise, so the lossy vortices could be counted before a qubit is cooled. Under review.</li>
-      <li><strong>Machine learning for quantum and optical hardware</strong>, with the University of Memphis. SPARQ (<em>ACS Photonics</em>, 2026) screens candidate single-photon sources, reaching 90% accuracy in simulation with six times less measuring time than a standard fit. FabGAN-ID (<em>IEEE Sensors Journal</em>, 2026) learns how a deposition process really errs and designs optical filters that survive those errors.</li>
+      <li>Squeezed light is laser light whose noise is pushed below the usual quantum limit. One micro-ring on a silicon-carbide chip can never deliver more than 3 dB of it; adding a second ring, whose only job is to let the light out, releases 7.9 dB. <em>Optics Express</em> (2026).</li>
+      <li>A tin-vacancy spin in diamond is a quantum memory that talks to light. In simulation, a deliberately leaky nanocavity on a lithium niobate chip reads it in 0.1 µs with 98.8% fidelity, against a measured 87.4% in 50 µs with a microscope. <em>Optics Express</em> (2026).</li>
+      <li>Trapped vortices waste energy in the tantalum films of the best superconducting qubits. A diamond spin sensor 50 nm above the film would hear one moving vortex about 6,000 times above the film's own noise, so the lossy vortices could be counted before a qubit is cooled. Under review.</li>
+      <li>Two machine-learning projects with the University of Memphis are published. SPARQ (<em>ACS Photonics</em>, 2026) screens candidate single-photon sources, reaching 90% accuracy in simulation with six times less measuring time than a standard fit. FabGAN-ID (<em>IEEE Sensors Journal</em>, 2026) learns how a deposition process really errs and designs optical filters that survive those errors.</li>
     </ul>
     <p class="area-more"><a href="{{ '/research/#quantum-optics' | relative_url }}">All six projects in this area</a></p>
   </li>
@@ -35,10 +32,10 @@ This approach has carried my work from 2D and GaN electronics to quantum photoni
     <h3><a href="{{ '/research/#quantum-materials-mems' | relative_url }}">GaN and 2D semiconductor devices and physics-guided design</a></h3>
     <p class="area-who">With Prof. Md. Mosaddequr Rahman, BRAC University, since July 2024</p>
     <ul>
-      <li><strong>How heavy are the holes in GaN/AlN?</strong> Published measurements disagree. Our calculation matches the measured heavy-hole mass with nothing adjusted, and shows why one experiment reads it higher: the holes scatter before they can finish an orbit. <em>Physical Review B</em> Letter (2026).</li>
-      <li><strong>Charge at the cut edge of MoS<sub>2</sub>.</strong> Two Raman peaks show that a cut edge holds extra electrons but no measurable strain, and published transistor thresholds show that this fixed charge is negative and reaches about 12 nm into the ribbon. Under review.</li>
-      <li><strong>Strain and memory, tuned separately.</strong> In a WSe<sub>2</sub> ferroelectric memory transistor, one percent of compression more than doubles how easily charge moves, while the 1.43 V memory window moves by less than 0.1 percent. <em>Materials Today Communications</em> (2026).</li>
-      <li><strong>Circuits designed by the physics</strong>, with Dr. Nadim Chowdhury at BUET. A single-chip GaN frequency synthesizer stays locked from −55 to 150 °C in transistor-level simulation, and designing it revealed three rules that set the temperature limits of such chips (<em>Materials Today Communications</em>, 2026). A machine-learning method built with GlobalFoundries, Inc. sizes the transistors of analog circuits and carries what it has learned across four manufacturing technologies (<em>IEEE Transactions on Computer-Aided Design</em>, 2026).</li>
+      <li>Published measurements disagree on how heavy the holes at a GaN/AlN interface are. Our calculation matches the measured heavy-hole mass with nothing adjusted, and shows why one experiment reads it higher: the holes scatter before they can finish an orbit. <em>Physical Review B</em> Letter (2026).</li>
+      <li>Two Raman peaks show that the cut edge of a MoS<sub>2</sub> ribbon holds extra electrons but no measurable strain, and published transistor thresholds show that this fixed charge is negative and reaches about 12 nm into the ribbon. Under review.</li>
+      <li>In a WSe<sub>2</sub> ferroelectric memory transistor, one percent of compression more than doubles how easily charge moves, while the 1.43 V memory window moves by less than 0.1 percent, so strain and memory can be tuned separately. <em>Materials Today Communications</em> (2026).</li>
+      <li>With Dr. Nadim Chowdhury at BUET, the same physics designs circuits. A single-chip GaN frequency synthesizer stays locked from −55 to 150 °C in transistor-level simulation, and designing it revealed three rules that set the temperature limits of such chips (<em>Materials Today Communications</em>, 2026). A machine-learning method built with GlobalFoundries, Inc. sizes the transistors of analog circuits and carries what it has learned across four manufacturing technologies (<em>IEEE Transactions on Computer-Aided Design</em>, 2026).</li>
     </ul>
     <p class="area-more"><a href="{{ '/research/#quantum-materials-mems' | relative_url }}">All seven projects in this area</a></p>
   </li>
@@ -46,8 +43,8 @@ This approach has carried my work from 2D and GaN electronics to quantum photoni
     <h3><a href="{{ '/research/#control-energy' | relative_url }}">Learning-based grid control and bifacial photovoltaics</a></h3>
     <p class="area-who">With Dr. A. H. M. A. Rahim, BRAC University, May 2023 to June 2024</p>
     <ul>
-      <li><strong>Controllers that learn their own rules.</strong> They hold a small local grid (<em>IEEE Transactions on Fuzzy Systems</em>, 2025) and a wind turbine (2026, with Prof. Md. Mosaddequr Rahman and Dr. A. S. Nazmul Huda) steady through faults severe enough to defeat fixed-setting controllers.</li>
-      <li><strong>Solar panels that collect light on both faces.</strong> A custom-built two-sided module, and an efficiency model that adds air pressure and humidity to the usual sunlight and temperature (<em>IEEE Journal of Photovoltaics</em>, 2024), plus two reviews.</li>
+      <li>Controllers that learn their own rules hold a small local grid (<em>IEEE Transactions on Fuzzy Systems</em>, 2025) and a wind turbine (2026, with Prof. Md. Mosaddequr Rahman and Dr. A. S. Nazmul Huda) steady through faults severe enough to defeat fixed-setting controllers.</li>
+      <li>A custom-built solar module that collects light on both faces, and an efficiency model that adds air pressure and humidity to the usual sunlight and temperature (<em>IEEE Journal of Photovoltaics</em>, 2024), followed by two reviews.</li>
     </ul>
     <p class="area-more"><a href="{{ '/research/#control-energy' | relative_url }}">All five projects in this area</a></p>
   </li>
@@ -77,7 +74,7 @@ I welcome questions on any of these topics, and offers of collaboration, at [tan
 <ul class="news">
   <li>
     <span class="news-date">Nov 2026</span>
-    <span class="news-body">All twelve open-source tools have another new release. This round works through the limits each tool's own documentation listed. A limit was closed only where the new result could be checked against an exact answer or an independent calculation; the others are still listed, with the reason. Each release also fixes problems found in a fresh check of the code, with a test for each fix. <a href="{{ '/software/' | relative_url }}">Details</a></span>
+    <span class="news-body">All twelve open-source tools have new releases. Each one closes limits that its own documentation listed, wherever the new result could be checked against an exact answer or a second calculation; the rest are still listed, with the reason. Each also fixes the bugs found in a new review of its code. <a href="{{ '/software/' | relative_url }}">Details</a></span>
   </li>
   <li>
     <span class="news-date">Nov 2026</span>

@@ -6,9 +6,9 @@ permalink: /research/
 description: "Research of Tanvir Mahmud Mahim: squeezed-light microcombs, diamond quantum sensing and photonic machine learning; GaN and 2D semiconductor devices and physics-guided design; and learning-based grid control and bifacial photovoltaics. Code and data released openly."
 ---
 
-Each project below models a device all the way from the material it is made of to the number an instrument reports, and nothing is fitted that can be computed. Because every step of the chain can be traced, it also runs in reverse: to recover a hidden quantity from measured data, or to turn a target specification into a design.
+Each project below models a device from the material it is made of to the number an instrument reports, and nothing that can be computed is fitted. Because every step of the chain can be traced, it also runs in reverse: to recover a hidden quantity from measured data, or to turn a target specification into a design.
 
-Work marked <span class="tag tag-review">Under review</span> is currently in peer review. The <a href="{{ '/publications/' | relative_url }}">Publications</a> page lists only accepted records. Code and data are released openly as each project matures. Every project opens with a one-line summary.
+Work marked <span class="tag tag-review">Under review</span> is currently in peer review. The <a href="{{ '/publications/' | relative_url }}">Publications</a> page lists only accepted records. Code and data are released openly as each project matures.
 
 <nav class="toc" aria-label="On this page">
   <p class="toc-title">On this page</p>
@@ -49,13 +49,13 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="quantum-optics">Squeezed-light microcombs, diamond quantum sensing and photonic machine learning</h2>
 
-<p class="section-lead">Conducted with Dr. A. S. M. Mohsin, Department of EEE, BRAC University, since January 2025. This work develops models of quantum photonic hardware, together with learned controllers that close the loop around it: squeezed-light sources, nitrogen-vacancy (NV) diamond magnetometers and single-photon instruments.</p>
+<p class="section-lead">Conducted with Dr. A. S. M. Mohsin, Department of EEE, BRAC University, since January 2025. This work models quantum photonic hardware, such as squeezed-light sources, diamond (nitrogen-vacancy, NV) magnetic sensors and single-photon instruments, and builds learning-based controllers that run the measurement around it.</p>
 
 <section class="project" id="sic-squeezing">
   <h3>Overcoming the 3 dB squeezing extraction limit in silicon-carbide microcombs</h3>
   <p class="project-meta">4H-SiC-on-insulator · soliton crystals · continuous-variable quantum optics<span class="sep">|</span><span class="tag tag-published">Published · Optics Express 2026</span></p>
 
-  <p class="in-short"><strong>In short:</strong> One micro-ring can never release more than 3 dB of squeezed light. A second ring, built only to let the light out, raises that to 7.9 dB in the full model.</p>
+  <p class="in-short">One micro-ring can never release more than 3 dB of squeezed light. A second ring, built only to let the light out, raises that to 7.9 dB in the full model.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/sic-microcomb-squeezing.jpg' | relative_url }}" alt="Photonic-molecule geometry with a main soliton-crystal ring coupled to an auxiliary Purcell-extraction ring, the comb-tooth and squeezed-vacuum mode structure, and finite-element mode profile and dispersion engineering of the 4H-SiC waveguide core." width="960" height="617" loading="lazy">
@@ -79,7 +79,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>Fast single-shot readout of tin-vacancy spins on thin-film lithium niobate</h3>
   <p class="project-meta">Diamond nanocavity · thin-film lithium niobate · spin-photon interface<span class="sep">|</span><span class="tag tag-published">Published · Optics Express 2026</span></p>
 
-  <p class="in-short"><strong>In short:</strong> In simulation, a deliberately leaky diamond cavity on a lithium niobate chip detects 32% of the spin's photons, about a hundred times more than a microscope, and reads the spin in 0.1 µs with 98.8% fidelity.</p>
+  <p class="in-short">In simulation, a deliberately leaky diamond cavity on a lithium niobate chip detects 32% of the spin's photons, about a hundred times more than a microscope, and reads the spin in 0.1 µs with 98.8% fidelity.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/snv-tfln-fast-readout.png' | relative_url }}" alt="Top and side views of a diamond nanobeam cavity holding one tin-vacancy spin, tapered onto a 600 nm thin-film lithium niobate waveguide that leads to a detector; the spin's energy levels and optical lines; and a plot of how strongly each line is excited versus laser detuning, with the dark-state leak marked." width="1600" height="776" loading="lazy">
@@ -103,7 +103,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>Listening to vortex noise: which trapped vortices cause loss in tantalum qubits</h3>
   <p class="project-meta">Diamond NV spin sensors · vortex noise · superconducting-qubit loss<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
-  <p class="in-short"><strong>In short:</strong> A vortex that wastes energy must also jitter. So a diamond spin sensor can hear which trapped vortices cause loss in the tantalum films of superconducting qubits, and measure that loss.</p>
+  <p class="in-short">A vortex that wastes energy must also jitter. So a diamond spin sensor can hear which trapped vortices cause loss in the tantalum films of superconducting qubits, and measure that loss.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/nv-vortex-noise-loss.png' | relative_url }}" alt="Three parts: a tantalum film with holes under a diamond membrane, holding flux in a hole (no core, silent) and a vortex between holes (moving core, noisy); simulated static field and spin relaxation maps of a 2 by 2 micrometre film, where all trapped flux is bright in the field map but only the vortices between holes are bright in the noise map; and the link from NV noise to microwave loss per vortex." width="1600" height="598" loading="lazy">
@@ -126,7 +126,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>SPARQ: autonomous triage of solid-state single-photon emitters</h3>
   <p class="project-meta">With the University of Memphis, USA · spiking networks · adaptive photon-correlation measurement<span class="sep">|</span><span class="tag tag-published">Published · ACS Photonics 2026</span></p>
 
-  <p class="in-short"><strong>In short:</strong> In simulation, a network that reads the photon data as they arrive reaches 90% accuracy with 6 times less measuring time than a standard fit, and adapting the time spent on each spot screens a field 1.7 times faster than a fixed scan.</p>
+  <p class="in-short">In simulation, a network that reads the photon data as they arrive reaches 90% accuracy with 6 times less measuring time than a standard fit, and adapting the time spent on each spot screens a field 1.7 times faster than a fixed scan.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/sparq-hbt-triage-pipeline.png' | relative_url }}" alt="Measurement pipeline: a laser excites one candidate site, the light is split onto two single-photon detectors and a time tagger builds the photon-pair histogram; an early-decision estimator and an exposure controller decide to keep measuring, certify or reject. Below: the spiking network's running estimate for a single emitter and for three emitters; the simulator that makes the training data; and the level-structure graphs that tell the estimator the emitter type." width="1600" height="1042" loading="lazy">
@@ -152,7 +152,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>PILOT-Q: photon-efficient neural inference at the standard quantum limit</h3>
   <p class="project-meta">With the University of Memphis, USA · photonic computing · shot-noise-limited operation<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
-  <p class="in-short"><strong>In short:</strong> Training a network through a model of photon-counting noise cuts the photons it needs for the same accuracy by 1.4 to 3.1 times in simulation.</p>
+  <p class="in-short">Training a network through a model of photon-counting noise cuts the photons it needs for the same accuracy by 1.4 to 3.1 times in simulation.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/pilotq-thin-client-receiver.png' | relative_url }}" alt="Device-level drawing of the edge device's receiver: weight-encoded light from a fiber passes a silicon Mach-Zehnder modulator with a thermo-optic heater, then a splitter feeds a balanced pair of germanium photodiodes whose difference charge is digitized; red labels mark trim error, shot noise and dark current, and quantization." width="1600" height="1078" loading="lazy">
@@ -175,7 +175,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>FabGAN-ID: learned fabrication twins for yield-aware photonic design</h3>
   <p class="project-meta">With the University of Memphis, USA · generative process models · differentiable CVaR optimization · multilayer photonic sensor filters<span class="sep">|</span><span class="tag tag-published">Published · IEEE Sensors Journal 2026</span></p>
 
-  <p class="in-short"><strong>In short:</strong> A model learned from 400 process records predicts the rare bad runs that decide yield. Designing against it raises the simulated yield of a 532 nm notch filter from 0.16% to 63.7%.</p>
+  <p class="in-short">A model learned from 400 process records predicts the rare bad runs that decide yield. Designing against it raises the simulated yield of a 532 nm notch filter from 0.16% to 63.7%.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/fabgan-id-yield-aware.jpg' | relative_url }}" alt="FabGAN-ID pipeline from process traces through a GAN fabrication twin and a differentiable CVaR loop to a yield-qualified sensor, with plots showing the learned twin reproducing heavy error tails and the yield tail lifted by 7.2 percent." width="925" height="706" loading="lazy">
@@ -203,7 +203,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>Origin of the conflicting hole masses in the GaN/AlN two-dimensional hole gas</h3>
   <p class="project-meta">Six-band band structure · self-consistent electrostatics · Landau levels · two-subband transport<span class="sep">|</span><span class="tag tag-published">Published · Physical Review B 2026</span></p>
 
-  <p class="in-short"><strong>In short:</strong> A standard band-structure calculation, with nothing adjusted, matches the measured heavy-hole mass. The higher value from cyclotron resonance comes from holes that scatter before they can finish an orbit.</p>
+  <p class="in-short">A standard band-structure calculation, with nothing adjusted, matches the measured heavy-hole mass. The higher value from cyclotron resonance comes from holes that scatter before they can finish an orbit.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/gan-2dhg-conflicting-masses.png' | relative_url }}" alt="Two panels: the GaN on AlN layer stack carrying the two-dimensional hole gas, with the computed hole distribution inset; and a chart of what quantum oscillations, cyclotron resonance and two-carrier Hall measurements each report, the four places their results disagree, and how this work accounts for each." width="1600" height="864" loading="lazy">
@@ -229,7 +229,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>Two Raman peaks and transistor thresholds measure the fixed charge at etched MoS<sub>2</sub> edges</h3>
   <p class="project-meta">Monolayer MoS<sub>2</sub> · frozen-phonon DFT · tip-enhanced Raman · gated-sheet electrostatics · width scaling<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
-  <p class="in-short"><strong>In short:</strong> Two Raman peaks show that the etched edges of a MoS<sub>2</sub> ribbon hold extra electrons but no measurable strain. Transistor thresholds show that the fixed edge charge is negative and reaches about 12 nm into the ribbon.</p>
+  <p class="in-short">Two Raman peaks show that the etched edges of a MoS<sub>2</sub> ribbon hold extra electrons but no measurable strain. Transistor thresholds show that the fixed edge charge is negative and reaches about 12 nm into the ribbon.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/raman-two-phonon-edge-charge.png' | relative_url }}" alt="Four panels: a monolayer nanoribbon transistor probed by tip-enhanced Raman, with the damage halo and a cross-section inset; Raman spectra at the ribbon center and edge; a strain-charge plot separating edge charge from interior strain; and normalized on-current versus nanoribbon width for a thin high-k gate and a 90 nm SiO2 gate." width="1600" height="1007" loading="lazy">
@@ -254,7 +254,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>What sets the memory window of a 2D ferroelectric transistor</h3>
   <p class="project-meta">CuInP<sub>2</sub>S<sub>6</sub> ferroelectric · monolayer WSe<sub>2</sub> · memory window · strain and interface traps<span class="sep">|</span><span class="tag tag-published">Published · Materials Today Communications 2026</span></p>
 
-  <p class="in-short"><strong>In short:</strong> Under conditions the paper spells out, the memory window depends only on the ferroelectric layer and the charge trapped at the channel surface, not on the channel itself, so strain and memory can be tuned separately.</p>
+  <p class="in-short">Under conditions the paper spells out, the memory window depends only on the ferroelectric layer and the charge trapped at the channel surface, not on the channel itself, so strain and memory can be tuned separately.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/wse2-cips-mfmis-fefet.png' | relative_url }}" alt="Device concept: a strained monolayer WSe2 channel under h-BN, a floating metal gate, a 30 nm CuInP2S6 ferroelectric and a top gate, with a legend of the layers; the light K and heavy Gamma valence-band valleys, pushed apart by compression; and the simulation chain from strained transport to nonvolatile logic." width="1600" height="696" loading="lazy">
@@ -280,7 +280,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>PARL-ID: fabrication-aware inverse design across MEMS and photonics</h3>
   <p class="project-meta">Physics-informed neural networks · neural adjoint · CVaR reinforcement learning<span class="sep">|</span><span class="tag tag-review">Under review</span></p>
 
-  <p class="in-short"><strong>In short:</strong> One framework designs sensors that stay within specification when manufacturing varies, tested on ultrasound transducers and on photonic examples.</p>
+  <p class="in-short">One framework designs sensors that stay within specification when manufacturing varies, tested on ultrasound transducers and on photonic examples.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/parl-id-inverse-design.jpg' | relative_url }}" alt="PARL-ID three-stage architecture: a multi-physics physics-informed neural network forward surrogate, a neural-adjoint inverse engine, and a reinforcement-learning fabrication loop, validated on a unit-cell CMUT testbench and photonic benchmarks." width="1190" height="688" loading="lazy">
@@ -299,7 +299,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>Hierarchical inverse design of unit-cell CMUTs</h3>
   <p class="project-meta">Attentive gated recurrent networks · membrane-displacement maximization<span class="sep">|</span><span class="tag tag-published">Published · IEEE Sensors Journal 2025</span></p>
 
-  <p class="in-short"><strong>In short:</strong> A network chosen by a probabilistic search maps a target acoustic response back to the geometry of a transducer cell, without the usual finite-element sweeps.</p>
+  <p class="in-short">A network chosen by a probabilistic search maps a target acoustic response back to the geometry of a transducer cell, without the usual finite-element sweeps.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/cmut-hierarchical-inverse-design.jpg' | relative_url }}" alt="Hierarchical inverse-design network: unit-cell CMUT thickness parameters enter a stack of gated recurrent layers, pass through an attention dot-product block and fully connected dense layers, and emerge as an optimized device profile." width="1280" height="641" loading="lazy">
@@ -320,7 +320,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>Device-physics design rules for wide-temperature GaN integrated circuits</h3>
   <p class="project-meta">200 V GaN-on-SOI · E-mode HEMT circuits · 218 to 423 K<span class="sep">|</span><span class="tag tag-published">Published · Materials Today Communications 2026</span></p>
 
-  <p class="in-short"><strong>In short:</strong> Designing a GaN frequency synthesizer that works from −55 to 150 °C revealed three rules that set the temperature limits of such chips. The design locks at all ten simulated temperatures.</p>
+  <p class="in-short">Designing a GaN frequency synthesizer that works from −55 to 150 °C revealed three rules that set the temperature limits of such chips. The design locks at all ten simulated temperatures.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/gan-ic-design-rules.jpg' | relative_url }}" alt="Overview of the study: a fractional-N phase-locked loop built from e-mode GaN HEMTs reveals three rules. Rule 1: precharge the bootstrap above the supply. Rule 2: switch the capacitance. Rule 3: sense temperature with two kinds of resistor." width="1280" height="312" loading="lazy">
@@ -348,7 +348,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>Transferable analog transistor sizing with graph reinforcement learning</h3>
   <p class="project-meta">With GlobalFoundries, Inc., USA · interval type-2 fuzzy rewards · 180/130/65/45 nm<span class="sep">|</span><span class="tag tag-published">Published · IEEE TCAD 2026</span></p>
 
-  <p class="in-short"><strong>In short:</strong> A learning agent sizes the transistors of analog circuits, needs fewer circuit simulations than earlier methods, and carries what it learned across manufacturing technologies.</p>
+  <p class="in-short">A learning agent sizes the transistors of analog circuits, needs fewer circuit simulations than earlier methods, and carries what it learned across manufacturing technologies.</p>
 
   <figure class="project-figure">
     <img src="{{ '/assets/images/research/graph-rl-transistor-sizing.jpg' | relative_url }}" alt="Transistor sizing loop: a circuit graph encoded by a graph convolutional network feeds a soft actor-critic agent driving ngspice across open PDKs, with an interval type-2 fuzzy reward and a physics-in-the-loop adjoint supplying exact gradients to the actor." width="1131" height="522" loading="lazy">
@@ -365,13 +365,13 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="control-energy">Learning-based grid control and bifacial photovoltaics</h2>
 
-<p class="section-lead">Conducted with Dr. A. H. M. A. Rahim (retired December 2024) from May 2023 to June 2024. This work develops controllers that adapt their own inference rules, applied to grid-connected machines under fault conditions, and a custom-built bifacial solar module.</p>
+<p class="section-lead">Conducted with Dr. A. H. M. A. Rahim (retired December 2024) from May 2023 to June 2024. This work develops controllers that adapt their own rules, for grid-connected machines during faults, and a custom-built solar module that collects light on both faces (a bifacial module).</p>
 
 <section class="project" id="dfig">
   <h3>Fuzzy inference with reinforcement learning for DFIG low-voltage ride-through</h3>
   <p class="project-meta">With Dr. A. S. Nazmul Huda · Takagi–Sugeno–Kang inference · doubly-fed induction generators · extreme grid sags<span class="sep">|</span><span class="tag tag-published">Published · JESTECH 2026</span></p>
 
-  <p class="in-short"><strong>In short:</strong> A controller that adapts its own rules keeps a wind-turbine generator running through voltage dips severe enough to defeat standard schemes.</p>
+  <p class="in-short">A controller that adapts its own rules keeps a wind-turbine generator running through voltage dips severe enough to defeat standard schemes.</p>
   <p>How much wind generation a grid can accept is limited by what happens during faults. This work couples a Takagi–Sugeno–Kang fuzzy inference engine (control rules expressed in graded, human-readable form) to reinforcement learning, so that the controller adapts its own rules rather than relying on a fixed rule base. It sustains a doubly-fed induction generator, the standard wind-turbine generator, through voltage sags severe enough to defeat conventional ride-through schemes.</p>
   <ul class="pub-actions">
     <li><a class="chip chip-paper" href="https://doi.org/10.1016/j.jestch.2026.102435" rel="noopener">Paper · Elsevier JESTECH</a></li>
@@ -382,7 +382,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>Adaptive fuzzy attention control of a microgrid under grid-bus fault</h3>
   <p class="project-meta">Double Q-learning · prioritized rewards · attention-weighted inference<span class="sep">|</span><span class="tag tag-published">Published · IEEE Trans. Fuzzy Systems 2025</span></p>
 
-  <p class="in-short"><strong>In short:</strong> A learning controller keeps a small local grid stable through an extreme fault, where fixed-setting controllers fail.</p>
+  <p class="in-short">A learning controller keeps a small local grid stable through an extreme fault, where fixed-setting controllers fail.</p>
   <p>A double Q-learning scheme with prioritized rewards drives an attention-weighted fuzzy inference controller, keeping a microgrid stable through an extreme fault on the grid bus. This is the regime in which fixed-gain controllers fail, because the operating point departs further from nominal than their tuning assumes.</p>
   <ul class="pub-actions">
     <li><a class="chip chip-paper" href="https://doi.org/10.1109/TFUZZ.2025.3539325" rel="noopener">Paper · IEEE TFS</a></li>
@@ -395,7 +395,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>Weather-responsive efficiency model for a custom-built bifacial panel</h3>
   <p class="project-meta">One-diode model · air-pressure and humidity terms · multiple cell technologies<span class="sep">|</span><span class="tag tag-published">Published · IEEE J. Photovoltaics 2024</span></p>
 
-  <p class="in-short"><strong>In short:</strong> An efficiency model for solar panels that adds air pressure and humidity to the usual sunlight and temperature, checked on several panel types, including a two-sided panel built in-house.</p>
+  <p class="in-short">An efficiency model for solar panels that adds air pressure and humidity to the usual sunlight and temperature, checked on several panel types, including a two-sided panel built in-house.</p>
   <p>Standard efficiency-rating models account only for sunlight intensity and ambient temperature. Starting from the derivation of the one-diode model toward a photovoltaic efficiency rating, this work introduces air pressure and humidity as additional, carefully constructed dimensions, and validates the resulting model against modules based on several different cell technologies, including a bifacial panel constructed and characterized in-house.</p>
   <ul class="pub-actions">
     <li><a class="chip chip-paper" href="https://doi.org/10.1109/JPHOTOV.2024.3421252" rel="noopener">Paper · IEEE JPV</a></li>
@@ -407,7 +407,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>Mono- and bifacial photovoltaic technologies compared</h3>
   <p class="project-meta">TOPCon · silicon heterojunction · next-generation bifacial cells<span class="sep">|</span><span class="tag tag-published">Published · IEEE J. Photovoltaics 2024</span></p>
 
-  <p class="in-short"><strong>In short:</strong> A side-by-side review of new two-sided solar cells and their one-sided equivalents.</p>
+  <p class="in-short">A side-by-side review of new two-sided solar cells and their one-sided equivalents.</p>
   <p>Next-generation bifacial cells (panels that collect light on both faces) are central to the development of high-efficiency modules. This review compares the emerging technologies, including TOPCon and silicon heterojunction, with their monofacial equivalents on a common basis.</p>
   <ul class="pub-actions">
     <li><a class="chip chip-paper" href="https://doi.org/10.1109/JPHOTOV.2024.3366698" rel="noopener">Paper · IEEE JPV</a></li>
@@ -418,7 +418,7 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
   <h3>Agrivoltaics: challenges and prospects</h3>
   <p class="project-meta">Dual land use · standards · community acceptance · policy<span class="sep">|</span><span class="tag tag-published">Published · Adv. Energy Sustain. Res. 2026</span></p>
 
-  <p class="in-short"><strong>In short:</strong> A review of farming and solar power on the same land, and of the standards, community views and policies that decide whether the farmers benefit.</p>
+  <p class="in-short">A review of farming and solar power on the same land, and of the standards, community views and policies that decide whether the farmers benefit.</p>
   <p>Agri-photovoltaics enables the dual use of land for agriculture and electricity generation. This review surveys recent agri-PV prospects across continents, together with the standards, community-acceptance and policy questions that determine whether the economic benefit reaches the farmers working beneath the arrays.</p>
   <ul class="pub-actions">
     <li><a class="chip chip-paper" href="https://doi.org/10.1002/aesr.202500227" rel="noopener">Paper · Wiley AESR (open access)</a></li>
@@ -427,4 +427,4 @@ Work marked <span class="tag tag-review">Under review</span> is currently in pee
 
 <h2 id="software">Open-source software</h2>
 
-<p class="section-lead">Beyond the per-paper repositories above, twelve general-purpose tools distilled from this research (<strong>ramansep</strong>, <strong>kpenvelope</strong>, <strong>sqzcomb</strong>, <strong>absnoise</strong>, <strong>cavsqueeze</strong>, <strong>SPARQ</strong>, <strong>hamop</strong>, <strong>fabtwin</strong>, <strong>vacspin</strong>, <strong>labplan</strong>, <strong>fracpll</strong> and <strong>lockkernel</strong>) are maintained under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization, with tested cores, continuous integration and archived DOIs. They have a page of their own: <a href="{{ '/software/' | relative_url }}">Software</a>.</p>
+<p class="section-lead">Besides the code for each paper above, twelve general-purpose tools grew out of this research: <strong>ramansep</strong>, <strong>kpenvelope</strong>, <strong>sqzcomb</strong>, <strong>absnoise</strong>, <strong>cavsqueeze</strong>, <strong>SPARQ</strong>, <strong>hamop</strong>, <strong>fabtwin</strong>, <strong>vacspin</strong>, <strong>labplan</strong>, <strong>fracpll</strong> and <strong>lockkernel</strong>. They live under the <a href="https://github.com/TaN-MM-Org" rel="noopener">TaN-MM-Org</a> organization, are tested in public and are archived with DOIs. They have a page of their own: <a href="{{ '/software/' | relative_url }}">Software</a>.</p>
